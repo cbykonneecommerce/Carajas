@@ -1,0 +1,141 @@
+.fullbanner .owl-controls .owl-buttons .owl-prev, .fullbanner .owl-controls .owl-buttons .owl-next{
+    display: none;
+}
+
+
+#propostascomerciais{
+    margin-top: 3em;
+}
+
+
+.collection-title{
+    margin-bottom: 2em;
+}
+.collection-title h2 {
+    font-size: 40px;
+    color: #227346;
+    font-weight: 700;
+}
+
+
+.our-categories .content .card {
+    border: 1px solid #278950;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    text-align: center;
+    padding: 22%;
+}
+
+.owl-item .item .card {
+    border: 1px solid #278950;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    text-align: center;
+    padding: 4%;
+}
+
+
+.card:hover {
+    background-color: rgb(39, 137, 80,0.8) !important;
+    -webkit-transition: rgb(39, 137, 80,0.8) 1000ms linear;
+    -ms-transition: rgb(39, 137, 80,0.8) 1000ms linear;
+    transition:rgb(39, 137, 80,0.8)  1000ms linear;
+}
+
+
+.card-title {
+    text-align: center;
+    padding-top: 0.5em;
+    color: #757575;
+    font-size: 20px;
+    line-height: 1.4em;
+}
+
+
+h2.section-title {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 7px solid #227346; 
+    line-height: 0;
+    margin: 10px 0 20px; 
+    margin-bottom: 2em;
+ } 
+ 
+ h2.section-title span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
+
+ .our-departments .background-container {
+     background-image: url("/arquivos/cards-background.png");
+     background-repeat: no-repeat !important;
+     background-size: contain;
+     background-position: center center;
+     padding-top: 6em;
+    padding-bottom: 3em;
+ }
+.background-container .content .card {
+    margin-bottom: 2em;
+    border: 2px solid #227346;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    width: 518px;
+    margin: 2em;
+    background-color: #F2F2F2
+}
+
+
+#carouselmarcas .owl-item:nth-child(odd)
+{
+    margin-top: 4.5em;
+}
+@media (max-width: 1600px)  {
+
+    .our-categories .content .card a img{
+        height: 78px;
+        margin: auto
+    }
+
+    .card-title h4 {
+        
+        font-size: 14px !important;
+    }
+    
+   .background-container .content .card {
+        
+        padding: 14px;
+        padding-left: -32px;
+        margin: 0.5em;
+        width: 32%;
+    }
+
+    .collection-title h2 {
+        font-size: 1.7em;
+    }
+
+    
+}
+
+@media (max-width: 500px)  {
+    h2.section-title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 7px solid #227346;
+    line-height: 1em;
+    margin: 10px 0 20px;
+     margin-bottom: 0;
+    }
+
+    .collection-title h2 {
+        font-size: 1.7em;
+    }
+    #carouselmarcas .owl-item {
+        margin-top: 0 !important;
+    }
+
+    .our-departments {
+        display: none;
+    }
+}

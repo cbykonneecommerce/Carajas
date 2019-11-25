@@ -1,0 +1,47 @@
+.prateleira .box-item:hover img {
+    opacity: 1;
+}
+
+.product-image::after {
+    content: none !important;
+    background: none !important;
+}
+.prateleira .btn-add-buy-button-asynchronous .fa, .compare input {
+    display: none;
+}
+
+.prateleira .btn-add-buy-button-asynchronous {
+    border-radius: 5px;
+    background-color: #F58220 !important;
+    font-size: 20px;
+    font-weight: 300;
+    width: 200px;
+    margin-top: 1em;
+
+}
+
+.upper-side{
+    border: solid 1px #BDBDBD;
+    border-bottom: none;
+    border-top: solid 4px #227346;
+}
+
+.green-part {
+    background-color: #227346;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+}
+
+.prateleira .price a, .prateleira .price .best-price {
+    color: #F2F2F2 !important;
+}
+
+.prateleira .price .best-price {
+    font-size: 20px;
+    padding-bottom: 8px;
+
+}
+
+.prateleira .price .installment {
+    font-size: 11px;
+}

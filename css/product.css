@@ -1,0 +1,171 @@
+.product-info {
+    border: solid 1px #278950;
+    padding-bottom: 2em !important;
+    border-radius: 5px;
+    border-top: solid 10px #278950;
+    padding-left: 2em !important;
+}
+
+
+#comprar-flutuante .descricao-preco .valor-por strong, .product-details .price-box .descricao-preco .valor-por strong {
+    color: #278950;
+    font-size: 36px;
+    margin-bottom: 0.3em;
+}
+
+.product-details .codigo-produto div, .product-details .codigo-produto span, .product-details .codigo-produto div {
+    color: #BDBDBD;
+}
+
+.rating-produto:after {
+    content: " " !important;
+}
+
+.product-details .price-box, .product-info .shipping-box {
+    border-bottom: none;
+    border-top: none;
+}
+.buy-button.buy-button-ref .fa-lock, .added-to-cart, #description, #specification, #reviews {
+    display: none;
+}
+
+.buy-button-box .box-qtd {
+    display: none !important;
+}
+
+
+.product-info .shipping-box .freight-btn {
+    
+    background: #278950 !important;
+    border: none !important;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white !important;
+    font-weight: 700;
+    line-height: 16px
+}
+.product-info .shipping-box label .fitext {
+    border: 1px solid #278950 !important;
+}
+.product-info .shipping-box label, .product-details .price-box .descricao-preco .valor-dividido, .product-details .price-box .descricao-preco .valor-dividido span, .product-details .price-box .descricao-preco .valor-dividido strong{
+    color: #4F4F4F;
+    font-weight: 200;
+}
+.product-details .product-name .productName {
+    color: #333 !important;
+    font-size: 35px !important;
+    line-height: 36px;
+}
+
+.go-to-cart-button, .go-to-cart-button:hover {
+    color: #fff;
+    padding-left: 38px;
+    padding-right: 38px;
+    background-color: #F58220 !important;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.product-image .apresentacao .thumbs {
+    display: contents;
+}
+.product-image .apresentacao .thumbs li {
+    
+    margin: 8px 0;
+    border: solid 2px #278950;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block !important;
+}
+
+
+.cart-counter {
+    margin-bottom: 4em;
+}
+
+.add-to-cart-button {
+    color: #F58220;
+    border: solid 2px #F58220 !important;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    margin-left: 1em;
+    text-decoration: none;
+    outline-style: none;
+    box-shadow: none;
+    font-weight: 800;
+}
+
+.added-to-cart {
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    margin-left: 3em;
+    text-decoration: none;
+    outline-style: none;
+    box-shadow: none;
+}
+
+
+.product-info .shipping-box label {
+    width: 62%;
+}
+
+.rating-produto:before, .rating-demonstrativo:before, .rating-wrapper .rating:before {
+    font-size: 25px !important
+}
+
+.product-details .codigo-produto .avaliacoes {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: -6em;
+}
+
+
+#btn-description, #btn-specification, #btn-reviews {
+    background-color: transparent;
+    border-color: transparent;
+    outline-style: none;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#product-specs {
+    border-bottom: solid 2px #808080;
+    width: 100%;
+}
+
+#product-specs a:hover {
+    border-bottom: 3px solid #F67828 !important;
+    color: #F67828
+}
+
+#product-specs a.active {
+    border-bottom: 3px solid #F67828 !important;
+    color: #F67828;
+}
+@media (min-width: 1200px) {
+    #comprar-flutuante {
+        display: none !important;
+    }
+}
+@media (max-width: 1400px) {
+    .go-to-cart-button, .go-to-cart-button:hover {
+        padding-left: 1em;
+    padding-right: 1em;
+    }
+    .add-to-cart-button {
+        margin-left: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    }
+}

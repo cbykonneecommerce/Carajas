@@ -1,0 +1,135 @@
+
+
+button {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.header .mini-cart span.badge {
+    background-color: #F00 !important;
+}
+
+.header-container {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 100000;
+}
+
+.logo .link-logo img {
+    width: 200px;
+    height: auto;
+}
+.welcome-bar {
+    background-color: #278950;
+}
+
+.welcome-bar a, .welcome-bar span {
+    color: white;
+}
+
+.btn-default {
+    background-color: transparent;
+    border-color: transparent; 
+}
+
+.button-text-header {
+    color: #227346;
+    display: inline-flex;
+    padding-left: 5px;
+    padding-bottom: -11px;
+    text-align: left;
+    font-size: 11px;
+}
+
+
+
+.busca {
+    border: 1px solid #22864C;
+    border-radius: 10px;
+    height: 3.2em;
+    background-color: transparent !important;
+}
+
+.fulltext-search-box {
+    border-color: transparent !important;
+    box-shadow:none;
+    outline-style:none;
+
+}
+
+.btn-buscar {
+    background-image: url(/arquivos/lupa.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    background-position: center center;
+    color: transparent !important;
+    outline-style:none;
+    box-shadow:none;
+    border: none !important;
+    margin-top: 5px;
+    background-color: transparent !important;
+    
+   
+}
+
+#text-carrinho {
+    line-height: 13px;
+}
+
+h2 {
+    color: #227346;
+}
+
+.separador {
+    border-top: 7px solid #227346;
+}
+
+
+.btn-open-menu-xs.btn-menu-xs .fa-bars {
+    font-size: 34px;
+    color: #227346;
+}
+
+#menu-mobile {
+    background-color: rgba(13, 45, 27, 0.9);
+}
+
+#menu-mobile ul li a{
+    color: white !important
+}
+
+#menu-mobile .header-menu-mobile span i {
+    color:white
+}
+@media (max-width: 600px)  {
+    
+   /* .container-fluid {
+        padding-left: 5px !important;
+        padding-right: 5px !important; 
+    }*/
+
+    .header {
+        margin-top: 2em;
+    }
+
+    #mobile-cart img {
+        width: 3em;
+    margin-top: 6px;
+    }
+}
+
+
+@media (max-width: 1600px)  {
+    .giftlist a {
+        padding-left: 50px;
+    }
+   
+}
+
+@media (min-width: 600px) {
+    .container-fluid {
+        padding-left: 8em !important;
+        padding-right: 8em !important; 
+    }
+}

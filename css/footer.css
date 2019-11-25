@@ -1,0 +1,81 @@
+#newsletter {
+    height: 11em;
+    display: flex;
+  align-items: center;
+}
+
+#newstext {
+    color: white
+}
+
+#newsform #emailform {
+    width: 75%;
+    height: 3.5em;
+}
+#newsform #commit {
+    margin-left: 4em;
+    width: 18%;
+    background-color: #F58220;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 3.5em;
+}
+
+
+.social-media .social-icons li a img{
+    max-width: 80%;
+}
+
+.footer {
+    line-height: 1.8em;
+    background-color: #E0E0E0;
+    margin-top: 0;
+}
+.copy-right {
+    background-color: #E0E0E0;
+}
+
+.footer .col-social #cbyk {
+    width: 5em;
+}
+.footer .col-social #vtex-logo-footer {
+    width: 5.9em;
+}
+
+@media screen and (max-width: 1850px) {
+    #newsform #emailform {
+        width: 67%;
+    }
+    #newsform #commit {
+       
+        width: 22%;
+    }
+}
+
+
+@media (max-width: 600px)  {
+    
+    #cbyk {
+        margin-bottom: 3em;
+    }
+    #newstext h3 {
+        font-size: 1.3em;
+    }
+
+    #newsform #emailform {
+        width: 100%;
+    }
+    #newsform #commit {
+       
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .col-pague-com {
+        margin-top: -12em;
+    }
+}
+

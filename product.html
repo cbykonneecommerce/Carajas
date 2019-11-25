@@ -1,0 +1,234 @@
+<!-- 
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+ 
+ <head>
+     <title> Modelo Vtex</title>
+     <vtex:metaTags/>
+     <vtex:template id="commonStyles" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link href="/arquivos/product.css" rel="stylesheet" type="text/css" />
+ 
+ </head>
+ 
+ <body id="product-page">
+ 
+     <div class="page">
+ 
+         <!--  SubTemplate: Header -->
+         <vtex:template id="Header" />
+         <!-- /SubTemplate: Header -->
+                     
+         <div id="product-extra-top"></div>  
+ 
+         <section id="product-content" class="container-fluid">
+ 
+             <div id="box-bread-brumb" class="hidden-xs">
+                 <vtex.cmc:breadCrumb />
+             </div>
+                     
+             <div id="product-extra-middle"></div>  
+ 
+             <div class="row product-details">
+ 
+                 <div class="product-name-mobile col-xs-12 visible-xs">
+                     <div class="product-name">
+                         <div id="brand"><vtex.cmc:brandName/></div>
+                         <vtex.cmc:productName />
+                     </div>
+                     <div class="row">
+                         <div class="codigo-produto col-xs-12">
+                             <span>Cód:</span> <vtex.cmc:skuReference/>
+                         </div>
+                         <div class="col-xs-12">
+                             <div class="avaliacoes"><a href="#reviews" class="link-ancora"><vtex.cmc:evaluationRate/></a></div>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="product-image col-xs-12 col-sm-7 col-lg-6 text-center">
+                     <!--  Component: Product Images -->
+                     <vtex.cmc:ProductImage zoom="on"/>
+ 
+                 
+                 </div><!-- .product-image -->
+ 
+                 <div class="product-info col-xs-12 col-sm-5 col-lg-6">
+ 
+                     <div class="product-name hidden-xs">
+                         
+                         <h1>
+                             <vtex.cmc:productName />
+                         </h1>
+                     </div>
+ 
+                     <div class="row hidden-xs">
+                         <div class="codigo-produto col-xs-12 col-lg-6">
+                             <span>Cód:</span> <vtex.cmc:skuReference/>
+                             <br/>
+                             <div class="avaliacoes"><a href="#reviews" class="link-ancora"><vtex.cmc:evaluationRate/></a></div>
+                         
+                         </div>
+                         <div class="col-xs-12 col-lg-6">
+                         </div>
+                     </div>
+ 
+                     <div class="price-box">
+                         <!--  Component: Sellers -->
+                         <vtex.cmc:SellerOptions />
+                 
+                         <!--  Component: Price -->
+                         <vtex.cmc:skuPrice />
+                     
+                         <!--  Component: Sales channels -->
+                         <vtex.cmc:SalesChannelDropList />
+                     
+                         <!--  Component: Addicional services -->
+                         <vtex.cmc:stockKeepingUnitService />
+                         
+                         <!--  Component: Payment methods -->
+                         <!-- <vtex.cmc:OtherPaymentMethod/> -->
+                     </div><!-- .price-box -->
+ 
+                     <div class="seletor-sku">
+                            <vtex.cmc:skuSelection />
+                     </div><!-- .seletor-sku -->
+
+                     <div class="cart-counter">
+                            <h4>Quantidade:</h4>
+                            <button class="btn btn-menos" style="background-color: transparent;outline-style: none;
+                            box-shadow: none;"><img src="/arquivos/btn-menos.png" alt="" style="width: 2em;"/></button>  
+                            <input type="number" class="qtd-field" value="1"/>      
+                            <button class="btn btn-mais" style="background-color: transparent;outline-style: none;
+                            box-shadow: none;"><img src="/arquivos/btn-mais.png" alt="" style="width: 2em;"/></button>   
+                      </div>
+ 
+                     <div class="buy-button-box hidden-xs">
+                            <!-- <vtex.cmc:BuyButton />
+                            <vtex.cmc:BuyInPage/>
+                            <vtex.cmc:AmountItemsInCart/>
+                            
+                            --> 
+                            <a class="go-to-cart-button" href="">COMPRAR</a>
+                            <a class="add-to-cart-button" href="">COLOCAR NO CARRINHO</a>
+                            <button class="added-to-cart"><img src="/arquivos/carrotick.png" style="
+                             width: 2em;margin-top: -5px;"/><span>ADICIONADO!</span></button>
+     
+                         </div><!-- .buy-button-box -->
+                     
+                     <div id="product-extra-details-1"></div>  
+ 
+                     <div class="shipping-box">
+                         <vtex.cmc:shippingValue />
+                         <script type="text/javascript">
+                             $(document).ready( function(){
+                                 ShippingValue();
+                             });
+                         </script>
+                     </div>
+ 
+                     <div id="product-extra-details-2"></div>  
+ 
+                 </div><!-- .product-info -->
+ 
+             </div><!-- .product-details -->
+                     
+             <div id="product-extra-details-3"></div>  
+
+             
+                     
+             <div class="product-description">
+				
+                    <div class="btn-group" id="product-specs" role="group" aria-label="menu-anchor">
+                          <a href="#product-specs" id="btn-description" class="btn btn-default">Descrição</a>
+                          <a href="#product-specs" id="btn-specification" class="btn btn-default">Especificação</a>
+                          <a href="#product-specs" id="btn-reviews" class="btn btn-default">Comentários</a>
+                    </div>
+                    
+                    
+    
+    
+                
+    
+                    <div class="product-description-box">
+                        <!--  Component: Cross selling -->
+                        <vtex.cmc:BuyTogether/>
+                    </div>
+    
+                    
+    
+                    <div class="product-description-box">
+                        <div id="description">
+                            
+                            <!--  Component: Description -->
+                            <vtex.cmc:ProductDescription />
+                        </div><!-- .description -->
+                    </div>
+    
+            
+    
+                    <div class="product-description-box">
+                        <div id="specification">
+                            <!--  Component: Specification -->
+                            <vtex.cmc:productSpecification />
+                        </div><!-- .description -->
+                    </div>
+    
+                
+    
+                    <div class="product-description-box">
+                        <div id="reviews" class="rating">
+                            <vtex.cmc:UserReview/>
+                        </div>
+                    </div>
+    
+    
+                    
+                </div><!-- .product-description -->
+ 
+         </section>
+                     
+         <div id="product-extra-bottom"></div>  
+         
+         <!--  SubTemplate: Footer -->
+         <vtex:template id="Footer" />
+         <!-- /SubTemplate: Footer -->
+ 
+         <div id="comprar-flutuante" style="display: none;">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-xs-1 visible-lg visible-md">
+                         <img src="/arquivos/sem-foto.gif" alt="" id="foto-comprar-flutuante" class="img-responsive" />
+                     </div>
+                     <div class="col-nome col-xs-3 hidden-xs">
+                         <vtex.cmc:productName/>
+                     </div>
+                     <div class="col-precos col-xs-4 col-lg-5 hidden-xs">
+                         <vtex.cmc:skuPrice/>
+                     </div>
+                     <div class="col-comprar col-xs-12 col-sm-5 col-md-4 col-lg-3">
+                         <div class="buy-button-box">
+                             <vtex.cmc:BuyButton />
+                         </div><!-- .buy-button-box -->
+                     </div>
+                 </div>
+             </div>
+         </div>
+     
+     </div><!-- .container-fluid -->
+ 
+ </body>
+
+
+  
+     <vtex:template id="commonScripts" />
+     <script src="/arquivos/product.js"></script>
+ </html>
