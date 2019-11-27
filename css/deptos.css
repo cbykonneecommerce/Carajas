@@ -1,0 +1,77 @@
+.pages li.first, .pages li.last, .resultado-busca-filtro{
+    display: none !important;
+}
+.owl-carousel#carouseldepto .owl-wrapper, .owl-carousel .owl-item {
+    padding: 10px;
+
+}
+#departament-banner {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.title-category {
+    border-bottom: none !important;
+}
+.filtros {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.filtros ul {
+    display: inline-block;
+}
+.filtros ul li {
+    border-right: solid 1px #828282;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: inherit;
+}
+.filtros ul li a {
+ color: #828282;
+ text-decoration: none;
+}
+
+.filtros ul li a:hover {
+    color: #F58220;
+    border: solid 1px #F58220;
+    border-radius: 5px;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+#departament-extra-banner .box-banner{
+    margin-top: 1em;
+}
+
+#departament-extra-banner .box-banner a img, #departament-banner .box-banner a img {
+    height: auto !important;
+}
+
+.pages li  {
+    border: solid 1px #227346 !important;
+    color: black;
+    border-radius: 5px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.pages li.pgCurrent {
+    background-color: #227346 !important;
+    color: #fff;
+    border-radius: 5px;
+    cursor: default;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.pages li.previous, .pages li.next {
+    border:none !important;
+}
+
+#box-bread-brumb li.last strong a {
+    color: #4F4F4F;
+    font-weight: bold;
+}

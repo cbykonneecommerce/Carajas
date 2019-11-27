@@ -29,6 +29,21 @@ $(document).ready(function() {
         stopOnHover: true
     
     });
+
+
+    $("#carouseldepto").owlCarousel({
+     
+        autoPlay: 2000, //Set AutoPlay to 3 seconds
+    
+        items : 5,
+        itemsDesktop : [1199,6],
+        itemsDesktopSmall : [320,2],
+        itemsMobile: [600,2],
+        navigation: true,
+        stopOnHover: true
+    
+    });
+    
     
         
     $("#carouselpropostas").owlCarousel({
