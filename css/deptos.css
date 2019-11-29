@@ -14,27 +14,36 @@
 .title-category {
     border-bottom: none !important;
 }
-.filtros {
+.filtros, .filtrosmob {
     text-align: center;
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
+.filtrosmob h3{
+    font-weight: bold;
+    color: #227346;
+}
 .filtros ul {
     display: inline-block;
 }
-.filtros ul li {
+.filtros ul li, .filtrosmob ul li  {
     border-right: solid 1px #828282;
     padding-left: 2em;
     padding-right: 2em;
     display: inherit;
 }
-.filtros ul li a {
+
+.filtrosmob ul li {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+}
+.filtros ul li a, .filtrosmob ul li a {
  color: #828282;
  text-decoration: none;
 }
 
-.filtros ul li a:hover {
+.filtros ul li a:hover, .filtrosmob ul li a:hover  {
     color: #F58220;
     border: solid 1px #F58220;
     border-radius: 5px;
@@ -42,6 +51,20 @@
     padding-right: 1.8em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+}
+
+.filtrosmob ul li a:hover {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.filtrosmob h3{
+    margin-bottom: 1em;
+}
+
+.filtrosmob ul {
+    display: inline-block;
+    margin-bottom: 2em;
 }
 #departament-extra-banner .box-banner{
     margin-top: 1em;
@@ -74,4 +97,13 @@
 #box-bread-brumb li.last strong a {
     color: #4F4F4F;
     font-weight: bold;
+}
+
+@media (max-width: 600px)  {
+    #box-bread-brumb, .carrossel {
+        display: none;
+    }
+    .title-category h2 {
+        margin-top: 1em;
+    }
 }

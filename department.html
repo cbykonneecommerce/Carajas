@@ -55,13 +55,22 @@
                         <vtex:contentPlaceHolder id="texto-categoria" />
                     </div>
 
-                    <div id="departament-banner">
+                    <div id="departament-banner" class=" hidden-xs">
                         <!--  placeholder -->
                         <vtex:contentPlaceHolder id="Banner-Principal" />
                         <!-- /placeholder -->
                     </div><!-- #departament-banner -->
-                    <div class="filtros">
+                    <div id="departament-bannermob" class="visible-xs">
+                        <!--  placeholder -->
+                        <vtex:contentPlaceHolder id="Banner-Principalmobile" />
+                        <!-- /placeholder -->
+                    </div><!-- #departament-banner -->
+                    <div class="filtros hidden-xs">
                         <vtex.cmc:deptoFilters />
+                    </div>
+
+                    <div class="filtrosmob visible-xs">
+                        <vtex.cmc:deptoFiltersmobile />
                     </div>
                     <div class="carrossel">
                         <vtex:contentPlaceHolder id="carrossel-ofertas" />
