@@ -54,6 +54,55 @@
     }
 }
 
+.social-icons-mobile {
+text-align: center;
+}
+.social-icons-mobile li {
+    display: inline-block
+}
+
+.col-atendimento-mob {
+        border-bottom: none !important; 
+        padding-bottom: 2em;
+        margin-bottom: 1em;
+        text-align: center;
+}
+
+.dropbuttom .dropdown-btn{
+    width: 100%;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    color: white;
+    background-color: #227346 !important;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    outline: none !important;
+}
+.dropbuttom button i {
+    color:#F58220;
+    padding-left: 7em;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dropbuttom #suporte i {
+    
+    padding-left: 10em;
+    
+}
+
+.dropdown-container#institucional, .dropdown-container#suporte  {
+    background-color: white;
+    padding: 8px;
+}
+.dropdown-container#institucional a, .dropdown-container#suporte a {
+    display: block !important;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
 
 @media (max-width: 600px)  {
     

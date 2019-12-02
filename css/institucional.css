@@ -1,0 +1,41 @@
+#institucional-content{
+    background-image: url(/arquivos/quemsomos-bg.png);
+    background-repeat: no-repeat !important;
+    /* background-size: contain; */
+    background-position: center;
+    padding-top: 2em;
+    padding-bottom: 7em;
+}
+
+#box-bread-brumb li a {
+    color: white !important;
+}
+#institutional-box {
+    border-top: solid 4px #227346;
+    border-bottom: solid 4px #227346;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+}
+
+.titulo-institucional {
+    border-bottom: none;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 1em;
+}
+.conteudo-institucional #titulo {
+    color: #227346;
+    font-weight: bold;
+}
+.conteudo-institucional #subtitulo {
+    color: #333;
+}
+
+@media (min-width: 600px) and (max-width: 1600px)  {
+
+    #institutional-box {
+        width: 45% !important;
+    }
+
+}

@@ -85,6 +85,15 @@
 
 .cart-counter {
     margin-bottom: 4em;
+    display: inline-flex;
+}
+.cart-counter .qtd-field {
+    width: 42px;
+    text-align: center;
+    color: #4F4F4F;
+    font-weight: 700;
+    font-size: 2em;
+    border: none;
 }
 
 .add-to-cart-button {
@@ -167,5 +176,8 @@
         margin-left: 1em;
     padding-left: 1em;
     padding-right: 1em;
+    }
+    .product-details .product-name .productName {
+        font-size: 26px !important;
     }
 }

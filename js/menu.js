@@ -2,7 +2,7 @@ $(".dropdown-container").hide();
 
 
 $(".dropdown-btn#institucional").toggle(() => {
-    $(".dropdown-container").hide();
+    $(".dropdown-container#suporte").hide();
     $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-up');
     $(".dropdown-container#institucional").slideDown()
 }, () => {
@@ -12,7 +12,7 @@ $(".dropdown-btn#institucional").toggle(() => {
 
 
 $(".dropdown-btn#suporte").toggle(() => {
-    $(".dropdown-container").hide();
+    $(".dropdown-container#institucional").hide();
     $(".dropdown-btn#suporte i").attr('class', 'fa fa-angle-up');
     $(".dropdown-container#suporte").slideDown()
 }, () => {
