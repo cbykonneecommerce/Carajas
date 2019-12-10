@@ -19,6 +19,7 @@ button {
 .logo .link-logo img {
     width: 200px;
     height: auto;
+    margin-top: -4px;
 }
 .welcome-bar {
     background-color: #278950;
@@ -36,10 +37,10 @@ button {
 .button-text-header {
     color: #227346;
     display: inline-flex;
-    padding-left: 5px;
+    padding-left: 10px;
     padding-bottom: -11px;
     text-align: left;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 
@@ -67,7 +68,7 @@ button {
     outline-style:none;
     box-shadow:none;
     border: none !important;
-    margin-top: 5px;
+    margin-top: 5px !important;
     background-color: transparent !important;
     
    
@@ -132,4 +133,109 @@ h2 {
         padding-left: 8em !important;
         padding-right: 8em !important; 
     }
+}
+
+
+
+
+
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+/*.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}*/
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+ 
+}
+
+
+.navbar-nav li {
+    font-size: 15px; 
+    margin-right: 0.2em;
+}
+
+
+.navbar-nav li .dropdown-toggle.title   {
+   font-size: 17px 
+}
+
+
+.navbar-nav li .dropdown-toggle {
+    color: #333;
+}
+
+.navbar-nav li .dropdown-toggle:hover {
+    color: #F67828;
+}
+
+.dropdown-toggle i {
+    float: right;
+}
+@media (min-width: 1800px) {
+
+    .navbar-nav li .dropdown-toggle.title  {
+        font-size: 22px 
+     }
+     .navbar-nav li {
+        margin-right: 3.1em;
+    }
+
+
+.navbar-nav li {
+    font-size: 17px 
+}
+
+    .giftlist {
+        width: 8%;
+    }
+
+    .logo .link-logo img {
+        margin-top: -10px;
+
+    }
+
+    .header .search .busca {
+        margin-top: 8px;
+    }
+
+    .sing-in img, .giftlist img, .mini-cart img{
+        width: 3.2em !important;
+    }
+     
 }

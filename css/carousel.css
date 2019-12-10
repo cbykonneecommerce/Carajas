@@ -18,6 +18,12 @@
     margin-right: 1em;
 }
 
+.owl-prev {
+    margin-left: -6%;
+}
+.owl-next {
+    margin-right: -6%;
+}
 
 
 .fullbanner .owl-controls .owl-pagination .owl-page {

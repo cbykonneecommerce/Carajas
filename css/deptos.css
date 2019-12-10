@@ -1,9 +1,18 @@
 .pages li.first, .pages li.last, .resultado-busca-filtro{
     display: none !important;
 }
+
+.title-category h2 {
+    font-size: 50px;
+    font-family: Calibri, sans-serif;
+}
 .owl-carousel#carouseldepto .owl-wrapper, .owl-carousel .owl-item {
     padding: 10px;
 
+}
+
+.category-text p {
+    font-size: 22px;
 }
 #departament-banner {
     text-align: center;
@@ -15,7 +24,7 @@
     border-bottom: none !important;
 }
 .filtros, .filtrosmob {
-    text-align: center;
+    
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -23,6 +32,7 @@
 .filtrosmob h3{
     font-weight: bold;
     color: #227346;
+    font-size: 20px;
 }
 .filtros ul {
     display: inline-block;
@@ -99,11 +109,33 @@
     font-weight: bold;
 }
 
+.filtros ul .item-filtro a {
+    font-weight: 200;
+}
+@media (max-width: 1400px) {
+
+
+    .title-category {
+        padding-bottom: 0px;
+    margin-bottom: 0px;
+    }
+    .title-category h2 {
+        font-size: 18px;
+    }
+    .category-text p {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 600px)  {
     #box-bread-brumb, .carrossel {
         display: none;
     }
     .title-category h2 {
         margin-top: 1em;
+        font-size: 20px;
+    }
+    .filtrosmob {
+        text-align: left;
     }
 }
