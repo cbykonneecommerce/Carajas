@@ -15,7 +15,7 @@ $(".dropdown-btn#institucional").toggle(() => {
     $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-up');
     $(".dropdown-container#institucional").slideDown()
 }, () => {
-    $(".dropdown-container#institucional").hide()
+    $(".dropdown-container#institucional").slideUp()
     $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-down');
 })
 
@@ -25,6 +25,6 @@ $(".dropdown-btn#suporte").toggle(() => {
     $(".dropdown-btn#suporte i").attr('class', 'fa fa-angle-up');
     $(".dropdown-container#suporte").slideDown()
 }, () => {
-    $(".dropdown-container#suporte").hide()
+    $(".dropdown-container#suporte").slideUp()
     $(".dropdown-btn#suporte i").attr('class', 'fa fa-angle-down');
 })

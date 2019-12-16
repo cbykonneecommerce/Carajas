@@ -1,7 +1,7 @@
 #newsletter {
     height: 11em;
     display: flex;
-  align-items: center;
+    align-items: center;
 }
 
 #newstext {
@@ -12,20 +12,19 @@
     width: 68%;
     height: 3.5em;
 }
+
 #newsform #commit {
     margin-left: 4em;
     width: 18%;
     background-color: #F58220;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: 300;
     height: 3.5em;
-    
 }
 
-
-.social-media .social-icons li a img{
+.social-media .social-icons li a img {
     max-width: 80%;
 }
 
@@ -34,6 +33,7 @@
     background-color: #E0E0E0;
     margin-top: 0;
 }
+
 .copy-right {
     background-color: #E0E0E0;
 }
@@ -41,6 +41,7 @@
 .footer .col-social #cbyk {
     width: 5em;
 }
+
 .footer .col-social #vtex-logo-footer {
     width: 5.9em;
 }
@@ -50,26 +51,26 @@
         width: 67%;
     }
     #newsform #commit {
-       
         width: 22%;
     }
 }
 
 .social-icons-mobile {
-text-align: center;
+    text-align: center;
 }
+
 .social-icons-mobile li {
     display: inline-block
 }
 
 .col-atendimento-mob {
-        border-bottom: none !important; 
-        padding-bottom: 2em;
-        margin-bottom: 1em;
-        text-align: center;
+    border-bottom: none !important;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+    text-align: center;
 }
 
-.dropbuttom .dropdown-btn{
+.dropbuttom .dropdown-btn {
     width: 100%;
     padding-bottom: 1em;
     padding-top: 1em;
@@ -80,60 +81,60 @@ text-align: center;
     text-align: left;
     outline: none !important;
 }
+
 .dropbuttom button i {
-    color:#F58220;
-    padding-left: 7em;
+    color: #F58220;
+    padding-left: 35%;
     font-size: 20px;
     font-weight: bold;
 }
 
 .dropbuttom #suporte i {
-    
     padding-left: 10em;
-    
 }
 
-.dropdown-container#institucional, .dropdown-container#suporte  {
+.dropdown-container#institucional, .dropdown-container#suporte {
     background-color: white;
     padding: 8px;
 }
+
 .dropdown-container#institucional a, .dropdown-container#suporte a {
     display: block !important;
     font-size: 20px;
     padding-top: 10px;
     padding-left: 10px;
 }
+
 #newstext h3 {
-    font-size: 34px;
+    font-size: 20px;
     font-family: sans-serif;
 }
 
-@media (max-width: 600px)  {
-    
+@media (max-width: 600px) {
     #cbyk {
         margin-bottom: 3em;
     }
     #newstext h3 {
         font-size: 1.3em;
     }
-
     #newsform #emailform {
         width: 100%;
     }
     #newsform #commit {
-       
         width: 100%;
         margin-left: 0;
         margin-top: 1em;
     }
-
     .col-pague-com {
         margin-top: -12em;
     }
+    .footer .container-fluid .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
 }
 
-
-@media (min-width: 1800px)  {
+@media (min-width: 1800px) {
     #newsform #commit {
         margin-left: 3em;
         height: 2.75em;
@@ -143,9 +144,7 @@ text-align: center;
     #newsform #emailform {
         height: 4.4em;
     }
-
     #newstext h3 {
         font-size: 33px;
     }
 }
-

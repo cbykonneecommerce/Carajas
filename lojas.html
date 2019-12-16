@@ -1,0 +1,80 @@
+<!-- 
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+ 
+ <head>
+     <title> Lojas</title>
+     <vtex:metaTags/>
+     <vtex:template id="commonStyles" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link href="/arquivos/lojas.css" rel="stylesheet" type="text/css" />
+ 
+ </head>
+ 
+ <body id="institucional-page">
+ 
+     <div class="page">
+ 
+         <!--  SubTemplate: Header -->
+         <vtex:template id="Header" />
+         <!-- /SubTemplate: Header -->
+                     
+         <div id="institucional-extra-top"></div>                    
+        <div class="container-fluid" style="padding-right: 0px !important; padding-left: 0px !important;">
+            
+        </div>
+         <section id="institucional-content" class="container-fluid">
+                <div style="width: 100%" id="desk">
+                <vtex:contentPlaceHolder id="loja-box-map" />
+
+
+                <iframe width="100%" height="460" src="https://maps.google.com/maps?width=100%&amp;height=700&amp;hl=en&amp;q=Av. Assis Chateaubriand, 1261 - Liberdade, Campina Grande - PB (Carajas Home Center)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">gps coordinates finder</a></iframe>
+            </div>
+               
+             <div class="row">
+                 <div class="col-sm-4" id="loja-box">
+                    <vtex:contentPlaceHolder id="loja-box-content" />
+
+                    <h4>Carajás Home Center - Unidade Paraíba</h4>
+                    <p><b>Endereço:</b> Avenida Assis Chateaubriand, 135
+                        Liberdade, Campina Grande - PB, 58414-060</p>
+
+                    <p><b>Funcionamento:</b> Todos os dias, de 08h às 21h</p>
+
+                    <p><b>Telefone:</b>(83) 3182-2300</p>
+
+                    <a class="btn" id="baixar-agora">BAIXE O NOSSO CATÁLOGO ELETRÔNICO</a>
+                    <a class="btn" id="baixar-email">RECEBA NOSSO CATÁLOGO POR E-MAIL</a>
+
+                 </div>
+                 
+             </div>
+             
+             <div class="row">
+                <div class="col-xs-12">
+                    <div style="width: 100%" id="loja-map" class="visible-xs">
+                    <vtex:contentPlaceHolder id="loja-box-map" />
+                    </div>
+                </div>
+             </div>
+         </section><!-- #content -->  
+         
+         <div id="institucional-extra-bottom"></div>
+                 
+         <!--  SubTemplate: Footer -->
+         <vtex:template id="Footer" />
+         <!-- /SubTemplate: Footer -->
+     
+     </div><!-- .container-fluid -->
+ 
+ </body>
+     <vtex:template id="commonScripts" />
+ </html>

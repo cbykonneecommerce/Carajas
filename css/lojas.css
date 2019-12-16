@@ -1,0 +1,119 @@
+
+#institucional-content{
+    padding-right: 0px !important; 
+    padding-left: 0px !important;
+}
+
+
+#desk iframe{
+    height: 900px !important;
+}
+
+#loja-box {
+    padding-left: 3.2em;
+    padding-right: 3.2em;
+    padding-top: 3.9em;
+    padding-bottom: 5em;
+    border: solid 1px #BDBDBD;
+    border-top: solid 3px #227346;
+    border-bottom: solid 3px #227346;
+    position: absolute;
+    top: 23%;
+    background-color: white;
+    right: 4%;
+}
+
+#loja-box h4 {
+    color: #227346;
+    font-weight: bold;
+    margin-bottom: 3em;
+    font-size: 23px;
+}
+
+#baixar-agora {
+    background-color: #F67828;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-top: 2em;
+}
+
+#baixar-email {
+    border: 2px solid #F67828 !important;
+    color: #F67828;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+
+#loja-box p {
+    margin-bottom: 2em;
+    font-size: 18px;
+}
+
+@media (max-width: 1600px) {
+    #loja-box h4 {
+        font-size: 17px;
+    }
+    #baixar-email, #baixar-agora {
+        font-size: 12px;
+    }
+    #loja-box {
+        padding-left: 1.6em;
+        padding-right: 1.6em;
+        padding-bottom: 2em;
+        top: 30%;
+        right: 2%;
+    }
+    #loja-box p {
+        margin-bottom: 1.5em;
+        font-size: 14px;
+    }
+
+    #desk iframe{
+        height: 632px !important;
+    }
+    
+}
+
+@media (max-width: 900px) {
+
+    #institucional-content{
+        padding-right: 15px !important; 
+        padding-left: 15px !important;
+    }
+    
+    #desk iframe {
+        display: none;
+    }
+    #loja-box {
+        padding-left: 1.6em;
+        padding-right: 1.6em;
+        padding-bottom: 2em;
+        position: inherit;
+        margin-top: 3em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #loja-map {
+        border: solid 1px #227346;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        padding: 8px;
+        margin-top:2em;
+    }
+    #loja-map iframe{
+        height: 159px !important;
+    }
+}

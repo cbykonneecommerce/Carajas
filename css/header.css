@@ -1,4 +1,17 @@
+.header{
+    padding-bottom: 0;
+}
 
+#top-menu{
+    margin-bottom: 0px !important;
+}
+.header .search .fulltext-search-box{
+    padding-top: 12px;
+    background-color: transparent;
+}
+.navbar-nav li .dropdown-toggle.title{
+    background-color: transparent !important;
+}
 
 button {
     background-color: transparent !important;
@@ -7,6 +20,11 @@ button {
 
 .header .mini-cart span.badge {
     background-color: #F00 !important;
+}
+
+.header .search .btn-buscar {
+    width: 4%;
+    margin-left: 3em;
 }
 
 .header-container {
@@ -26,9 +44,13 @@ button {
 }
 
 .welcome-bar a, .welcome-bar span {
-    color: white;
+    color: white !important;
+    font-weight: 200;
 }
+#lojas-fisicas>li>a:hover {
+    background-color: #227346 !important;
 
+}
 .btn-default {
     background-color: transparent;
     border-color: transparent; 
@@ -223,6 +245,7 @@ h2 {
 
     .giftlist {
         width: 8%;
+        margin-left: 22px;
     }
 
     .logo .link-logo img {
