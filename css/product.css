@@ -44,6 +44,11 @@
     display: none;
 }
 
+#publishUserReview #formUserReview {
+    margin-top: 8%;
+}
+
+
 .product-info .shipping-box .freight-btn {
     background: #278950 !important;
     border: none !important;
