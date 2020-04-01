@@ -66,6 +66,12 @@ button {
 }
 
 
+.navbar-nav {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    float: inherit !important;
+}
 
 .busca {
     border: 1px solid #22864C;
@@ -209,7 +215,7 @@ h2 {
 
 .navbar-nav li {
     font-size: 15px; 
-    margin-right: 0.2em;
+    
 }
 
 
@@ -235,7 +241,7 @@ h2 {
         font-size: 22px 
      }
      .navbar-nav li {
-        margin-right: 3.1em;
+        margin-right: 0
     }
 
 

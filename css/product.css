@@ -213,7 +213,7 @@
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1580px) {
     .go-to-cart-button, .go-to-cart-button:hover {
         padding-left: 3em;
         padding-right: 3em;
@@ -313,3 +313,6 @@
     }
     
 }
+
+
+
