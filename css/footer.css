@@ -11,6 +11,8 @@
 #newsform #emailform {
     width: 68%;
     height: 3.5em;
+    font-size: 20px;
+    padding-left: 1em;
 }
 
 #newsform #commit {
@@ -20,7 +22,7 @@
     color: white;
     border: none;
     border-radius: 10px;
-    font-weight: 300;
+    font-weight: 700;
     height: 3.5em;
 }
 
@@ -137,12 +139,12 @@
 @media (min-width: 1800px) {
     #newsform #commit {
         margin-left: 3em;
-        height: 2.75em;
+        height: 2.3em;
         font-size: 23px;
         width: 9.5em;
     }
     #newsform #emailform {
-        height: 4.4em;
+        height: 2.4em;
     }
     #newstext h3 {
         font-size: 33px;

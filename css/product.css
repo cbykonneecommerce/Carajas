@@ -32,6 +32,7 @@
     border-top: none;
 }
 
+
 .buy-button.buy-button-ref .fa-lock, .added-to-cart, #description, #specification, #reviews {
     display: none;
 }
@@ -74,20 +75,20 @@
     color: #333 !important;
     font-size: 35px !important;
     line-height: 36px;
-    font-family: Calibri, sans-serif;
 }
 
 .go-to-cart-button, .go-to-cart-button:hover {
-    color: #fff;
-    padding-left: 5.4em;
-    padding-right: 5.4em;
+    color: #fff !important;
+    text-decoration: none;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
     background-color: #F58220 !important;
     padding-top: 1em;
     padding-bottom: 1em;
     border-radius: 5px;
     font-size: 20px;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .product-image .apresentacao .thumbs {
@@ -122,10 +123,11 @@
 }
 
 .add-to-cart-button {
-    color: #F58220;
+    color: #F58220 !important;
+    text-decoration: none;
     border: solid 2px #F58220 !important;
-    padding-left: 33px;
-    padding-right: 33px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 0.93em;
     padding-bottom: 0.93em;
     border-radius: 5px;
@@ -135,7 +137,7 @@
     text-decoration: none;
     outline-style: none;
     box-shadow: none;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .added-to-cart {
@@ -160,7 +162,6 @@
 .product-details .codigo-produto .avaliacoes {
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: -10.5em;
 }
 
 #btn-description, #btn-specification, #btn-reviews {
@@ -211,12 +212,15 @@
     #comprar-flutuante {
         display: none !important;
     }
+    .product-info .shipping-box {
+        width: 50%;
+    }
 }
 
-@media (max-width: 1580px) {
+/*@media (max-width: 1580px) {
     .go-to-cart-button, .go-to-cart-button:hover {
-        padding-left: 3em;
-        padding-right: 3em;
+        padding-left: 2em;
+        padding-right: 2em;
     }
     .add-to-cart-button {
         margin-left: 1em;
@@ -232,7 +236,7 @@
         margin-top: 0px;
         margin-bottom: 0px;
     }
-}
+}*/
 
 @media (max-width: 600px) {
     .product-details {
@@ -258,7 +262,7 @@
         margin-top: 43px !important;
     }
     .product-details .price-box .descricao-preco .valor-por strong {
-        font-weight: 800;
+        font-weight: 500;
         font-family: Arial, sans-serif;
         margin-top: 15px;
     }
@@ -273,7 +277,7 @@
     }
     .go-to-cart-button.flutuante {
         display: block;
-        margin-bottom: 1em;
+       /* margin-bottom: 1em;*/
         text-align: center;
     }
     .add-to-cart-button.flutuante {

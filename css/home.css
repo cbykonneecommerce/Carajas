@@ -81,7 +81,6 @@ h2.section-title {
     border-radius: 20px;
     text-align: center;
     padding: 20px;
-    width: 508px;
     margin: 2em;
     background-color: #F2F2F2
 }
@@ -91,18 +90,22 @@ h2.section-title {
 {
     margin-top: 4.5em;
 }
+
+.card-title h4 {
+        
+    font-size: 14px !important;
+}
+
+.our-categories .content .card a img{
+    height: 78px;
+    margin: auto
+}
+
 @media (max-width: 1600px)  {
 
-    .our-categories .content .card a img{
-        height: 78px;
-        margin: auto
-    }
+   
 
-    .card-title h4 {
-        
-        font-size: 14px !important;
-    }
-    
+   
    .background-container .content .card {
         
         padding: 14px;

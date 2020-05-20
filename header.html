@@ -50,7 +50,7 @@
     </div><!-- .welcome-bar -->
 
     <div class="header">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
 
                 <div class="button-menu-xs col-xs-3 col-sm-1 visible-xs visible-sm">
@@ -84,7 +84,7 @@
                 <!-- .logo -->
                 <div class="mini-cart mini-cart-xs text-right col-xs-3 visible-xs">
                     <a title="Carrinho de Compras" href="/checkout/#/cart" class="btn btn-default" id="mobile-cart">
-                        <img alt="Sacola de Compras" title="Sacola de Compras" src="/arquivos/cart.png" />
+                        <img alt="Sacola de Compras" title="Sacola de Compras" src="/arquivos/cart-mob.png" />
                         <span class="badge bg-danger mini-cart-qty-admake">12</span>
                     </a>
                 </div><!-- .mini-cart-xs -->
@@ -95,365 +95,106 @@
 
 
 
-                <div class="sing-in col-xs-2 col-md-3 col-lg-1 text-center hidden-xs">
-                    <div class="btn-group icon-dropdown">
-                        <button type="button" class="btn btn-default dropdown-toggle btn-login" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            <img src="/arquivos/entre.png" style="width: 2.6em;margin-top:3px;margin-bottom: -10px;" />
-                            <p class="button-text-header">Entre ou <br />cadastre-se</p>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li class=""><a href="/account" title="Fazer Login" class="btn">ENTRAR</a></li>
-                            <li class=""><a href="/account/orders" title="Meus Pedidos" class="btn">MEUS
-                                    PEDIDOS</a></li>
+                <div class="sing-in col-xs-2 col-sm-3 col-md-3 col-lg-4 text-center hidden-xs">
+                   
+                    <ul class="nav navbar-nav">
 
-                        </ul>
-                    </div>
+                       
+
+                        <li class="dropdown hidden-sm hidden-md  hidden-xs" id="usuario-login">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false"><img src="/arquivos/entre.png"
+                                    style="max-height: 45px !important;" /></a>
+                            <ul class="dropdown-menu" id="drop-login">
+                                <li><a href="/account" title="Fazer Login"
+                                        class="btn btn-default btn-login">ENTRAR/CADASTRE-SE</a></li>
+                                <li><a href="/account/orders" title="Meus Pedidos"
+                                        class="btn btn-default btn-orders">MEUS PEDIDOS</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li id="usuario-giftlist" class="hidden-sm hidden-md  hidden-xs">
+                            <a href="">
+                                <img src="/arquivos/giftlist.png" alt="Gift" style="max-height: 42px !important;" />
+                               
+                            </a>
+                        </li>
+
+
+
+                        <li id="usuario-cart" class="">
+                            <div class="mini-cart col-mini-cart">
+                                <a title="Carrinho de Compras" href="/checkout/#/cart"
+                                class="btn btn-default btn-block btn-mini-cart" id="desktop-cart" style="margin-top: 8px;">
+                                <img alt="Sacola de Compras" title="Sacola de Compras" src="/arquivos/cart.png"
+                                    style="max-height: 39px !important;" />
+        
+                                <span class="badge bg-danger mini-cart-qty-admake">0</span>
+                               
+                            </a>
+                            <div id="mini-cart-admake-aux" class="hidden">
+                                <vtex.cmc:miniCart />
+                                <vtex.cmc:AmountItemsInCart />
+                            </div><!-- #mini-cart-admake-aux -->
+                            <div id="mini-cart-admake" style="display: none;">
+                                <div class="mini-cart-header"></div>
+                                <div class="mini-cart-itens">
+                                    <!-- recebe itens -->
+                                </div>
+                                <div class="mini-cart-footer">
+                                    <div class="mini-cart-totais">
+                                        <strong id="mini-cart-admake-total" class="pull-right">
+                                            <!-- recebe valor total --></strong>
+                                        <span>Total</span>
+                                    </div>
+                                    <div class="mini-cart-botao">
+                                        <a href="/checkout/#/cart" class="btn btn-block btn-verde btn-finalizar-compra">Fechar
+                                            Pedido</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
 
 
                 </div><!-- .sing-in -->
 
-                <div class="giftlist col-xs-2 col-md-3 col-lg-2 text-center hidden-xs" style="    margin-top: 0.8em;">
-                    <a href="">
-                        <img src="/arquivos/giftlist.png" alt="Gift" style="width: 2.6em;" />
-                        <p class="button-text-header">Lista de<br />Presente</p>
-                    </a>
-                </div>
+                
 
-                <div class="mini-cart col-mini-cart col-xs-1 col-sm-1 col-md-3 col-lg-1 hidden-xs">
-                    <a title="Carrinho de Compras" href="/checkout/#/cart"
-                        class="btn btn-default btn-block btn-mini-cart" id="desktop-cart" style="margin-top: 8px;">
-                        <img alt="Sacola de Compras" title="Sacola de Compras" src="/arquivos/cart.png"
-                            style="width: 2.6em;" />
-
-                        <span class="badge bg-danger mini-cart-qty-admake">0</span>
-                        <p class="button-text-header" id="text-carrinho">Meu<br />Carrinho</p>
-                    </a>
-                    <div id="mini-cart-admake-aux" class="hidden">
-                        <vtex.cmc:miniCart />
-                        <vtex.cmc:AmountItemsInCart />
-                    </div><!-- #mini-cart-admake-aux -->
-                    <div id="mini-cart-admake" style="display: none;">
-                        <div class="mini-cart-header"></div>
-                        <div class="mini-cart-itens">
-                            <!-- recebe itens -->
-                        </div>
-                        <div class="mini-cart-footer">
-                            <div class="mini-cart-totais">
-                                <strong id="mini-cart-admake-total" class="pull-right">
-                                    <!-- recebe valor total --></strong>
-                                <span>Total</span>
-                            </div>
-                            <div class="mini-cart-botao">
-                                <a href="/checkout/#/cart" class="btn btn-block btn-verde btn-finalizar-compra">Fechar
-                                    Pedido</a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- .mini-cart -->
 
             </div><!-- .row -->
         </div><!-- .container -->
     </div><!-- .header -->
+
+    <div class="depto-nav-area">
+        <div class="container">
+            <div class="row">
+                <div class="deptos col-xs-12 col-sm-5 col-md-4 col-lg-12 hidden-xs hidden-sm">
+                    <ul></ul>
+                    <!--<vtex.cmc:departmentNavigator/>-->
+                </div><!-- .search -->
+            </div>
+        </div>
+    </div>
 
 </header><!-- .header-container -->
 
 <div id="extra-header-bottom"></div>
 
 <nav class="visible-md visible-lg" id="top-menu">
-
-    <!--<vtex.cmc:departmentLinks /> -->
-
-    <div class="container-fluid" style="padding-left: 6em !important; padding-right: 6em !important;">
-
-        <div class="collapse navbar-collapse" style="display: block">
-
-            <ul class="nav navbar-nav">
-
-                <li class="">
-                    <a href="#" class="dropdown-toggle title" data-toggle="dropdown">Todas as Categorias</a>
-                    <ul class="dropdown-menu multi-level">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-
-                        <li><a href="#">Separated link</a></li>
-
-                        <li><a href="#">One more separated link</a></li>
-                        <li class="dropdown-submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                            <ul class="dropdown-menu" style="
-        border-radius: 0px;
-    ">
-                                <li><a href="#">Action</a></li>
-                                <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a></li>
-                                                <li><a href="#">Another action</a></li>
-                                                <li><a href="#">Something else here</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">One more separated link</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="#" class="dropdown-toggle  title" data-toggle="dropdown">Construção </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-submenu">
-                            <a href="/acabamento/banheiro" class="dropdown-toggle">Material de construção<i
-                                    class="fa fa-angle-right"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Acessórios</a></li>
-                                <li><a href="#">Aços para contrução</a></li>
-                                <li><a href="#">Arames</a></li>
-                                <li><a href="#">Areia, pedra brita, gesso, cal</a></li>
-                                <li><a href="#">Armazenamento, captação, trata</a></li>
-                                <li><a href="#">Barras, tubos e chapas metalon</a></li>
-                                <li><a href="#">Blocos e tijolos</a></li>
-                                <li><a href="#">Caixas d'agua</a></li>
-                                <li><a href="#">Calhas</a></li>
-                                <li><a href="#">Cercados e segurança</a></li>
-                                <li><a href="#">Churrasqueiras</a></li>
-                                <li><a href="#">Cimentos, argamassas e concreto</a></li>
-                                <li><a href="#">Cisterna</a></li>
-                                <li><a href="#">Conduites</a></li>
-                                <li><a href="#">Elementos vazados cobogos</a></li>
-                                <li><a href="#">Equipamentos para construção</a></li>
-                                <li><a href="#">Escadas profissionais</a></li>
-                                <li><a href="#">Estribos</a></li>
-                                <li><a href="#">Fornos e fogões de concreto</a></li>
-                                <li><a href="#">Impermeabilizantes</a></li>
-                                <li><a href="#">Isolamento</a></li>
-                                <li><a href="#">Juntas de dilatação</a></li>
-                                <li><a href="#">Lona, papelão e plástico bolha</a></li>
-                                <li><a href="#">Madeiras para construção</a></li>
-                                <li><a href="#">Madeiras para telhado</a></li>
-                                <li><a href="#">Pré-moldados</a></li>
-                                <li><a href="#">Sacos de entulho</a></li>
-                                <li><a href="#">Telhas</a></li>
-                                <li><a href="#">Vergalhões</a></li>
-                             
-
-
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portas e janelas<i
-                                    class="fa fa-angle-right"></i> </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Janelas</a></li>
-                                <li><a href="#">Portas</a></li>
-
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="#" class="dropdown-toggle title" data-toggle="dropdown">Acabamento
-                        <!--<i class="fa fa-angle-down"></i>--></a>
-                    <ul class="dropdown-menu">
+    <div class="container">
+        <div class="row" style="position: relative;" id="deptos-list">
 
 
 
-                        <li class="dropdown-submenu">
-                            <a href="/acabamento/banheiro" class="dropdown-toggle">Banheiro<i
-                                    class="fa fa-angle-right"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Acabamentos para registro</a></li>
-                                <li><a href="#">Acessibilidade e segurança</a></li>
-                                <li><a href="#">Acessorios para banheiro</a></li>
-                                <li><a href="#">Aquecedores de água</a></li>
-                                <li><a href="#">Assentos sanitarios</a></li>
-                                <li><a href="#">Banheiras, Spas e Ofuros</a></li>
 
 
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pisos e Revestimentos<i
-                                    class="fa fa-angle-right"></i> </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Acabamento piso</a></li>
-                                <li><a href="#">Acabamentos e Acessórios</a></li>
-                                <li><a href="#">Jardim e Varanda</a></li>
-                                <li><a href="#">Ladrilhos</a></li>
-                                <li><a href="#">Mosaicos</a></li>
-                                <li><a href="#">Nichos para banheiro</a></li>
-                                <li><a href="#">Organização da casa</a></li>
-                                <li><a href="#">Pastilhas</a></li>
-                                <li><a href="#">Pedras naturais</a></li>
-                                <li><a href="#">Pisos Ceramicos</a></li>
-                                <li><a href="#">Pisos de cimento</a></li>
-                                <li><a href="#">Pisos decorados e ladrilhos</a></li>
-                                <li><a href="#">Pisos emborrachados</a></li>
-                                <li><a href="#">Pisos laminados</a></li>
-                                <li><a href="#">Pisos para jardim</a></li>
-                                <li><a href="#">Pisos vinilicos</a></li>
-                                <li><a href="#">Porcelanatos</a></li>
-                                <li><a href="#">Rejuntes</a></li>
-                                <li><a href="#">Revestimentos e acabamento piscina</a></li>
-                                <li><a href="#">Revestimentos decor acessorio parede</a></li>
-                                <li><a href="#">Revestimentos externos</a></li>
-                                <li><a href="#">Revestimentos internos de parede</a></li>
-                                <li><a href="#">Rodapés</a></li>
-
-                            </ul>
-                        </li>
-                        <li><a href="#">Tintas e Acessórios</a></li>
-                        <li><a href="#">Cozinha</a></li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="#" class="dropdown-toggle  title" data-toggle="dropdown">Manutenção</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                        <li class="dropdown-submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a></li>
-                                                <li><a href="#">Another action</a></li>
-                                                <li><a href="#">Something else here</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">One more separated link</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="#" class="dropdown-toggle  title" data-toggle="dropdown">Casa e Decoração </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Banheiro</a></li>
-                        <li><a href="#">Cama,mesa &amp; banho</a></li>
-                        <li><a href="#">Colchões</a></li>
-                        <li><a href="#">Cozinha</a></li>
-                        <li><a href="#">Decoração</a></li>
-                        <li><a href="#">Iluminação</a></li>
-                        <li><a href="#">Jardim  &amp; Lazer</a></li>
-                        <li><a href="#">Móveis</a></li>
-                        <li><a href="#">Organização</a></li>
-                        >
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="#" class="dropdown-toggle  title" data-toggle="dropdown">Eletroeletônico e Tecnologia </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                        <li class="dropdown-submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a></li>
-                                                <li><a href="#">Another action</a></li>
-                                                <li><a href="#">Something else here</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">One more separated link</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="">
-                    <a href="#" class="dropdown-toggle title" data-toggle="dropdown">Saldão</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                        <li class="dropdown-submenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a></li>
-                                                <li><a href="#">Another action</a></li>
-                                                <li><a href="#">Something else here</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">One more separated link</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
         </div>
-        <!--/.nav-collapse -->
-    </div>
-
+    </div><!-- .container -->
 </nav><!-- #top-menu -->
 
 <div id="extra-banner-regua"></div>
