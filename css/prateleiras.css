@@ -1,5 +1,13 @@
+.prateleira .box-item {
+    height: 32em;
+}
+
 .prateleira .box-item:hover img {
     opacity: 1;
+}
+
+.prateleira .product-image img {
+    max-width: 136px !important;
 }
 
 .product-image::after {
@@ -10,12 +18,14 @@
 .prateleira .btn-add-buy-button-asynchronous .fa, .compare input {
     display: none;
 }
+.prateleira .product-name {
+    min-height: 60px !important;
+}
 
 .prateleira .btn-add-buy-button-asynchronous {
     border-radius: 5px;
     background-color: #F58220 !important;
     font-size: 20px;
-    font-weight: 200;
     width: 80%;
     margin-top: 1em;
     padding-top: 15px;
@@ -28,6 +38,7 @@
     color: black !important;
     font-family: Calibri, sans-serif !important;
     text-transform: uppercase;
+    line-height: 17px;
 }
 
 .upper-side {
@@ -56,23 +67,16 @@
     font-size: 11px;
 }
 
-@media (max-width: 600px) {
-    .prateleira .price .best-price {
-        font-size: 28px;
-    font-weight: 200;
-    }
-    .prateleira .btn-add-buy-button-asynchronous {
-        font-size: 23px;
-        padding-top: 18px;
-        padding-bottom: 18px;
-        width: 75%;
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .prateleira .box-item {
+        height: 32em;
     }
 }
 
-
-@media (max-width: 1400px) {
-    .prateleira .btn-add-buy-button-asynchronous {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-}

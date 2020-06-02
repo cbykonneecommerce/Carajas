@@ -139,3 +139,143 @@
         text-align: left;
     }
 }
+
+
+.pages li {
+    border: none !important;
+    background-color: transparent;
+}
+
+.resultado-busca-filtro > fieldset select {
+    border: 1px solid white !important;
+    border-radius: 0 !important;
+    color: black !important;
+}
+
+#admake-advanced-filter {
+    background-color: transparent !important;
+    border: none !important;
+    margin-bottom: 0.5em;
+}
+#admake-advanced-filter > h2  {
+    display: none;
+}
+
+.resultado-busca-filtro {
+    /*background-color: #FCFCFC;*/
+    margin-top: 1em;
+}
+
+
+
+#returnToTop .arrowToTop {
+    background: none !important;
+    background-color: #931A29 !important;
+    width: 20px !important;
+    height: 32px;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    display: block;
+    float: right;
+}
+
+
+
+.sub-titulo h3 .caret {
+    border-top: 10px dashed !important;
+    border-right: 10px solid transparent !important;
+    border-left: 10px solid transparent !important;
+}
+
+.fa-square-o {
+    color: #227346 !important;
+    font-weight: 800 !important;
+}
+
+#admake-advanced-filter .opcoes {
+    overflow: visible !important;
+}
+
+#admake-advanced-filter .box-filtro.checkbox li a {
+    color: #333 !important;
+    font-weight: 500 !important;
+}
+
+#admake-advanced-filter > .box-filtro  {
+    border: 1px solid #227346 !important;
+    border-radius: 15px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1900px) {
+    .box-banner a img {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .cardorder {
+        display: none;
+    }
+    .resultado-busca-filtro > fieldset.filterby {
+        display: none;
+    }
+
+    .prateleira.vitrine > ul > li {
+        width: 50% !important;
+        padding: unset;
+    }
+
+    .pager.bottom {
+        margin-top:100px
+    }
+    #mySidenavfiltros {
+        z-index: 9999999999;
+        top: 0;
+        left: -880px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-top: 20px;
+        height: 100%;
+        position: fixed;
+        width: 64%;
+        transition: 0.5s;
+        padding-top: 60px;
+        background-color: white;
+    }
+
+    #departament-navegador #admake-advanced-filter {
+        display: block !important;
+    }
+
+    .sub-titulo h3 .caret {
+        float: right;
+    margin-top: 10px;
+    }
+    #admake-advanced-filter {
+        display: block !important;
+    }
+}
+@media screen and (min-width: 1100px) {
+    #sidenavCTRfiltros {
+        display: none;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 1200px) {
+    #admake-advanced-filter > .box-filtro {
+        display: inline-grid;
+        background-color: white;
+        min-width: 150px;
+        /*border-bottom: none !important;*/
+    }
+
+    .carregar-prox-pg {
+        margin-left: 12em;
+    }
+}
