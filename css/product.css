@@ -238,7 +238,13 @@
     }
 }*/
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+    .thumbs.owl-carousel.owl-theme {
+        margin-left: -11px;
+    }
+    .product-details .product-image {
+        padding-left: 0px !important;
+    }
     .product-details {
         border: solid 1px #278950;
         padding-bottom: 2em !important;
@@ -251,6 +257,10 @@
         border-right-color: #333;
         margin-top: 1em;
     }
+
+    #comprar-flutuante {
+        z-index: 9999;
+    }
     .product-info {
         border: 0 !important;
         padding-bottom: 0 !important;
@@ -259,7 +269,9 @@
         padding-left: 0 !important;
     }
     .product-details .product-name .productName {
-        margin-top: 43px !important;
+        margin-top: 22px !important;
+        font-size: 20px !important;
+        line-height: 26px;
     }
     .product-details .price-box .descricao-preco .valor-por strong {
         font-weight: 500;
@@ -280,8 +292,8 @@
        /* margin-bottom: 1em;*/
         text-align: center;
     }
-    .add-to-cart-button.flutuante {
-        display: block;
+    .add-to-cart-button.flutuante, .add-to-cart-button  {
+        display: none;
         text-align: center;
         margin-left: 0 !important;
     }
@@ -314,6 +326,14 @@
     .short-description .productDescriptionShort {
         font-size: 13px;
         margin-top: 5px;
+    }
+
+    .product-image .zoomPad {
+        display: none !important;
+    }
+
+    .owl-controls .owl-pagination {
+        bottom: 0px !important;
     }
     
 }

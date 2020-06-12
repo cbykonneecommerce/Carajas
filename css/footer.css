@@ -10,9 +10,13 @@
 
 #newsform #emailform {
     width: 68%;
-    height: 3.5em;
+    height: 2.5em;
     font-size: 20px;
     padding-left: 1em;
+}
+.out-of-stock {
+    color: white;   
+     font-weight: 600;
 }
 
 #newsform #commit {

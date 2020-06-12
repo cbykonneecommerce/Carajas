@@ -2,6 +2,94 @@
     padding-bottom: 0;
 }
 
+
+.sidenav {
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+.sidenav span {
+    display: inline-block;
+}
+
+.sidenav a {
+    padding: 17px 8px 17px 0px;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+.fa-angle-down, .fa-angle-up {
+    float: right;
+    padding-right: 8px;
+    color: white;
+    font-size: 25px;
+}
+
+.vtexIdUI a {
+    color: rgb(245,130,32) !important;
+}
+
+#loginWithUserAndPasswordBtn {
+   
+   
+    background-color: #F58220 !important;
+    background-image: linear-gradient(to bottom, #F58220, #F58220) !important;
+    border: 1px solid #F58220 !important;
+    box-shadow: none !important; 
+    color: white !important;
+    
+}
+
+.vtexIdUI.ng-scope.vtexIdUI-show-app {
+    margin-top: 9em !important;
+}
+
+.vtexIdUI .btn:hover, .vtexIdUI .btn:focus {
+    background-position: 0 !important;
+    box-shadow: none !important;
+}
+.vtexIdUI .btn {
+    background-repeat: initial !important;
+    text-shadow: none !important;
+    color: white !important;
+}
+
+.vtexIdUI .btn-success:hover, .vtexIdUI .btn-success:focus, .vtexIdUI .btn-success:active {
+    background-color: #278950!important;
+}
+.vtexIdUI .btn-success {
+    background-image: linear-gradient(to bottom, #278950, #278950) !important;
+}
+
+.dropdown-btn {
+    padding: 0;
+    text-decoration: none;
+    color: #8B8B8B;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    cursor: pointer;
+    float: right;
+    padding-top: 1em;
+    outline: none;
+}
+
+.dropdown-container {
+    display: none;
+    padding-left: 8px;
+}
+
 #top-menu{
     position: sticky;
     top: 11.9em;
@@ -253,7 +341,7 @@ h2 {
     }*/
 
     .header {
-        margin-top: 2em;
+        margin-top: 8px;
     }
 
     #mobile-cart img {

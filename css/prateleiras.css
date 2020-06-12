@@ -7,7 +7,7 @@
 }
 
 .prateleira .product-image img {
-    max-width: 136px !important;
+   /* max-width: 136px !important;*/
 }
 
 .product-image::after {

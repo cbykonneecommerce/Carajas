@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 
              //mobile
-             $(".sidenav").append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${element.name}"><a href="${element.url}">${divtext}</a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
+             $(".sidenav").append(`<div style="display:block;"><span class="depto-${element.name}"><a href="${element.url}">${divtext}</a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
              <div class="dropdown-container" id="${element.name}"></div>`);
              
 

@@ -33,13 +33,4 @@
 
 
 
-@media (max-width: 600px)  {
-    
-    .owl-carousel .owl-controls .owl-pagination .owl-page{
-        display: none !important;
-    }
-    .owl-prev, .owl-next {
-        display:none
-    }
-}
 

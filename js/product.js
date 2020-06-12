@@ -12,6 +12,46 @@ function BatchBuy_OnSkuDataReceived(e) {
 
 $(document).ready(function() {
 
+    const mq = window.matchMedia("(max-width: 900px)");
+
+    if (mq.matches) {
+
+       
+
+        const imgsLength = $(".product-image .apresentacao .thumbs a img").length;
+
+        for(let i= 0; i < imgsLength; i++) {
+            let imgProduct = $($(".product-image .apresentacao .thumbs a img")[i]).attr("src");
+            imgProduct = imgProduct.replace(/-55-55/g, '-500-500');
+            $($(".product-image .apresentacao .thumbs a img")[i]).attr("src",imgProduct);
+        }
+
+        
+        $(".product-image .apresentacao .thumbs").owlCarousel({
+ 
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+        
+            items : 1,
+            itemsDesktop : [1199,1],
+            itemsDesktopSmall : [979,1],
+            itemsTablet: [768, 1],
+            navigation: false,
+            stopOnHover: true,
+            pagination: true
+        
+        });
+
+
+        $(".product-info .shipping-box label").click(()=>{
+            $(".product-info .shipping-box label .fitext").css({"display": "block"});
+            $(".product-info .shipping-box .freight-btn").css({"display": "inline-block"});
+        })
+
+        
+$(".owl-prev").html("<img src='/arquivos/seta-esquerda.png' />");
+$(".owl-next").html("<img src='/arquivos/seta-direita.png' />");
+    }
+
     if(skuJson.skus.length  == 1) {
         console.log("KAWABUNGA")
         sku = skuJson.skus[0].sku;
