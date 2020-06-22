@@ -32,13 +32,34 @@
     border-top: none;
 }
 
+.product-info .shipping-box {
+    margin-top: 0px !important;
+    padding-top: 0px !important
+}
+
 
 .buy-button.buy-button-ref .fa-lock, .added-to-cart, #description, #specification, #reviews {
     display: none;
 }
 
-.buy-button-box .box-qtd {
-    display: none !important;
+.product-description .buy-together-content td.buy .comprar-junto a:hover, .product-description .buy-together-content td.buy .comprar-junto a:focus, .product-info .buy-button-box .buy-button:hover, .product-info .buy-button-box .buy-button:focus,
+.product-description .buy-together-content td.buy .comprar-junto a, .buy-button.buy-button-ref {
+    
+    text-decoration: none;
+    color: #fff !important;
+    text-decoration: none;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+    background-color: #F58220 !important;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.preco-a-vista.price-cash {
+display: none !important;
 }
 
 #brand {
@@ -47,6 +68,58 @@
 
 #publishUserReview #formUserReview {
     margin-top: 8%;
+}
+
+.buy-button-box .box-qtd {
+    border: none !important;
+    border-radius: 0;
+    color: white !important;
+    display: -webkit-box;
+    margin-top: 0%;
+    
+    float: inherit !important;
+}
+
+.buy-button-box .box-qtd::before{
+    content:"Quantidade:";
+    color:black;
+    margin-right:14px;
+   font-size: 18px !important;
+    vertical-align: -60%;
+}
+
+.buy-button-box .box-qtd .bts {
+    width: 50% !important;
+    box-shadow: none !important;
+    display: block;
+    height: auto;
+}
+
+.buy-button-box .box-qtd .btn {
+    outline: none !important;
+    box-shadow: none !important;
+    display: inline-block !important;
+}
+
+.buy-button-box .box-qtd .btn img {
+    z-index: 99999;
+    display: block;
+    height: auto;
+}
+
+.buy-button-box .box-qtd .qtd {
+    border-right: 1px solid #EBEBEB !important;
+    border-radius: 0;
+    font-weight: bold;
+    border-right: none !important;
+    width: 33px;
+    margin-top: -8px;
+    font-size: 24px !important;
+    color: #333 !important;
+    border-radius: 15px !important;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: inline-block;
 }
 
 
@@ -64,6 +137,8 @@
 
 .product-info .shipping-box label .fitext {
     border: 1px solid #278950 !important;
+    color: #333;
+    font-weight: 600;
 }
 
 .product-info .shipping-box label, .product-details .price-box .descricao-preco .valor-dividido, .product-details .price-box .descricao-preco .valor-dividido span, .product-details .price-box .descricao-preco .valor-dividido strong {
@@ -73,7 +148,7 @@
 
 .product-details .product-name .productName {
     color: #333 !important;
-    font-size: 35px !important;
+    font-size: 25px !important;
     line-height: 36px;
 }
 
@@ -113,6 +188,7 @@
     font-weight: 400;
 }
 
+
 .cart-counter .qtd-field {
     width: 42px !important;
     text-align: center !important;
@@ -128,14 +204,15 @@
     border: solid 2px #F58220 !important;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 0.93em;
-    padding-bottom: 0.93em;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-radius: 5px;
     font-size: 20px;
     background-color: transparent;
     margin-left: 1em;
     text-decoration: none;
     outline-style: none;
+    display: inline-block;
     box-shadow: none;
     font-weight: 700;
 }
@@ -150,9 +227,23 @@
     box-shadow: none;
 }
 
-.product-info .shipping-box label {
-    width: 62%;
+
+.notifyme-client-email, .notifyme-client-name {
+    border: solid 2px #F58220 !important;
+    color: #333 !important; 
+    margin: 6px;
+    padding-left: 10px;
 }
+
+.sku-notifyme-button-ok {
+    display: inline-block;
+border: solid 2px #F58220 !important;
+color: white !important;
+background-color: #F58220 !important;
+font-weight: 700;
+margin: 6px;
+}
+
 
 .rating-produto:before, .rating-demonstrativo:before, .rating-wrapper .rating:before {
     font-size: 25px ;
@@ -212,9 +303,7 @@
     #comprar-flutuante {
         display: none !important;
     }
-    .product-info .shipping-box {
-        width: 50%;
-    }
+    
 }
 
 /*@media (max-width: 1580px) {
@@ -237,6 +326,9 @@
         margin-bottom: 0px;
     }
 }*/
+
+
+
 
 @media (max-width: 900px) {
     .thumbs.owl-carousel.owl-theme {
@@ -268,10 +360,19 @@
         border-top: 0 !important;
         padding-left: 0 !important;
     }
+
+    .product-details .product-name {
+        margin-bottom: 0px !important; 
+    }
     .product-details .product-name .productName {
         margin-top: 22px !important;
         font-size: 20px !important;
         line-height: 26px;
+    }
+
+    .product-details .price-box {
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
     }
     .product-details .price-box .descricao-preco .valor-por strong {
         font-weight: 500;
@@ -311,10 +412,14 @@
         font-family: Calibri, sans-serif;
     }
 
+    
+
     .product-description {
         margin-bottom: 7em;
+        margin-top: 15px !important;
     }
 
+   
     .product-details .codigo-produto {
         width: 46%;
         margin-bottom: 1em;
@@ -333,7 +438,12 @@
     }
 
     .owl-controls .owl-pagination {
-        bottom: 0px !important;
+        bottom: -5px !important;
+    }
+
+
+    .buy-button-box {
+        display: block !important
     }
     
 }

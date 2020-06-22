@@ -214,6 +214,10 @@
     font-weight: 800 !important;
 }
 
+.pages {
+    margin-top: 2em;
+}
+
 #admake-advanced-filter .opcoes {
     overflow: visible !important;
 }
@@ -302,6 +306,11 @@
         display: none;
     }
 
+    #mySidenavfiltros {
+        width: 21% !important;
+        padding-right: 0px !important;
+    }
+
     
 }
 
@@ -314,7 +323,15 @@
         /*border-bottom: none !important;*/
     }
 
+    #main-content {
+        width: 79% !important;
+    }
+
     .carregar-prox-pg {
         margin-left: 12em;
+    }
+
+    .prateleira.vitrine > ul > li {
+        width: 25% !important;
     }
 }

@@ -12,8 +12,15 @@ function BatchBuy_OnSkuDataReceived(e) {
 
 $(document).ready(function() {
 
+    if(!skuJson.available) {
+        $(".add-to-cart-button").hide();
+    }
+
     const mq = window.matchMedia("(max-width: 900px)");
 
+    if(mq.matches && skuJson.available) {
+        $(".buy-button-box").hide()
+    }
     if (mq.matches) {
 
        
@@ -74,43 +81,22 @@ $(".owl-next").html("<img src='/arquivos/seta-direita.png' />");
 
 
 
-    let value = $(".qtd-field").val();
+    let value = $("input.qtd").val();
 
-
-$(".go-to-cart-button").attr("href", `/checkout/cart/add?sku=${sku}&qty=1&seller=1&redirect=true&sc=1`);
 $(".add-to-cart-button").attr("href", `/checkout/cart/add?sku=${sku}&qty=1&seller=1&redirect=false&sc=1`);
 
-$(".btn-mais").click(()=>{
-    
-    $(".qtd-field").val( value ++)
-})
-$(".btn-menos").click(()=>{
-    if ( $(".qtd-field").val() > 1) {
-        $(".qtd-field").val( value --)
-    }
-    
-})
 
 
-$(".qtd-field").on("input propertychange",()=>{
-    let qty = $(".qtd-field").val();
-    $(".go-to-cart-button").attr("href", `/checkout/cart/add?sku=${sku}&qty=${qty}&seller=1&redirect=true&sc=1`);
+
+
+$("input.qtd").on("input propertychange",()=>{
+    let qty = $("input.qtd").val();
     $(".add-to-cart-button").attr("href", `/checkout/cart/add?sku=${sku}&qty=${qty}&seller=1&redirect=false&sc=1`);
 
 
 })
 
-$(".btn-menos").click(()=>{
-    let qty = $(".qtd-field").val();
-    $(".go-to-cart-button").attr("href", `/checkout/cart/add?sku=${sku}&qty=${qty}&seller=1&redirect=true&sc=1`);
-    $(".add-to-cart-button").attr("href", `/checkout/cart/add?sku=${sku}&qty=${qty}&seller=1&redirect=false&sc=1`);
-})
-$(".btn-mais").click(()=>{
-    let qty = $(".qtd-field").val();
-    $(".go-to-cart-button").attr("href", `/checkout/cart/add?sku=${sku}&qty=${qty}&seller=1&redirect=true&sc=1`);
-    $(".add-to-cart-button").attr("href", `/checkout/cart/add?sku=${sku}&qty=${qty}&seller=1&redirect=false&sc=1`);
 
-})
 
 
 $("#btn-description").click(()=>{

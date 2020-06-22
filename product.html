@@ -113,11 +113,9 @@
                     </div><!-- .seletor-sku -->
 
 
-                    <div class="short-description hidden-xs">
-                            <vtex.cmc:productDescriptionShort />
-                    </div>
+                    
 
-                    <div class="cart-counter">
+                    <!--<div class="cart-counter">
                         <h4>Quantidade:</h4>
                         <button class="btn btn-menos" style="background-color: transparent;outline-style: none;
                             box-shadow: none;"><img src="/arquivos/btn-menos.png" alt=""
@@ -125,20 +123,22 @@
                         <input type="number" class="qtd-field" value="1" />
                         <button class="btn btn-mais" style="background-color: transparent;outline-style: none;
                             box-shadow: none;"><img src="/arquivos/btn-mais.png" alt="" style="width: 2em;" /></button>
-                    </div>
+                    </div>-->
 
 
-                    <div class="short-description visible-xs">
+                    <div class="short-description">
                             <vtex.cmc:productDescriptionShort />
                     </div>
 
-                    <div class="buy-button-box hidden-xs">
+                    <div class="buy-button-box">
                         <!-- <vtex.cmc:BuyButton />
                             <vtex.cmc:BuyInPage/>
                             <vtex.cmc:AmountItemsInCart/>
                             
                             -->
-                        <a class="go-to-cart-button" href="">COMPRAR</a>
+
+                            <vtex.cmc:BuyButton /> 
+                       <!-- <a class="go-to-cart-button" href="">COMPRAR</a>-->
                         <a class="add-to-cart-button" href="">COLOCAR NO CARRINHO</a>
                         <button class="added-to-cart"><img src="/arquivos/carrotick.png" style="
                              width: 2em;margin-top: -5px;" /><span>ADICIONADO!</span></button>

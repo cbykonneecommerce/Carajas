@@ -1,5 +1,5 @@
 .prateleira .box-item {
-    height: 32em;
+    height: 26em;
 }
 
 .prateleira .box-item:hover img {
@@ -7,7 +7,7 @@
 }
 
 .prateleira .product-image img {
-   /* max-width: 136px !important;*/
+    max-width: 80%;
 }
 
 .product-image::after {
@@ -20,6 +20,7 @@
 }
 .prateleira .product-name {
     min-height: 60px !important;
+    padding: 4px;
 }
 
 .prateleira .btn-add-buy-button-asynchronous {
@@ -49,8 +50,8 @@
 
 .green-part {
     background-color: #227346;
-    padding-bottom: 1.5em;
-    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 .prateleira .price a, .prateleira .price .best-price {
@@ -76,7 +77,7 @@
 
 @media (max-width: 800px) {
     .prateleira .box-item {
-        height: 32em;
+        height: 25em;
     }
 }
 

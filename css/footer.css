@@ -86,6 +86,7 @@
     font-size: 20px;
     text-align: left;
     outline: none !important;
+    padding-left: 1em;
 }
 
 .dropbuttom button i {
@@ -102,6 +103,7 @@
 .dropdown-container#institucional, .dropdown-container#suporte {
     background-color: white;
     padding: 8px;
+    padding-bottom: 1.5em;
 }
 
 .dropdown-container#institucional a, .dropdown-container#suporte a {
