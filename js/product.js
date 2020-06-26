@@ -153,8 +153,8 @@ let formatedSpecs = specs.map((element)=>{
     let valuename = element.split(":")[1];
 
     return `<tr style="height: 50px;">
-    <td style="font-weight:bold;font-size: 20px;">${specname}</td>
-    <td style="font-size: 20px;">${valuename}</td>
+    <td style="font-weight:bold;font-size: 20px;width: 50%;">${specname}</td>
+    <td style="font-size: 20px;width: 50%;">${valuename}</td>
     </tr>`
 });
 

@@ -16,8 +16,9 @@ function refreshCart() {
         vtexjs.checkout.getOrderForm()
         .then(function(orderForm) {
     
-    
+            let total = 0
             orderForm.items.forEach((item, position)=>{
+                total += item.quantity
                 $("#mini-cart-admake .mini-cart-itens").append(`
        
                 <div class="mini-cart-item item-${position}">
@@ -41,8 +42,8 @@ function refreshCart() {
           
         
           
-            $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
-            $(".header .mini-cart span.badge").text(orderForm.items.length)
+            $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.totalizers[0].value));
+            $(".header .mini-cart span.badge").text(total)
         });
      
     },1000)

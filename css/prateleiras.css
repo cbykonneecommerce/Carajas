@@ -19,7 +19,7 @@
     display: none;
 }
 .prateleira .product-name {
-    min-height: 60px !important;
+    min-height: 76px !important;
     padding: 4px;
 }
 
@@ -77,7 +77,19 @@
 
 @media (max-width: 800px) {
     .prateleira .box-item {
-        height: 25em;
+        height: 26em;
     }
 }
+
+
+
+
+
+@media (min-width: 1200px) {
+    .green-part {
+        height: 11em;
+    }
+}
+
+
 

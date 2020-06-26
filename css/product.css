@@ -414,6 +414,10 @@ margin: 6px;
     }
     .product-description .productDescription {
         font-family: Calibri, sans-serif;
+        font-size: 20px !important;
+    font-weight: 400 !important;
+    line-height: 30px !important;
+    color:#000 !important
     }
 
     
