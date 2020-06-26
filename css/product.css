@@ -331,6 +331,10 @@ margin: 6px;
 
 
 @media (max-width: 900px) {
+
+    #specification table tr td {
+        font-size: 17px !important;
+    }
     .thumbs.owl-carousel.owl-theme {
         margin-left: -11px;
     }

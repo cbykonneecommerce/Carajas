@@ -131,27 +131,37 @@ e.preventDefault();
         dataType: "html",
         success: function() {
             alert("Produto adicionado ao carrinho!");
+
+            refreshCart();
         }
     })
 })
-/*$(".add-to-cart-button").click(()=>{
-    let item = {
-        quantity: 1,
-        seller: '1'
-    };
-    $(".add-to-cart-button").fadeOut("slow"); 
-    vtexjs.catalog.getCurrentProductWithVariations().done(function (product) {
-        console.log(product, 'getcurrent');
-        item.id = product.skus[0].sku;
-        console.log(item);
-    
-        vtexjs.checkout.addToCart([item], null, 1)
-            .done(function (orderForm) {
-                    $(".added-to-cart").fadeIn()
-            });
-    });
-     
-})*/
+
+
+
+
+//TRANSFORM SPECS
+
+let specs = $(".value-field.Especificacoes").text().split("\\");
+$("#caracteristicas").remove();
+$("#specification").html(`<table cellspacing="0" class="group Especificacoes">
+
+</table>`)
+
+let formatedSpecs = specs.map((element)=>{
+    let specname = element.split(":")[0];
+    let valuename = element.split(":")[1];
+
+    return `<tr style="height: 50px;">
+    <td style="font-weight:bold;font-size: 20px;">${specname}</td>
+    <td style="font-size: 20px;">${valuename}</td>
+    </tr>`
+});
+
+$("#specification table").html(formatedSpecs);
+$($("#specification table tr")[$("#specification table tr").length - 1]).remove()
+
+
 
 
     
