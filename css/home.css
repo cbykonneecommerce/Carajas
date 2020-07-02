@@ -17,6 +17,10 @@
     font-weight: 700;
 }
 
+.box-banner a img {
+    max-width: 100%;
+    height: auto;
+}
 
 .our-categories .content .card {
     border: 1px solid #278950;
@@ -25,6 +29,8 @@
     text-align: center;
     padding: 22%;
 }
+
+
 
 .owl-item .item .card {
     border: 1px solid #278950;
@@ -35,7 +41,7 @@
 }
 
 .prateleira .box-item {
-    height: 28em !important;
+    height: 30em !important;
 }
 
 .card:hover {

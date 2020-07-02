@@ -183,11 +183,25 @@ display: none !important;
     display: inline-flex;
 }
 
+#metragemPiso {
+    color: #333;
+    display: block;
+    font-size: 18px;
+    padding-bottom: 0.5em;
+    font-family: "Nunito";
+}
+
 .cart-counter h4 {
     font-size: 20px;
     font-weight: 400;
 }
-
+.product-description .productDescription {
+    /*font-family: Calibri, sans-serif;*/
+    font-size: 20px !important;
+font-weight: 400 !important;
+line-height: 30px !important;
+color:#000 !important
+}
 
 .cart-counter .qtd-field {
     width: 42px !important;
@@ -412,13 +426,7 @@ margin: 6px;
         margin-left: 0;
         margin-right: 0;
     }
-    .product-description .productDescription {
-        font-family: Calibri, sans-serif;
-        font-size: 20px !important;
-    font-weight: 400 !important;
-    line-height: 30px !important;
-    color:#000 !important
-    }
+    
 
     
 

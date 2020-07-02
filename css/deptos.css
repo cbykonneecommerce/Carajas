@@ -3,7 +3,7 @@
 }
 
 .title-category h2 {
-    font-size: 50px;
+    font-size: 40px;
     font-family: Calibri, sans-serif;
 }
 .owl-carousel#carouseldepto .owl-wrapper, .owl-carousel .owl-item {
@@ -219,18 +219,28 @@
 }
 
 #admake-advanced-filter .opcoes {
-    overflow: visible !important;
+    overflow: scroll !important;
+    height: 268px;
+    padding-left: 1px;
 }
 
 #admake-advanced-filter .box-filtro.checkbox li a {
     color: #333 !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
 }
 
+#admake-advanced-filter > .box-filtro h3 {
+    color: #333 !important;
+    font-size: 19px !important;
+    font-weight: 700 !important;
+}
 #admake-advanced-filter > .box-filtro  {
-    border: 1px solid #227346 !important;
+    border: 1px solid #808080!important;
+    border-top: 5px solid #278950 !important;
     border-radius: 15px;
     width: 100%;
+    border-radius: 0px 0 10px 10px;
+    margin-bottom: 1em;
 }
 
 @media screen and (max-width: 1900px) {

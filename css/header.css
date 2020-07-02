@@ -14,7 +14,24 @@
     height: 50px !important;
 }
 
+#drop-login {
+    padding: 0.5em;
+    border: solid 2px #278950;
+    border-radius: 9px;
+}
 
+.ui-autocomplete .ui-menu-item a {
+    background-color: white !important;
+    border: none !important
+}
+
+#drop-login li a {
+    font-weight: 700 !important;
+}
+
+#vtexIdUI-global-loader {
+    background: rgb(255, 255, 255) !important;
+}
 .sidenav {
     width: 100%;
     z-index: 1;

@@ -98,7 +98,7 @@ $("input.qtd").on("input propertychange",()=>{
 
 
 
-
+$("#description").show();
 $("#btn-description").click(()=>{
     $("#description").show();
     $("#specification").hide();
@@ -166,6 +166,46 @@ $($("#specification table tr")[$("#specification table tr").length - 1]).remove(
 
     
 });
+
+//CALCULADORA
+
+setTimeout(()=>{
+    let ispiso = false;
+    let metragem = 0
+    
+    for(let i = 0; i < $(".Especificacoes td").length; i++ ) {
+        if($($(".Especificacoes td")[i]).text() == " CX" || $($(".Especificacoes td")[i]).text() == "CX") {
+            ispiso = true;
+            metragem = $($(".Especificacoes td")[i + 1]).text().split("M²")[0].replace(/,/g, '.');
+            metragem = parseFloat(metragem);
+        }
+    }
+    
+    if(ispiso) {
+        $(".buy-button-box").prepend(`<span id="metragemPiso">Você está comprando: ${metragem} M²</span>`);
+    
+        $(".btn-menos").click(()=>{
+            let qty = Number($(".qtd").val());
+            
+            qty <= 1 ? qty = 1: qty = qty - 1;
+            console.log(qty)
+            let metragemOriginal = metragem;
+            metragemOriginal = metragem * qty;
+            $("#metragemPiso").text(`Você está comprando: ${metragemOriginal.toFixed(2)} M²`);
+          })
+        $(".btn-mais").click(()=>{
+            let qty = Number($(".qtd").val());
+            qty = qty + 1
+            console.log(qty)
+            let metragemOriginal = metragem;
+            metragemOriginal = metragem * qty;
+            $("#metragemPiso").text(`Você está comprando: ${metragemOriginal.toFixed(2)} M²`);
+    
+        })
+    }
+    
+},1000)
+
 
 
 
