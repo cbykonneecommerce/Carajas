@@ -118,7 +118,7 @@
 			$fullbanner.owlCarousel({
 			 	items 			: 1,
 			    singleItem 		: true,
-			    autoPlay 		: true,
+			    autoPlay 		: 3000,
 			    stopOnHover 	: true,
 			    navigation 		: true,
 			    autoHeight 		: true,
