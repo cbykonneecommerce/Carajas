@@ -261,6 +261,13 @@ $(document).ready(function () {
       
      
      refreshCart();
+
+
+
+
+
+
+     $("#desktop-cart").hover(()=>{$(".deptonav").hide()})
 });
 
 
