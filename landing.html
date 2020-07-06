@@ -10,18 +10,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
-        html { 
-  background:url(/arquivos/banner-landing.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+        body { 
+            background-color: #069a51 !important;
 }
 
-.container-fluid {
+img {
+    max-width: 65% !important;
+}
+
+.row {
+    margin-top: 4em;
+}
+
+.stores, #princ{
+    border: solid 2px #037545;
+    padding: 1.5em;
+    border-radius: 40px;
+    color: white;
+}
+
+.state-container {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.horario {
+    background-color: #EF821E;
+    padding: 7px;
+    border-radius: 20px;
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+.state-container span {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    background-color: #EF821E;
+    padding: 15px;
+    border-radius: 14px;
     position: absolute;
-        left: 5%;
-        top: 60%;
+    top: 33%;
+    left: -55px;
 }
 
 #buttons-selector {
@@ -32,82 +62,34 @@
     width: 102%;
 }
 
-.btn-basic {
-    color: white !important;
-    text-transform: uppercase;
-    -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: rgba(0, 0, 0, 0.5) 1px 2px 4px 0px;
-    background-color: #931A29 !important;
-    font-weight: bold !important;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px !important;
-    background-image: none !important;
-    border-color: none !important;
-    text-shadow: none !important;
-    padding: 18px 68px;
-    font-size: 22px;
+strong {
+    font-weight: 900 !important;
 }
 
-.btn-hollow {
-    color: #931A29 !important;
-    font-weight: bolder !important;
-    text-transform: uppercase !important;
-    border: solid 2px #931A29 !important;
-    border-radius: 10px;
-    padding: 18px;
-    font-size: 22px;
-    text-decoration: none;
-    background-color: white;
-}
-
-@media screen and (min-width:1200px) and (max-width: 1600px) {
-
-    #buttons-selector {
-        margin-top: 22%
-    }
-
-    .btn-basic {
-        padding: 12px 62px;
-        font-size: 20px;
-    }
-    .btn-hollow {
-        padding: 12px;
-        font-size: 20px;
-    }
-}
 
 @media screen and (max-width: 800px) {
-    html { 
-  background:url(/arquivos/banner-landing-mob.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.btn-basic, .btn-hollow {
-    display: block;
-    margin-bottom: 1em;
-    font-size: 18px;
-}
-#buttons-selector {
-    display: block;
-    width: 100%;
-    margin-top: 5%;
-
-}
-
-.container-fluid {
-    left: 15%;
-    top: 21%;
-}
-
-#princ {
+    .horario {
+        width: 99%
+    }
+    .state-container span {
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    background-color: #EF821E;
+    padding: 11px;
+    border-radius: 14px;
     position: absolute;
-    bottom: -30em;
-    left: -7%;
+    top: -5%;
+    left: -12px;
+}
+
+iframe {
+    width: 100%;
+    height: 203px;
+}
+
+#logos {
+    text-align: center;
 }
 
 }
@@ -119,9 +101,107 @@
 
     <div class="page">
 
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-xs-12" style="text-align: center;margin-top: 2em;" id="princ">
+                <div class="col-sm-5" id="logos">
+                    <div class="hidden-xs">
+                        <img src="/arquivos/carajas-landing-logo.png" alt=""/>
+                        <img src="/arquivos/carajas-landing-mapa.png" alt=""/>
+                    </div>
+
+                    <div class="visible-xs">
+                        <img src="/arquivos/carajas-landing-mapa.png" alt="" style="width:50% !important"/>
+                        <img src="/arquivos/carajas-landing-logo.png" alt=""  style="width:35% !important"/>
+                       
+                    </div>
+ 
+                </div>
+                <div class="col-sm-7">
+                    <div class="state-container">
+                        <span>CE</span>
+                        <div class="stores">
+                            <p class="store-title"><strong>UNIDADE FORTALEZA</strong></p>
+                            <p class="address">Av. Godofredo Maciel, 3570, Mondubim, Fortaleza - CE / CEP: 60711-502</p>
+                            <p class="horario">SEG A SEX. <strong>10 às 16h</strong>   -   SÁB.  <strong>10 às 16h</strong>   -   DOM. <strong>10 às 16h</strong>
+                            </p>
+
+
+                            <p class="store-title"><strong>UNIDADE JUAZEIRO DO NORTE</strong></p>
+                            <p class="address">Av. Padre Cícero, 3495, São José, Juazeiro do Norte - CE / CEP: 63.024-030</p>
+                            <p class="horario">SEG A SEX. <strong>09 às 18h</strong>   -   SÁB. <strong>08 às 12h</strong>    -   DOM.  <strong>fechado</strong>
+
+                            </p>
+                        </div>
+
+                        
+                    </div>
+                   
+                    
+
+                    <div class="state-container">
+                        <span>RN</span>
+                        <div class="stores">
+                            <p class="store-title"><strong>UNIDADE NATAL</strong></p>
+                            <p class="address"> AV. Bacharel Tomaz Landim , s/n, Jardim Lola, São Gonçalo do Amarante - RN / CEP: 59.296-802</p>
+                            <p class="horario">SEG A SEX. <strong>08 às 19h</strong>   -   SÁB.  <strong>08 às 19h</strong>   -   DOM. <strong>08 às 16h</strong>
+                            </p>
+
+
+                            <p class="store-title"><strong>UNIDADE JUAZEIRO DO NORTE</strong></p>
+                            <p class="address">Av. Padre Cícero, 3495, São José, Juazeiro do Norte - CE / CEP: 63.024-030</p>
+                            <p class="horario">SEG A SEX. <strong>09 às 18h</strong>   -   SÁB. <strong>08 às 12h</strong>    -   DOM.  <strong>fechado</strong>
+
+                            </p>
+                        </div>
+
+                        
+                    </div>
+
+                    
+                    <div class="state-container">
+                        <span>PB</span>
+                        <div class="stores">
+                            <p class="store-title"><strong>UNIDADE JOÃO PESSOA</strong></p>
+                            <p class="address">Rua Projetada, 155, Ernesto Geisel, João Pessoa - PB / CEP: 58.310-000</p>
+                            <p class="horario">SEG A SEX. <strong>09 às 18h</strong>   -   SÁB.  <strong>09 às 18h</strong>   -   DOM. <strong>09 às 18h</strong>
+                            </p>
+
+
+                            <p class="store-title"><strong>UNIDADE CAMPINA GRANDE</strong></p>
+                            <p class="address">Av. Assis Chateaubriand, 1261, Liberdade, Campina Grande - PB / CEP: 58414-060</p>
+                            <p class="horario">SEG A SEX. <strong>09 às 16h</strong>   -   SÁB. <strong>09 às 16h</strong>    -   DOM.  <strong>09 às 16h</strong></p>
+
+                            <p class="store-title"><strong>UNIDADE CABEDELO</strong></p>
+                            <p class="address">Portal do Poço, Cabedelo - PB (Estrada de Cabedelo - Intermares) / CEP: 58106-282</p>
+                            <p class="horario">SEG A SEX. <strong>09 às 18h</strong>   -   SÁB. <strong>09 às 18h </strong>    -   DOM.  <strong>09 às 18h</strong></p>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="state-container">
+                        <span>AL</span>
+                        <div class="stores">
+                            <p class="store-title"><strong>UNIDADE MACEIÓ</strong></p>
+                            <p class="address">Av. Durval de Góes Monteiro, 1896, Tabuleiro do Martins, Maceió - AL / CEP: 57061-000</p>
+                            <p class="horario">SEG A SEX. <strong>08 às 21h</strong>   -   SÁB.  <strong> 08 às 20h</strong>   -   DOM. <strong>08 às 18h</strong>
+                            </p>
+
+
+                            <p class="store-title"><strong>UNIDADE ARARAPIRACA</strong></p>
+                            <p class="address">Av. Marechal Deodoro da Fonseca, 690, Brasília, Arapiraca - AL / CEP: 57.301-185</p>
+                            <p class="horario">SEG A SEX. <strong>08 às 19h</strong>   -   SÁB. <strong>08 às 19h</strong>    -   DOM.  <strong>08 às 16h</strong></p>
+
+                            
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12" style="text-align: center" id="princ">
                     <vtex.cmc:video />
                 </div>
             </div>
