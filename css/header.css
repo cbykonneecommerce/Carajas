@@ -19,7 +19,17 @@
     border: solid 2px #278950;
     border-radius: 9px;
 }
+.welcome-bar div.welcome {
+    margin-top: 0px;
+}
 
+.welcome .dropdown-toggle .fa-angle-down:before {
+    content: "\f107";
+    position: absolute;
+    /* text-align: center; */
+    margin-left: -1%;
+    margin-top: -17px;
+}
 .ui-autocomplete .ui-menu-item a {
     background-color: white !important;
     border: none !important
