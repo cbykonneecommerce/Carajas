@@ -44,7 +44,7 @@ $(document).ready(function () {
                     $(`#deptos-list .depto-${element.name}#${element.name}`).mouseleave(function () {
                         $(`#deptos-list .depto-${element.name}#${element.name}`).hide()
                         $(`#deptos-list .deptonav .row .secondLayer`).hide();
-                        $(`#deptos-list .deptonav .row .thirdLayer`).hide();
+                       
                     });
 
 
@@ -75,7 +75,7 @@ $(document).ready(function () {
 
                         if (subs.hasChildren) {
                             $(`.depto-${element.name} .row`).append(`
-                        <div class="col-sm-4 secondLayer secondLayer-${subs.name} parent-${element.name}" style="display:none">
+                        <div class="col-sm-8 secondLayer secondLayer-${subs.name} parent-${element.name}" style="display:none">
                      <ul class="">
                          
                      </ul>
@@ -95,9 +95,8 @@ $(document).ready(function () {
 
                             //Desktop
                             $(`.depto-${element.name} .row .col-sm-4.firstLayer-${element.name}  ul .item-${subs.name}`).mouseenter(function () {
-                                $(`.depto-${element.name} .row .col-sm-4.secondLayer`).hide()
-                                $(`.depto-${element.name} .row .col-sm-4.thirdLayer`).hide()
-                                $(`.depto-${element.name} .row .col-sm-4.secondLayer-${subs.name}`).show()
+                                $(`.depto-${element.name} .row .col-sm-8.secondLayer`).hide()
+                                $(`.depto-${element.name} .row .col-sm-8.secondLayer-${subs.name}`).show()
                             });
 
                           
@@ -123,7 +122,7 @@ $(document).ready(function () {
                                // console.log(grandsubs)
                                 let divtextgrandsubs = grandsubs.name;
                                 grandsubs.name = grandsubs.name.replace(/[\s/,&]+/g, '-');
-                                $(`.depto-${element.name} .row .col-sm-4.secondLayer-${subs.name}  ul`).append(`<li  class="item-${grandsubs.name}"><a href="${grandsubs.url}"></i>${divtextgrandsubs}</a><i class="fa fa-angle-right"></li>`);
+                                $(`.depto-${element.name} .row .col-sm-8.secondLayer-${subs.name}  ul`).append(`<li  class="item-${grandsubs.name}"><a href="${grandsubs.url}"></i>${divtextgrandsubs}</a><i class="fa fa-angle-right"></li>`);
 
                                 //mobile
                                 if(!grandsubs.hasChildren) {
@@ -134,81 +133,7 @@ $(document).ready(function () {
                                    
                               
 
-                                if (grandsubs.hasChildren) {
-                                    $(`.depto-${element.name} .row`).append(`
-                                <div class="col-sm-4 thirdLayer thirdLayer-${grandsubs.name} parent-${subs.name}" style="display:none">
-                             <ul class="">
-                                 
-                             </ul>
-                         </div>
-                                `);
-                                  //mobile
-                                  $(`.dropdown-container#${subs.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${grandsubs.name}"><a href="${grandsubs.url}">${divtextgrandsubs}</a></span>
-                                  <button class="dropdown-btn" id="${grandsubs.name}"><i class="fa fa-angle-down"></i></button></div>
-                                  <div class="dropdown-container" id="${grandsubs.name}"></div>`);
-
-
-                                    $(`.depto-${element.name} .row .col-sm-4.secondLayer-${subs.name}  ul .item-${grandsubs.name}`).mouseenter(function () {
-                                        
-                                        $(`.depto-${element.name} .row .col-sm-4.thirdLayer`).hide()
-                                        $(`.depto-${element.name} .row .col-sm-4.thirdLayer-${grandsubs.name}`).show()
-                                    });
-
-
-                                        
-                                               
-
-
-
-                                  
-
-
-                                    
-                                        //Mobile
-                                        console.log("inserindo listeners grandsub  long " + grandsubs.name)
-                                       
-                                        $(`.dropdown-btn#${grandsubs.name}`).toggle(() => {
-                                         console.log(`.dropdown-btn#${grandsubs.name}`)
-                                         $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
-                                         $(`.dropdown-btn#${grandsubs.name} i`).attr('class', 'fa fa-angle-up');
-                                         $(`.dropdown-container#${grandsubs.name}`).slideDown()
-                                     }, () => {
-                                         $(`.dropdown-container#${grandsubs.name}`).slideUp()
-                                         $(`.dropdown-btn#${grandsubs.name} i`).attr('class', 'fa fa-angle-down');
-                                     })
-                                                               
-
-
-
-                                    grandsubs.children.forEach((ggsubs, index) => {
-                                      //  console.log("adding grandgrandchildren");
-                                      //  console.log(ggsubs);
-
-                                        let divtextggsubs = ggsubs.name;
-                                        ggsubs.name = ggsubs.name.replace(/[\s/,&]+/g, '-');
-
-                                        $(`.depto-${element.name} .row .col-sm-4.thirdLayer-${grandsubs.name}  ul`).append(`<li class="item-${ggsubs.name}"><a href="${ggsubs.url}">${divtextggsubs}</a></li>`);
-
-                                        //mobile
-                                       
-                                            $(`.dropdown-container#${grandsubs.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${ggsubs.name}"><a href="${ggsubs.url}">${divtextggsubs}</a></span></div>`);
-
-                                            console.log("inserindo listeners ggsub temp")
-                                            $(`.dropdown-btn#${ggsubs.name}`).toggle(() => {
-                                                console.log(`.dropdown-btn#${ggsubs.name}`)
-                                             $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
-                                             $(`.dropdown-btn#${ggsubs.name} i`).attr('class', 'fa fa-angle-up');
-                                             $(`.dropdown-container#${ggsubs.name}`).slideDown()
-                                         }, () => {
-                                             $(`.dropdown-container#${ggsubs.name}`).slideUp()
-                                             $(`.dropdown-btn#${ggsubs.name} i`).attr('class', 'fa fa-angle-down');
-                                         })
-                                        
-                                   
-
-                                    })
-
-                                }
+                               
 
                             })
                         }
