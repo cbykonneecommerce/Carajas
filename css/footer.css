@@ -140,6 +140,11 @@
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
+
+    #vtexlogo {
+        width: 7em !important;
+        padding-left: 1em;
+    }
 }
 
 @media (min-width: 1800px) {

@@ -313,6 +313,12 @@ margin: 6px;
     color: #F67828;
 }
 
+
+
+.prateleira .box-item {
+    height: 30em !important;
+}
+
 @media (min-width: 1200px) {
     #comprar-flutuante {
         display: none !important;
