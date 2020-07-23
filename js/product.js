@@ -182,7 +182,7 @@ setTimeout(()=>{
     }
     
     if(ispiso) {
-        $(".buy-button-box").prepend(`<span id="metragemPiso">Você está comprando: ${metragem} M²</span>`);
+        $(".buy-button-box").prepend(`<span id="metragemPiso">Você está comprando: ${metragem} M² (1 caixa)</span>`);
         let price = skuJson.skus[0].bestPriceFormated;
         price = price.replace(/,/g, '.').replace(/[\sR$]+/g, '');
         price = Number(price);
@@ -197,8 +197,8 @@ setTimeout(()=>{
             let metragemOriginal = metragem;
             metragemOriginal = metragem * qty;
             let totalPrice = metragemOriginal.toFixed(2) * price
-            $("#metragemPiso").text(`Você está comprando: ${metragemOriginal.toFixed(2)} M² <br/><br/>
-            Caixas: ${qty} no total de: <span style="color:color: #278950;font-weight: 400;">R$ ${totalPrice.toFixed(2)} </span>`);
+            $("#metragemPiso").html(`Você está comprando: ${metragemOriginal.toFixed(2)} M² <br/><br/>
+            Caixas: ${qty} no total de: <span style="color: #278950;font-weight: 400;">R$ ${totalPrice.toFixed(2)} </span>`);
           })
         $(".btn-mais").click(()=>{
             let qty = Number($('.buy-button-box .box-qtd .qtd').val());
@@ -208,8 +208,8 @@ setTimeout(()=>{
             let metragemOriginal = metragem;
             metragemOriginal = metragem * qty;
             let totalPrice = metragemOriginal.toFixed(2) * price
-            $("#metragemPiso").text(`Você está comprando: ${metragemOriginal.toFixed(2)} M² <br/><br/>
-            Caixas: ${qty} no total de: <span style="color:color: #278950;font-weight: 400;">R$ ${totalPrice.toFixed(2)} </span>`);
+            $("#metragemPiso").html(`Você está comprando: ${metragemOriginal.toFixed(2)} M² <br/><br/>
+            Caixas: ${qty} no total de: <span style="color: #278950;font-weight: 400;">R$ ${totalPrice.toFixed(2)} </span>`);
     
         })
     }
