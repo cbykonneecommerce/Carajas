@@ -31,6 +31,36 @@ $(document).ready(function() {
     });
 
 
+        
+    $("#carouselpais").owlCarousel({
+     
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+    
+        items : 4,
+        itemsDesktop : [1199,4],
+        itemsDesktopSmall : [320,1],
+        itemsMobile: [600,1],
+        navigation: true,
+        stopOnHover: true
+    
+    });
+
+    $("#carouselcards").owlCarousel({
+     
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+    
+        items : 4,
+        itemsDesktop : [1199,4],
+        itemsDesktopSmall : [320,2],
+        itemsMobile: [600,2],
+        navigation: true,
+        stopOnHover: true
+    
+    });
+
+
+
+
     $("#carouseldepto").owlCarousel({
      
         autoPlay: 2000, //Set AutoPlay to 3 seconds
