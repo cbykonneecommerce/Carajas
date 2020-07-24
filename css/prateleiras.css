@@ -1,5 +1,5 @@
 .prateleira .box-item {
-    height: 26em;
+    height: 27em;
 }
 
 .prateleira .box-item:hover img {
@@ -19,7 +19,7 @@
     display: none;
 }
 .prateleira .product-name {
-    min-height: 76px !important;
+    min-height: 96px !important;
     padding: 4px;
 }
 
@@ -82,7 +82,7 @@
 
 @media (max-width: 800px) {
     .prateleira .box-item {
-        height: 28em;
+        height: 30em;
     }
 }
 
