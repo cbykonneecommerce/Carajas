@@ -38,8 +38,8 @@ $(document).ready(function() {
     
         items : 4,
         itemsDesktop : [1199,4],
-        itemsDesktopSmall : [320,1],
-        itemsMobile: [600,1],
+        itemsDesktopSmall : [320,2],
+        itemsMobile: [600,2],
         navigation: true,
         stopOnHover: true
     
