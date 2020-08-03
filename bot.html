@@ -1,0 +1,75 @@
+<!-- Este código vai no cabeçalho da página -->
+<link rel="stylesheet" href="https://s3.amazonaws.com/udo-rapidpro-static-app/push-widget/1.1.3/push.min.css">
+<script src="https://s3.amazonaws.com/udo-rapidpro-static-app/push-widget/1.1.3/push.min.js"></script>
+<link rel="stylesheet" href="https://www.ilhasoft.com.br/newcodes/alagoas/alagoas-bkp.css">
+<script src="https://storage.googleapis.com/push-webchat/webchat-v0.7.33.js"></script>
+<style>
+    /* Para mudar a cor padrão, basta alterar o valor desta variável #A020F0.
+       Se desejar mudar alguma específica, basta substituir o uso da variável "var(--main-color) por um hexadecimal da cor, ou o RGB." */
+    :root {
+        --main-color: green;
+    }
+
+    ul, ol {
+        padding-inline-start: 10px;
+    }
+
+    /* cor do título */
+    .conversation-container .header {
+        background: var(--main-color) !important;
+    }
+
+    /* cor da mensagem */
+    .conversation-container .client {
+        background-color: var(--main-color) !important;
+    }
+
+    /* cor dos quickreplies */
+    .conversation-container .reply {
+        border: 1px solid var(--main-color);
+        color: var(--main-color);
+        font-size: small;
+    }
+
+    /* Cor do botão iniciar/finalizar */
+    .launcher {
+        background-color: var(--main-color) !important;
+    }
+    .launcher::after {
+        border-color: var(--main-color);
+    }
+</style>
+
+<!-- Este código vai no corpo do site -->
+<!--  CHATBOT  -->
+<div id="webchat">
+<script>
+    WebChat.default.init({
+        selector: "#webchat",
+        initPayload: "start",
+        channelUuid: 'd4a76c00-6df6-44ca-8839-93e2958be05f',
+        host: 'https://new.push.al',
+        socketUrl: "https://socket.push.al",
+        title: "Carajas",
+        showFullScreenButton: true,
+        inputTextFieldHint: "Fale comigo...",
+        openLauncherImage: 'https://push.al/wp-content/uploads/2018/08/avatar.png',
+        profileAvatar: 'https://push.al/wp-content/uploads/2018/08/avatar.png',
+        tooltipPayload: "start",
+        tooltipDelay: 200,
+    })
+    function isMobile() {
+        try {
+            document.createEvent("TouchEvent");
+            return true;
+        } catch(e) {
+            return false;
+        }
+    }
+    function openChat() {
+        if (!WebChat.isOpen() && !isMobile()) {
+            WebChat.open();
+        }
+    }
+    setTimeout(openChat, 5000);
+</script>
