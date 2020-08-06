@@ -193,6 +193,8 @@ $(document).ready(function () {
 
 
      $("#desktop-cart").hover(()=>{$(".deptonav").hide()})
+
+     $(".vtexIdUI-close").click(()=>{window.location.replace("/")})
 });
 
 
