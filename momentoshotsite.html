@@ -1,0 +1,229 @@
+<!-- 
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+     xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+ 
+ <head>
+     <title> Carajas Home Center</title>
+     <vtex:metaTags />
+     <vtex:template id="commonStyles" />
+     <link href="/arquivos/home.css" rel="stylesheet" type="text/css" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <style>
+
+#myModal {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 600px !important;
+}
+         .modal.in .modal-dialog {
+            margin-top: 33%;
+         }
+
+         .modal-title {
+            text-align: center;
+    font-weight: 700;
+    color: #278950;
+         }
+
+         .modal-body .allregions {
+             text-align: center;
+         }
+         .modal-body .allregions li {
+            margin-bottom: 3em;
+         }
+         .modal-body .allregions li a {
+            background-color: #F58220;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 10px 30px;
+         }
+
+
+         @media (max-width: 800px) {
+            .item a img{
+                max-width: 90%;
+            }
+         }
+
+     </style>
+ 
+ </head>
+ 
+ <body id="home-page">
+ 
+     <div class="page">
+ 
+         <!--  SubTemplate: Header -->
+         <vtex:template id="Header" />
+         <!-- /SubTemplate: Header -->
+ 
+         <div id="home-extra-top"></div>
+         <div class="container-fluid" style="padding-right:0px !important; padding-left:0px !important;">
+             <div class="fullbanner hidden-xs">
+                 <vtex:contentPlaceHolder id="bannersegmentado" />
+             </div><!-- .fullbanner -->
+ 
+             <div class="fullbanner visible-xs">
+                 <vtex:contentPlaceHolder id="bannersegmentadomobile" />
+             </div><!-- .fullbanner -->
+         </div>
+ 
+ 
+ 
+         <section id="home-content" class="container" style="margin-top:2em;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-theme" id="carouselpais">
+                        <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
+        
+                        <div class="item" id="iluminacaoitem"><a href="#iluminacao"><img src="/arquivos/carajas-momentos(1).jpg" alt="Owl Image" /></a></div>
+                        <div class="item" id="construcaoitem"><a href="#construcao"><img src="/arquivos/carajas-momentos(2).jpg" alt="Owl Image" /></a></div>
+                        <div class="item" id="banhoitem"><a href="#banho"><img src="/arquivos/carajas-momentos(3).jpg" alt="Owl Image" /></a></div>
+                        <div class="item" id="ferramentasitem"><a href="#ferramentas"><img src="/arquivos/carajas-momentos(4).jpg" alt="Owl Image" /></a></div>
+                       
+        
+                    </div>
+                </div>
+               
+            </div>
+          
+ 
+           <div class="row">
+               <div class="col-sm-12">
+                <div class="showcase-default showcase-owl" id="iluminacao">
+                    <div class="collection-title">
+                        
+                    </div>
+                    <vtex:contentPlaceHolder id="iluminacao" />
+                </div>
+               </div>
+           
+           </div>
+           <div class="row">
+            <div class="col-sm-12">
+             <div class="showcase-default showcase-owl" id="construcao">
+                 <div class="collection-title">
+                     
+                 </div>
+                 <vtex:contentPlaceHolder id="construcao" />
+             </div>
+            </div>
+        
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+             <div class="showcase-default showcase-owl" id="banho">
+                 <div class="collection-title">
+                     
+                 </div>
+                 <vtex:contentPlaceHolder id="banho" />
+             </div>
+            </div>
+        
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+             <div class="showcase-default showcase-owl" id="ferramentas">
+                 <div class="collection-title">
+                     
+                 </div>
+                 <vtex:contentPlaceHolder id="ferramentas" />
+             </div>
+            </div>
+        
+        </div>
+
+        <div class="row">
+            <h2>Fale com a Carajás!</h2>
+            <div class="col-sm-12">
+                <div class="owl-carousel owl-theme" id="carouselcards">
+                    <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
+    
+                    <div class="item"><a href="/"><img src="/arquivos/card1.png" alt="Owl Image" /></a></div>
+                    <div class="item"><a type="button" class="modal-opener" data-toggle="modal" data-target="#myModal"><img src="/arquivos/card2.png" alt="Owl Image" /></a></div>
+                    <div class="item"><a href="/institucional/nossas-lojas"><img src="/arquivos/card3.png" alt="Owl Image" /></a></div>
+                    <div class="item"><a href="#"><img src="/arquivos/card4.png" alt="Owl Image" /></a></div>
+                   
+    
+                </div>
+            </div>
+           
+        </div>
+            
+ 
+         </section><!-- #content -->
+ 
+         <div id="category-extra-bottom"></div>
+ 
+         <!--  SubTemplate: Footer -->
+         <vtex:template id="Footer" />
+         <!-- /SubTemplate: Footer -->
+ 
+     </div><!-- .container-fluid -->
+
+
+     <!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">X</button>
+                <h4 class="modal-title">ESCOLHA SUA PLATAFORMA</h4>
+               
+            </div>
+            <div class="modal-body">
+                <ul class="allregions">
+                    <li><a href="https://play.google.com/store/apps/details?id=carajas.carajas">ANDROID</a></li>
+                    <li><a href="https://apps.apple.com/br/app/carajas/id1508001631">IOS</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+ 
+ </body>
+ <script>
+      $("#iluminacaoitem").click(function(){
+        
+        $('html,body').animate({scrollTop: $("#iluminacao").offset().top - 150});
+      })
+
+
+      $("#construcaoitem").click(function(){
+        
+        $('html,body').animate({scrollTop: $("#construcao").offset().top - 150});
+      })
+
+
+
+      $("#banhoitem").click(function(){
+        
+        $('html,body').animate({scrollTop: $("#banho").offset().top - 150});
+      })
+
+
+      $("#ferramentasitem").click(function(){
+        
+        $('html,body').animate({scrollTop: $("#ferramentas").offset().top - 150});
+      })
+ </script>
+ <vtex:template id="commonScripts" />
+ 
+ </html>
