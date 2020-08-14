@@ -45,6 +45,24 @@ $(document).ready(function() {
     
     });
 
+            
+    $("#carouselcozinhas").owlCarousel({
+     
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+    
+        items : 3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [320,2],
+        itemsMobile: [600,2],
+        navigation: true,
+        stopOnHover: true
+    
+    });
+
+
+
+    
+
     $("#carouselcards").owlCarousel({
      
         autoPlay: 3000, //Set AutoPlay to 3 seconds
