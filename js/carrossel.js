@@ -59,6 +59,17 @@ $(document).ready(function() {
     
     });
 
+    $("#carouselautomotivo").owlCarousel({
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+    
+        items : 2,
+        itemsDesktop : [1199,2],
+        itemsDesktopSmall : [320,2],
+        itemsMobile: [600,1],
+        navigation: true,
+        stopOnHover: true
+    })
+
 
 
     

@@ -1,0 +1,344 @@
+<!-- 
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <title> Carajas Home Center</title>
+    <vtex:metaTags />
+    <vtex:template id="commonStyles" />
+    <link href="/arquivos/home.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        #myModal {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            border: none !important;
+            width: 600px !important;
+        }
+
+        .modal.in .modal-dialog {
+            margin-top: 33%;
+        }
+
+        .modal-title {
+            text-align: center;
+            font-weight: 700;
+            color: #278950;
+        }
+
+        .modal-body .allregions {
+            text-align: center;
+        }
+
+        .modal-body .allregions li {
+            margin-bottom: 3em;
+        }
+
+        .modal-body .allregions li a {
+            background-color: #F58220;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            padding: 10px 30px;
+        }
+
+        .form-control {
+            border-radius: 28px !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 43px !important;
+        }
+
+        .form-place {
+            background-color: #FFB902;
+            padding: 4em;
+            border-radius: 20px;
+        }
+
+        .form-place label {
+            font-weight: 700;
+            color: white;
+            font-size: 19px;
+        }
+
+        #send-email {
+            font-size: 20px !important;
+            font-weight: 800 !important;
+            color: white !important;
+            background-color: #F46517 !important;
+            margin-top: 7.7% !important;
+        }
+
+        #form-title {
+            text-align: center;
+            font-weight: 800;
+            color: white;
+            font-size: 31px;
+            margin-bottom: 1.5em;
+            margin-top: -0.3em;
+        }
+
+        .agradecimentos{
+            display: none;
+        }
+
+        @media screen and (max-width: 1200px) {
+            #form-title {
+          
+            font-size: 25px;
+            
+        }
+
+        .form-place label {
+            margin-top: 11px;
+        }
+        }
+
+        @media screen and (min-width: 1200px) {
+       #checklabel{
+        margin-top: 16px;
+       }
+       #iagree{
+        margin-top: -7px;
+       }
+        }
+    </style>
+
+</head>
+
+<body id="home-page">
+
+    <div class="page">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="Header" />
+        <!-- /SubTemplate: Header -->
+
+        <div id="home-extra-top"></div>
+        <div class="container-fluid" style="padding-right:0px !important; padding-left:0px !important;">
+            <div class="fullbanner hidden-xs">
+                <vtex:contentPlaceHolder id="bannersegmentado" />
+            </div><!-- .fullbanner -->
+
+            <div class="fullbanner visible-xs">
+                <vtex:contentPlaceHolder id="bannersegmentadomobile" />
+            </div><!-- .fullbanner -->
+        </div>
+
+
+
+        <section id="home-content" class="container" style="margin-top:2em;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="/arquivos/carajas-landing-pintoueconomia-ebookpage.png" alt="" />
+                </div>
+
+            </div>
+
+            <div class="not-reg">
+                <div class="row" style="margin-top: 1em;">
+                    <div class="col-sm-12">
+                        <h2 style="color: #EA6620;
+                        text-align: center;
+                        font-size: 37px;
+                        font-weight: 700;">A vida tem a cor que você pinta.
+                        </h2>
+                        <h2 style="    color: #6C6C6E;
+                        text-align: center;
+                        font-size: 37px;
+                        font-weight: 700">E que tal pintar a sua vida com novas cores?
+                        </h2>
+                        <p style="font-size: 23px;
+                        margin-top: 1em;
+                        margin-bottom: 2em;">Baixe agora mesmo o e-book e tenha acesso às melhores dicas para pintar a
+                            sua casa e deixá-la do jeitinho que sempre sonhou. Abra espaço para o novo!
+
+                        </p>
+
+                        <div class="form-place">
+                            <h3 id="form-title">Cadastre-se e baixe gratuitamente!</h3>
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <label for="meunome">Nome*</label>
+                                        <input type="text" class="form-control" id="meunome" placeholder="Nome" />
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="meuemail">E-mail*</label>
+                                        <input type="email" class="form-control" id="meuemail" placeholder="E-mail" />
+                                    </div>
+                                    <div class="col-sm-4">
+
+                                        <button  class="btn btn-primary mb-2" id="send-email">QUERO MEU
+                                            E-BOOK</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-sm-12">
+                                        <div class="checkbox">
+                                            <label id="checklabel"><input type="checkbox" id="iagree" /> Eu concordo em receber
+                                                comunicações e ofertas personalizadas de acordo com meus
+                                                interesses.</label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </form>
+
+                            <div class="agradecimentos">
+                                <h2 style="color: #EA6620;
+                        text-align: center;
+                        font-size: 50px;
+                        font-weight: 700;">Obrigado!
+                        </h2>
+                        <h2 style="    color: #fff;
+                        text-align: center;
+                        font-size: 37px;">Agradecemos pelo interesse em nosso e-book.
+                        </h2>
+                        <h2 style="    color: #fff;
+                        text-align: center;
+                        font-size: 37px;
+                        font-weight: 700">Esperamos que goste!
+                        </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="row">
+                <h2>Fale com a Carajás!</h2>
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-theme" id="carouselcards">
+                        <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
+
+                        <div class="item"><a href="/"><img src="/arquivos/carajas-landing-pintoueconomia-icon1.png"
+                                    alt="Owl Image" /></a></div>
+                        <div class="item"><a type="button" class="modal-opener" data-toggle="modal"
+                                data-target="#myModal"><img src="/arquivos/carajas-landing-pintoueconomia-icon2.png"
+                                    alt="Owl Image" /></a></div>
+                        <div class="item"><a href="/institucional/nossas-lojas"><img
+                                    src="/arquivos/carajas-landing-pintoueconomia-icon3.png" alt="Owl Image" /></a>
+                        </div>
+                        <div class="item"><a href="#"><img src="/arquivos/carajas-landing-pintoueconomia-icon4.png"
+                                    alt="Owl Image" /></a></div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section><!-- #content -->
+
+        <div id="category-extra-bottom"></div>
+
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="Footer" />
+        <!-- /SubTemplate: Footer -->
+
+    </div><!-- .container-fluid -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                    <h4 class="modal-title">ESCOLHA SUA PLATAFORMA</h4>
+
+                </div>
+                <div class="modal-body">
+                    <ul class="allregions">
+                        <li><a href="https://play.google.com/store/apps/details?id=carajas.carajas">ANDROID</a></li>
+                        <li><a href="https://apps.apple.com/br/app/carajas/id1508001631">IOS</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+
+<script src="//i.btg360.com.br/wf.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+
+    $("#send-email").click(function(event) {
+        event.preventDefault();
+        if($("#iagree[type=checkbox]").is(":checked")){
+
+            let myname = $("#meunome").val();
+        let myemail = $("#meuemail").val();
+console.log(myname, myemail )
+        __blc['id'] = "7b7cf8b423b8c4472176d1372701ecdd";
+
+        try {
+
+            lc.sendData({
+                evento: "Novo Cadastro ebook",
+                nm_email: myemail,
+                vars: {
+                    nome: myname,
+                },
+                vars_json: {
+
+                },
+                lista: {
+                    nm_lista: "Carajas_subscribers",
+                    atualizar: "1",
+                    nome: myname
+
+                }
+            });
+
+            $(".form-place #form-title").hide();
+            $(".form-place form").hide()
+            $(".form-place .agradecimentos").show()
+
+        } catch (e) {
+            alert("Algo de errado aconteceu :( \n Tente mais tarde")
+        }
+        } else {
+            alert("Concorde com os termos para poder receber seu E-book.")
+        }
+       
+
+
+    })
+
+
+
+
+</script>
+
+<vtex:template id="commonScripts" />
+
+</html>

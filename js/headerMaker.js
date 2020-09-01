@@ -199,6 +199,8 @@ $(document).ready(function () {
      }, 1000);
 
     
+
+     $(".depto-nav-area").mouseleave(()=>{$(".deptonav").hide()})
 });
 
 
