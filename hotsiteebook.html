@@ -89,29 +89,30 @@
             margin-top: -0.3em;
         }
 
-        .agradecimentos{
+        .agradecimentos {
             display: none;
         }
 
         @media screen and (max-width: 1200px) {
             #form-title {
-          
-            font-size: 25px;
-            
-        }
 
-        .form-place label {
-            margin-top: 11px;
-        }
+                font-size: 25px;
+
+            }
+
+            .form-place label {
+                margin-top: 11px;
+            }
         }
 
         @media screen and (min-width: 1200px) {
-       #checklabel{
-        margin-top: 16px;
-       }
-       #iagree{
-        margin-top: -7px;
-       }
+            #checklabel {
+                margin-top: 16px;
+            }
+
+            #iagree {
+                margin-top: -7px;
+            }
         }
     </style>
 
@@ -180,7 +181,7 @@
                                     </div>
                                     <div class="col-sm-4">
 
-                                        <button  class="btn btn-primary mb-2" id="send-email">QUERO MEU
+                                        <button class="btn btn-primary mb-2" id="send-email">QUERO MEU
                                             E-BOOK</button>
                                     </div>
                                 </div>
@@ -188,7 +189,8 @@
 
                                     <div class="col-sm-12">
                                         <div class="checkbox">
-                                            <label id="checklabel"><input type="checkbox" id="iagree" /> Eu concordo em receber
+                                            <label id="checklabel"><input type="checkbox" id="iagree" /> Eu concordo em
+                                                receber
                                                 comunicações e ofertas personalizadas de acordo com meus
                                                 interesses.</label>
                                         </div>
@@ -198,21 +200,34 @@
                                 </div>
                             </form>
 
-                            <div class="agradecimentos">
+                            <div class="agradecimentos" style="text-align: center;">
                                 <h2 style="color: #EA6620;
                         text-align: center;
                         font-size: 50px;
                         font-weight: 700;">Obrigado!
-                        </h2>
-                        <h2 style="    color: #fff;
+                                </h2>
+                                <h2 style="    color: #fff;
                         text-align: center;
                         font-size: 37px;">Agradecemos pelo interesse em nosso e-book.
-                        </h2>
-                        <h2 style="    color: #fff;
+                                </h2>
+                                <h2 style="    color: #fff;
                         text-align: center;
                         font-size: 37px;
                         font-weight: 700">Esperamos que goste!
-                        </h2>
+                                </h2>
+
+                                <a style="    font-size: 20px !important;
+                        font-weight: 800 !important;
+                        color: white !important;
+                        background-color: #F46517 !important;text-decoration: none;
+                        width: 22%;
+                        margin-left: auto;
+                        margin-top: 1em;
+                        display: block;
+                        padding: 7px;
+                        margin-right: auto;"
+                                    href="http://carjas-s3-ecommerce.s3.amazonaws.com/ebook/ebook_tintas.pdf">Baixe
+                                    aqui</a>
                             </div>
                         </div>
                     </div>
@@ -291,45 +306,45 @@
 <script type="text/javascript">
 
 
-    $("#send-email").click(function(event) {
+    $("#send-email").click(function (event) {
         event.preventDefault();
-        if($("#iagree[type=checkbox]").is(":checked")){
+        if ($("#iagree[type=checkbox]").is(":checked")) {
 
             let myname = $("#meunome").val();
-        let myemail = $("#meuemail").val();
-console.log(myname, myemail )
-        __blc['id'] = "7b7cf8b423b8c4472176d1372701ecdd";
+            let myemail = $("#meuemail").val();
+            console.log(myname, myemail)
+            __blc['id'] = "7b7cf8b423b8c4472176d1372701ecdd";
 
-        try {
+            try {
 
-            lc.sendData({
-                evento: "Novo Cadastro ebook",
-                nm_email: myemail,
-                vars: {
-                    nome: myname,
-                },
-                vars_json: {
+                lc.sendData({
+                    evento: "Novo Cadastro ebook",
+                    nm_email: myemail,
+                    vars: {
+                        nome: myname,
+                    },
+                    vars_json: {
 
-                },
-                lista: {
-                    nm_lista: "Carajas_subscribers",
-                    atualizar: "1",
-                    nome: myname
+                    },
+                    lista: {
+                        nm_lista: "Carajas_subscribers",
+                        atualizar: "1",
+                        nome: myname
 
-                }
-            });
+                    }
+                });
 
-            $(".form-place #form-title").hide();
-            $(".form-place form").hide()
-            $(".form-place .agradecimentos").show()
+                $(".form-place #form-title").hide();
+                $(".form-place form").hide()
+                $(".form-place .agradecimentos").show()
 
-        } catch (e) {
-            alert("Algo de errado aconteceu :( \n Tente mais tarde")
-        }
+            } catch (e) {
+                alert("Algo de errado aconteceu :( \n Tente mais tarde")
+            }
         } else {
             alert("Concorde com os termos para poder receber seu E-book.")
         }
-       
+
 
 
     })

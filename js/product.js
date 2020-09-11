@@ -217,7 +217,11 @@ setTimeout(()=>{
 },1000)
 
 
-
+setInterval(()=>{
+let original = $(".freight-values table tbody tr:first-of-type td:nth-of-type(2)").text();
+let newtext = original.replace("Frete Retira (1_2)", "Retirada em loja");
+$(".freight-values table tbody tr:first-of-type td:nth-of-type(2)").text(newtext)
+},1000)
 
 
 /*function BatchBuy_OnSkuDataReceived(e) {
