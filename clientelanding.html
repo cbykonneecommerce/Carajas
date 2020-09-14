@@ -1,0 +1,260 @@
+<!-- 
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+     xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+ 
+ <head>
+     <title> Carajas Home Center</title>
+     <vtex:metaTags />
+     <vtex:template id="commonStyles" />
+     <link href="/arquivos/home.css" rel="stylesheet" type="text/css" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <style>
+
+#myModal {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 600px !important;
+}
+         .modal.in .modal-dialog {
+            margin-top: 33%;
+         }
+
+         .modal-title {
+            text-align: center;
+    font-weight: 700;
+    color: #278950;
+         }
+
+         .modal-body .allregions {
+             text-align: center;
+         }
+         .modal-body .allregions li {
+            margin-bottom: 3em;
+         }
+         .modal-body .allregions li a {
+            background-color: #F58220;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 10px 30px;
+         }
+
+         .prateleira.vitrine h2{
+             display: none;
+         }
+
+         .product-of-the-day .prateleira {
+             text-align: center;
+         }
+
+         #almofada {
+            margin-top: 7em;
+    }
+
+ 
+
+    .contador p {
+        margin-bottom: 2em;
+    font-size: 20px;
+    font-weight: 700;
+    color: #838385;
+    }
+
+    .day-square span{
+        font-weight: 800;
+    font-size: 26px;
+    color: #EAAC0B;
+    padding: 6px 26px;
+    margin-top: 2em;
+    border: solid 2px #EAAC0B;
+    }
+    .prateleira .box-item{
+        background-color: white;
+    }
+    
+         @media (min-width: 1200px) {
+
+            #purplestuff{
+        background-image: url(/arquivos/carajas-landing-semanadocliente-bglista.png);
+    background-color: #fff;
+    height: 741px;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+            #almofada {    margin-top: -4em;}
+            .product-of-the-day .prateleira .box-item{
+                width: 121%;
+            }
+
+            .imspecial{
+                margin-top: 3em;
+    color: white;
+    font-weight: 600;
+            }
+            .imspecial span{
+                color: #FBAC18;
+            }
+    
+}
+     </style>
+ 
+ </head>
+ 
+ <body id="home-page">
+ 
+     <div class="page">
+ 
+         <!--  SubTemplate: Header -->
+         <vtex:template id="Header" />
+         <!-- /SubTemplate: Header -->
+ 
+         <div id="home-extra-top"></div>
+         <div class="container-fluid" style="padding-right:0px !important; padding-left:0px !important;">
+             <div class="fullbanner hidden-xs">
+                 <vtex:contentPlaceHolder id="bannersegmentado" />
+             </div><!-- .fullbanner -->
+ 
+             <div class="fullbanner visible-xs">
+                 <vtex:contentPlaceHolder id="bannersegmentadomobile" />
+             </div><!-- .fullbanner -->
+         </div>
+ 
+ 
+ 
+         <section id="home-content" class="container" style="margin-top:2em;">
+            <div class="row">
+                <div class="col-sm-12" style="text-align: center;margin-bottom: 3em;">
+                    <img src="/arquivos/carajas-landing-semanadocliente-titulo.png" alt=""/>
+                </div>
+               
+            </div>
+
+            <div class="row" style="margin-top: 1em;">
+                <div class="col-sm-6">
+                    <div class="product-of-the-day">
+                        <vtex:contentPlaceHolder id="prodemdestaque" />
+                    </div>
+                
+
+                    <img id="almofada" src="/arquivos/carajas-landing-semanadocliente-produtodia.png" alt="" />
+                </div>
+                <div class="col-sm-6">
+                    <img src="/arquivos/carajas-landing-semanadocliente-ofertadia-botao.png" alt=""/>
+                    <div class="contador">
+                        <p>Esta oferta termina em:</p>
+                        <div class="day-square">
+                            <span>1 DIA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+ 
+       
+         
+      
+      
+
+     
+            
+ 
+         </section><!-- #content -->
+
+         <div id="purplestuff">
+<div class="container">
+    <div class="row" >
+        <div class="col-xs-12">
+            <h2 class="imspecial">Lista para <span>VOCÊ</span></h2>
+
+            <div class="showcase-default showcase-owl">
+              
+               
+            <vtex:contentPlaceHolder id="listaparavoce" />
+            </div>
+
+        </div>
+    </div>
+  
+</div>
+         </div>
+
+         <div class="container">
+            <div class="row">
+                <h2>Fale com a Carajás!</h2>
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-theme" id="carouselcards">
+                        <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
+    
+                        <div class="item"><a href="/"><img src="/arquivos/carajas-landing-pintoueconomia-icon1.png"
+                                    alt="Owl Image" /></a></div>
+                        <div class="item"><a type="button" class="modal-opener" data-toggle="modal"
+                                data-target="#myModal"><img src="/arquivos/carajas-landing-pintoueconomia-icon2.png"
+                                    alt="Owl Image" /></a></div>
+                        <div class="item"><a href="/institucional/nossas-lojas"><img
+                                    src="/arquivos/carajas-landing-pintoueconomia-icon3.png" alt="Owl Image" /></a>
+                        </div>
+                        <div class="item"><a href="#"><img src="/arquivos/carajas-landing-pintoueconomia-icon4.png"
+                                    alt="Owl Image" /></a></div>
+    
+    
+                    </div>
+                </div>
+               
+            </div>
+         </div>
+ 
+         <div id="category-extra-bottom"></div>
+ 
+         <!--  SubTemplate: Footer -->
+         <vtex:template id="Footer" />
+         <!-- /SubTemplate: Footer -->
+ 
+     </div><!-- .container-fluid -->
+
+
+     <!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">X</button>
+                <h4 class="modal-title">ESCOLHA SUA PLATAFORMA</h4>
+               
+            </div>
+            <div class="modal-body">
+                <ul class="allregions">
+                    <li><a href="https://play.google.com/store/apps/details?id=carajas.carajas">ANDROID</a></li>
+                    <li><a href="https://apps.apple.com/br/app/carajas/id1508001631">IOS</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+ 
+ </body>
+ <script>
+
+    
+ </script>
+ <vtex:template id="commonScripts" />
+ 
+ </html>
