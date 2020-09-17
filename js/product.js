@@ -16,7 +16,7 @@ $(document).ready(function() {
         $(".add-to-cart-button").hide();
     }
 
-    const mq = window.matchMedia("(max-width: 900px)");
+    const mq = window.matchMedia("(max-width: 1100px)");
 
     if(mq.matches && skuJson.available) {
         $(".buy-button-box").hide()
