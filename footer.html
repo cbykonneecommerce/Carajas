@@ -1,22 +1,13 @@
-<!-- 
- *
- * Desenvolvido por Integrando.se
- * hello@integrando.se
- * 
- * Bootstrap v.3
- *
- -->
 <div class="container-fluid" style="background-color: #227346;margin-top: 4em;">
 
-    <div class="hidden-lg" style="font-size: 1.3em;color: white;text-align: center;">
-        <h3>Quer receber nossas novidades?</h3>
-    </div>
+    <div class="hidden-lg" style="font-size: 1.3em;color: white;text-align: center;"> <h3>Quer receber nossas novidades?</h3></div>
     <div class="row" id="newsletter">
         <div class="col-sm-4 col-sm-offset-1 col-xs-4 visible-lg" id="newstext">
             <h3>Quer receber nossas novidades?</h3>
         </div>
         <div class="col-lg-8 col-xs-12" id="newsform">
-            <input id="emailform" type="email" placeholder="Digite seu e-mail" />
+            <input id="nameform" type="name" placeholder="Seu nome" style="margin-right: 10px;" />
+            <input id="emailform" type="email" placeholder="E-mail" />
             <input id="commit" name="commit" type="submit" value="ENVIAR" />
         </div>
     </div>
@@ -34,9 +25,13 @@
                     <div class="col-institucional col-xs-6 col-sm-3 col-sm-offset-1">
                         <b>INSTITUCIONAL</b>
                         <ul>
-                            <li><a href="/institucional/quem-somos">Quem somos</a></li>
-                            <li><a href="/institucional/politica">Política E-commerce</a></li>
-                            <li><a href="/institucional/privacidade">Política de Privacidade</a></li>
+                       <li><a href="/institucional/quem-somos">Quem somos</a></li>
+                            <li><a href="/institucional/politica-frete">Política de Frete</a></li>
+                            <li><a href="/institucional/politica-trocas">Política de Trocas</a></li>
+                            <li><a href="/institucional/politica-retirada">Política de Retirada na Loja</a></li>
+                            <li><a href="/institucional/politica-compra">Política de Compra e Entrega</a></li>
+                            <li><a href="/institucional/politica-privacidade">Política de Privacidade e Cookies</a></li>
+                            <li><a href="/institucional/politica-descontos">Política de Descontos e Vendedor Parceiro</a></li>
                             <li><a href="/institucional/nossas-lojas">Nossas lojas</a></li>
                             <li><a href="#">Blog</a></li>
                         </ul>
@@ -51,12 +46,9 @@
 
                         <div class="row social-media">
                             <ul class="social-icons" style="display: flex">
-                                <li><a href="https://www.facebook.com/carajasonline/"><img src="/arquivos/fb.png"
-                                            alt="Facebook" /></a></li>
-                                <li><a href="https://www.instagram.com/carajasonline/"><img src="/arquivos/ig.png"
-                                            alt="Instagram" /></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCDdEDGI9ZMcs1jLedQAUCEQ"><img
-                                            src="/arquivos/yt.png" alt="Youtube" /></a></li>
+                                <li><a href="https://www.facebook.com/carajasonline/"><img src="/arquivos/fb.png" alt="Facebook" /></a></li>
+                                <li><a href="https://www.instagram.com/carajasonline/"><img src="/arquivos/ig.png" alt="Instagram" /></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCDdEDGI9ZMcs1jLedQAUCEQ"><img src="/arquivos/yt.png" alt="Youtube" /></a></li>
                                 <!--https://www.linkedin.com/company/carajasonline/-->
                             </ul>
                         </div>
@@ -66,11 +58,10 @@
                         <b>CENTRAL DE ATENDIMENTO</b>
                         <ul>
                             <li><span>
-                                    <vtex.cmc:telefone /> (telefone)</span></li>
+                                <vtex.cmc:telefone /> (telefone)</span></li>
                             <li><span>
-                                    <a href="https://wa.me/551140032020" target="_blank">11 4003-2020</a>
-                                    (whatsapp)</span></li>
-
+                                <a href="https://wa.me/551140032020" target="_blank">11 4003-2020</a> (whatsapp)</span></li>
+                            
                             <li>Seg à Sex das 8h30 às 17h00</li>
                             <li>Sábados das 8h30 às 12h00</li>
                             <li>sac@carajasonline.com</li>
@@ -114,10 +105,9 @@
             <div class="col-social col-xs-6 col-sm-3 col-sm-offset-1">
                 <b>Powered By</b>
                 <ul class="list-inline">
-                    <li><a href="http://www.cbykonne.com/" target="_Blank" id="cbyk"><img
-                                src="/arquivos/cbykonne-logo.png" alt="" /></a></li>
-                    <li><a href="http://www.vtex.com/" target="_Blank" id="vtex-logo-footer"><img
-                                src="/arquivos/vtex-logo.png" alt="" /></a></li>
+                    <li><a href="http://www.cbykonne.com/" target="_Blank" id="cbyk"><img src="/arquivos/cbykonne-logo.png" alt="" /></a></li>
+                    <li><a href="http://www.vtex.com/" target="_Blank" id="vtex-logo-footer"><img src="/arquivos/vtex-logo.png"
+                                alt="" /></a></li>
                 </ul>
             </div><!-- .col-seguranca -->
 
@@ -138,7 +128,7 @@
 </footer><!-- .footer -->
 
 <footer class="footer visible-xs">
-    <div class="container">
+    <div class="container" >
         <div class="row" style="padding: 0;">
             <div class="dropbuttom col-xs-12" style="padding: 0;
             padding-bottom: 1px;">
@@ -147,13 +137,16 @@
                 </button>
                 <div class="dropdown-container" id="institucional">
                     <a href="/institucional/quem-somos">Quem somos</a>
-                    <a href="/institucional/politica">Política E-commerce</a>
-                    <a href="/institucional/privacidade">Política de Privacidade</a>
-                    <a href="/institucional/nossas-lojas">Nossas lojas</a>
-                    <a href="#">Blog</a>
+                            <a href="/institucional/politica-frete">Política de Frete</a>
+                            <a href="/institucional/politica-trocas">Política de Trocas</a>
+                            <a href="/institucional/politica-retirada">Política de Retirada na Loja</a>
+                            <a href="/institucional/politica-privacidade">Política de Privacidade e Cookies</a>
+                            <a href="/institucional/politica-descontos">Política de Descontos e Vendedor Parceiro</a>
+                            <a href="/institucional/politica-compra">Política de Compra e Entrega</a>
+                            <a href="/institucional/nossas-lojas">Nossas lojas</a>
+                            <a href="#">Blog</a>
                 </div>
-
-
+                
             </div>
         </div>
         <div class="row" style="padding: 0;">
@@ -164,7 +157,7 @@
                 </button>
                 <div class="dropdown-container" id="suporte">
                     <a href="/institucional/faq">FAQ</a>
-                    <!--<a href="#">Como comprar</a>
+                            <!--<a href="#">Como comprar</a>
                             <a href="#">Pagamento e Venda</a>-->
                 </div>
             </div>
@@ -177,10 +170,10 @@
                 <b style="font-size:20px;">CENTRAL DE ATENDIMENTO</b>
                 <ul>
                     <li><span>
-                            <vtex.cmc:telefone /> (telefone)</span></li>
+                        <vtex.cmc:telefone /> (telefone)</span></li>
                     <li><span>
-                            <a href="https://wa.me/551140032020" target="_blank">11 4003-2020</a> (whatsapp)</span></li>
-
+                        <a href="https://wa.me/551140032020" target="_blank">11 4003-2020</a> (whatsapp)</span></li>
+                    
                     <li>Seg à Sex das 8h30 às 17h00</li>
                     <li>Sábados das 8h30 às 12h00</li>
                     <li>sac@carajasonline.com</li>
@@ -189,12 +182,9 @@
         </div>
         <div class="row">
             <ul class="social-icons-mobile">
-                <li><a href="https://www.facebook.com/carajashomecenter"><img src="/arquivos/fb.png"
-                            alt="Facebook" /></a></li>
-                <li><a href="https://www.instagram.com/carajasonline/"><img src="/arquivos/ig.png"
-                            alt="Instagram" /></a></li>
-                <li><a href="https://www.youtube.com/channel/UCDdEDGI9ZMcs1jLedQAUCEQ"><img src="/arquivos/yt.png"
-                            alt="Youtube" /></a></li>
+                <li><a href="https://www.facebook.com/carajashomecenter"><img src="/arquivos/fb.png" alt="Facebook" /></a></li>
+                <li><a href="https://www.instagram.com/carajasonline/"><img src="/arquivos/ig.png" alt="Instagram" /></a></li>
+                <li><a href="https://www.youtube.com/channel/UCDdEDGI9ZMcs1jLedQAUCEQ"><img src="/arquivos/yt.png" alt="Youtube" /></a></li>
             </ul>
         </div>
 
@@ -230,18 +220,15 @@
                 <b style="font-size:20px;margin-bottom: 1em;margin-top: 1em;">POWERED BY</b>
                 <div class="row">
                     <div class="col-xs-12">
-                        <a href=""><img src="/arquivos/cbykonne-logo.png" alt="" style="width: 5em;" /></a>
-                        <a href=""><img id="vtexlogo" src="/arquivos/vtex-logo.png" alt="" style="width: 8em;" /></a>
+                        <a href="" ><img src="/arquivos/cbykonne-logo.png" alt=""
+                                style="width: 5em;" /></a>
+                        <a href="" ><img id="vtexlogo"
+                                src="/arquivos/vtex-logo.png" alt="" style="width: 8em;" /></a>
                     </div>
 
                 </div>
             </div>
         </div>
-
-
-
-
-
     </div>
 </footer>
 <div id="extra-footer-middle"></div>
@@ -255,5 +242,3 @@
     </div>
 </div><!-- .copy-right -->
 <div id="extra-footer-bottom"></div>
-
-

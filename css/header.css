@@ -53,6 +53,14 @@
     display: inline-block;
 }
 
+.vtexIdUI #vtexIdUI-google-plus:hover{
+    background-image: linear-gradient(to bottom, #F58220 , #F58220 ) !important;
+}
+
+.vtexIdUI #vtexIdUI-google-plus{
+    background-image: linear-gradient(to bottom, #F58220 , #F58220 ) !important;
+}
+
 .sidenav a {
     padding: 17px 8px 17px 0px;
     text-decoration: none;

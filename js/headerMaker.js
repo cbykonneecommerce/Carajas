@@ -207,6 +207,7 @@ $(document).ready(function () {
 
 
 setInterval(()=>{
+    $(".bread-crumb ul li a").css({"text-transform":"capitalize"})
     
     const imgsLength = $(".ui-autocomplete .ui-menu-item").length;
 
