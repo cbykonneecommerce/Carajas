@@ -218,9 +218,10 @@ setTimeout(()=>{
 
 
 setInterval(()=>{
-//let original = $(".freight-values table tbody tr:first-of-type td:nth-of-type(2)").text();
-//let newtext = original.replace("Frete Retira (1_2)", "Retirada em loja");
-let newtext = "Retirada em loja";
+let original = $(".freight-values table tbody tr:first-of-type td:nth-of-type(2)").text();
+
+let newtext = original.replace("Frete Retira (1_2)", "Disponível para retirada na loja Maceió");
+newtext = newtext.replace("entrega", " ");
 
 $(".freight-values table tbody tr:first-of-type td:nth-of-type(2)").text(newtext)
 },1000)
