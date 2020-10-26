@@ -34,3 +34,38 @@
    $(".segundosblock").html(`0`)
     }
   }, 1000);
+
+
+  $(".dropdown-container").hide();
+
+
+$(".dropdown-btn#regulamento1").toggle(() => {
+   
+    $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-up');
+    $(".dropdown-container#institucional").slideDown()
+}, () => {
+    $(".dropdown-container#institucional").slideUp()
+    $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-down');
+})
+
+
+
+
+$(".dropdown-btn#institucional").toggle(() => {
+    $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-up');
+    $(".dropdown-container#institucional").slideDown()
+}, () => {
+    $(".dropdown-container#institucional").slideUp()
+    $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-down');
+})
+
+
+
+
+$(".dropdown-btn#institucional").toggle(() => {
+    $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-up');
+    $(".dropdown-container#institucional").slideDown()
+}, () => {
+    $(".dropdown-container#institucional").slideUp()
+    $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-down');
+})
