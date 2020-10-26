@@ -41,31 +41,35 @@
 
 $(".dropdown-btn#regulamento1").toggle(() => {
    
-    $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-up');
-    $(".dropdown-container#institucional").slideDown()
+    $(".dropdown-btn#regulamento1 i").attr('class', 'fa fa-angle-up');
+    $(".dropdown-container#regulamento1").slideDown()
 }, () => {
-    $(".dropdown-container#institucional").slideUp()
-    $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-down');
+    $(".dropdown-container#regulamento1").slideUp()
+    $(".dropdown-btn#regulamento1 i").attr('class', 'fa fa-angle-down');
+})
+
+
+$(".dropdown-btn#regulamento2").toggle(() => {
+   
+    $(".dropdown-btn#regulamento2 i").attr('class', 'fa fa-angle-up');
+    $(".dropdown-container#regulamento2").slideDown()
+}, () => {
+    $(".dropdown-container#regulamento2").slideUp()
+    $(".dropdown-btn#regulamento2 i").attr('class', 'fa fa-angle-down');
 })
 
 
 
 
-$(".dropdown-btn#institucional").toggle(() => {
-    $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-up');
-    $(".dropdown-container#institucional").slideDown()
+$(".dropdown-btn#regulamento3").toggle(() => {
+   
+    $(".dropdown-btn#regulamento3 i").attr('class', 'fa fa-angle-up');
+    $(".dropdown-container#regulamento3").slideDown()
 }, () => {
-    $(".dropdown-container#institucional").slideUp()
-    $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-down');
+    $(".dropdown-container#regulamento3").slideUp()
+    $(".dropdown-btn#regulamento3 i").attr('class', 'fa fa-angle-down');
 })
 
 
 
 
-$(".dropdown-btn#institucional").toggle(() => {
-    $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-up');
-    $(".dropdown-container#institucional").slideDown()
-}, () => {
-    $(".dropdown-container#institucional").slideUp()
-    $(".dropdown-btn#institucional i").attr('class', 'fa fa-angle-down');
-})
