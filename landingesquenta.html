@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <title> Carajas Home Center</title>
+    <vtex:metaTags />
+    <vtex:template id="commonStyles" />
+    <link href="/arquivos/home.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        #home-page {
+            background-color: black
+        }
+
+        #myModal {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            border: none !important;
+            width: 600px !important;
+        }
+
+        .modal.in .modal-dialog {
+            margin-top: 33%;
+        }
+
+        .modal-title {
+            text-align: center;
+            font-weight: 700;
+            color: #278950;
+        }
+
+        .modal-body .allregions {
+            text-align: center;
+        }
+
+        .modal-body .allregions li {
+            margin-bottom: 3em;
+        }
+
+        .modal-body .allregions li a {
+            background-color: #F58220;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            padding: 10px 30px;
+        }
+
+        .banners-cole {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            margin-top: 2em;
+            padding: 5em;
+        }
+
+        #newsletter-landing {
+            height: 7em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #newsform #emailformi {
+            width: 28%;
+            height: 2.5em;
+            border-radius: 4px;
+        }
+
+        #newsform #nomeformi {
+            width: 28%;
+            height: 2.5em;
+            border-radius: 4px;
+            margin-right: 10px;
+            margin-right: 10px;
+        }
+
+        #newsform #commitlanding {
+            background-color: #353839;
+            color: white;
+            height: 2.5em;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+
+<body id="home-page">
+
+    <div class="page">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="Header" />
+        <!-- /SubTemplate: Header -->
+
+        <div id="home-extra-top"></div>
+        <div class="container-fluid"
+            style="padding-right:0px !important; padding-left:0px !important; text-align: center;         ">
+            <div class="fullbanner hidden-xs">
+                <vtex:contentPlaceHolder id="bannersegmentado" />
+            </div><!-- .fullbanner -->
+
+            <div class="fullbanner visible-xs">
+                <vtex:contentPlaceHolder id="bannersegmentadomobile" />
+            </div><!-- .fullbanner -->
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                </div>
+                <div class="col-md-6">
+                    <img src="/arquivos/carajas-landing-frete-esquentablack.png" alt="" />
+                    <img src="/arquivos/carajas-landing-detalhebarraleads-esquentablack.png" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="background-color: #FF7E00;margin-top: 4em;">
+            <div class="text" style="color: white;padding-left: 9em;margin-top: -2.6em;">
+                <h3 style="font-size: 16px;">Quer receber nossas ofertas especiais? Cadastre-se</h3>
+            </div>
+            <div class="row" id="newsletter-landing">
+                <div class="col-md-12" id="newsform" style="display: flex;justify-content: center;">
+                    <input id="nomeformi" type="nome" placeholder="Seu Nome" />
+                    <input id="emailformi" type="email" placeholder="Seu Email" />
+                    <input id="commitlanding" name="commit" type="submit" value="ENVIAR" />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top: 2.5em; ">
+            <p style="font-size: 10px; font-weight: bold;text-align: center; color: white;">*Consulte condições de frete
+                grátis
+                no regulamento da campanha.
+                ** O valor do frete varia de acordo com a localidade.
+                A partir de R$ 399 (capitais e regiões metropolitanas) e a partir de R$599 (interior)
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="row-md-12">
+                    <li><img src="/arquivos/carajas-landing-title-esquentablack.png" alt=""
+                            style=" margin-top: 1em;"/></li>
+                </div>
+                <div class="row-md-12">
+                    <p style="color: white;padding: 7em; font-size: 20px; border-bottom: solid 2px #FF7E00;">A Black
+                        Friday é uma grande liquidação que começou nos Estados Unidos e geralmente acontece após
+                        o feriado do Dia de Ação de Graças (Thanksgiving) no país. Com o passar do tempo, ganhou
+                        popularidade em outros lugares, inclusive no Brasil. <br /><br />
+                        Muitas pessoas aproveitam a campanha para comprar diversos produtos a preços especiais.
+                        Em 2020, a Black Friday acontece no dia 27 de novembro, mas na Carajás, as ofertas começam antes
+                        e duram o mês inteiro.<br /><br />
+                        Selecionamos os itens mais desejados para você comprar tudo o que precisa e ainda economizar.
+                        Tem eletrodomésticos, pisos e revestimentos, tintas e acessórios, smartphones, materiais de
+                        construção e muito mais.<br /><br />
+                        Essa é uma excelente oportunidade de marcar o início do período de compras, que vai até o Natal.
+                        Os produtos da campanha serão sinalizados para você garantir o menor preço.<br /><br />
+                        <span style="color: #FF7E00;font-size: 20px;margin-top: 1em;">Aproveite!</span>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <p
+                style="margin-top: 1em; margin-bottom: 1em;color: white; text-align: center;font-size: 20px;text-transform: uppercase;">
+                Confira as <span style="color: #FF7E00;">principais categorias</span> procuradas na black friday</p>
+
+            <ul class="banners-cole">
+                <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/telefonia"><img
+                            src="/arquivos/carajas-landing-categorias-esquentablack1.png" alt="smartphone" /></a></li>
+                <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/audio---video"><img
+                            src="/arquivos/carajas-landing-categorias-esquentablack2.png" alt="audio e video" /></a>
+                </li>
+                <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/eletrodomesticos"><img
+                            src="/arquivos/carajas-landing-categorias-esquentablack3.png" alt="eletrodomesticos" /></a>
+                </li>
+                <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/climatizacao"><img
+                            src="/arquivos/carajas-landing-categorias-esquentablack4.png" alt="climatizaçao" /></a></li>
+                <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/eletroportateis"><img
+                            src="/arquivos/carajas-landing-categorias-esquentablack5.png" alt="eletroportateis" /></a>
+                </li>
+            </ul>
+
+            <p
+                style="margin-top: 1em; margin-bottom: 1em;color: white;text-align: center;font-size: 20px;text-transform: uppercase;">
+                Temos <span style="color: #FF7E00;">5 super dicas</span> para você curtir a black friday ao máximo: </p>
+        </div>
+
+        <section id="home-content" class="container" style="padding: 7em;">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/arquivos/carajas-landing-dicas-esquentablack1.png" alt="" />
+                </div>
+
+                <div class="col-md-6" style="border-left: solid 2px #FF7E00;">
+                    <p style="color: white;">Faça uma listinha de compras com antecedência e defina exatamente o que
+                        você deseja comprar.
+                        Smartphone? Geladeira? Ar-condicionado? TV? Micro-ondas? A Carajás garante os melhores produtos
+                        a preços superespeciais! </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/arquivos/carajas-landing-dicas-esquentablack2.png" alt="" />
+                </div>
+
+                <div class="col-md-6" style="border-left: solid 2px #FF7E00;">
+                    <p style="color: white;">Zele pela sua segurança. Mesmo com tantas ofertas e descontos, fique atento
+                        a possíveis fraudes
+                        ou falsas promoções.Desconfie de preços muito baixos e só compre em sites que você conhece. Uma
+                        dica é checar a reputação da empresa no site Reclame Aqui. A Carajás possui reputação “Ótima”,
+                        então você pode confiar. </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/arquivos/carajas-landing-dicas-esquentablack3.png" alt="" />
+                </div>
+
+                <div class="col-md-6" style="border-left: solid 2px #FF7E00;">
+                    <p style="color: white;">Antes de efetuar a compra e finalizar o pedido, leia atentamente as
+                        descrições técnicas do
+                        produto para evitar qualquer engano. Ninguém gosta de ser surpreendido com uma encomenda errada
+                        em casa, não é mesmo?
+                        Se o preço do item mudar quando ele for inserido no carrinho de compras, cuidado. Entre em
+                        contato com a empresa responsável imediatamente.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/arquivos/carajas-landing-dicas-esquentablack4.png" alt="" />
+                </div>
+
+                <div class="col-md-6" style="border-left: solid 2px #FF7E00;">
+                    <p style="color: white;">Confira o prazo de entrega do produto e os dias necessários para que ele
+                        chegue até a sua casa.
+                        Durante este período, pode acontecer de o item demorar um pouco mais para chegar que o normal.
+                        Informe-se sobre isso para evitar dor de cabeça, combinado?
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/arquivos/carajas-landing-dicas-esquentablack5.png" alt="" />
+                </div>
+
+                <div class="col-md-6" style="border-left: solid 2px #FF7E00;">
+                    <p style="color: white;">Para comprar os melhores produtos a preços imperdíveis e saber das
+                        promoções antes de todo mundo,
+                        cadastre-se no site com antecedência. Não deixe para o dia 27. Crie logo a sua conta e recebe
+                        ofertas exclusivas por e-mail.</p>
+                </div>
+
+            </div>
+
+        </section><!-- #content -->
+
+        <div class="container-fluid" style="background-color: #FF7E00;margin-top: 4em;">
+            <div class="text" style="color: white;padding-left: 9em;margin-top: -2.3em;">
+                <h3 style="font-size: 16px;">Quer receber nossas ofertas especiais? Cadastre-se</h3>
+            </div>
+            <div class="row" id="newsletter-landing">
+                <div class="col-md-12" id="newsform" style="display: flex;justify-content: center;">
+                    <input id="nomeformi" type="nome" placeholder="Seu Nome" />
+                    <input id="emailformi" type="email" placeholder="Seu Email" />
+                    <input id="commitlanding" name="commit" type="submit" value="ENVIAR" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/arquivos/carajas-landing-contatos-esquentablack1.png" alt="" />
+                <img src="/arquivos/carajas-landing-contatosbotao-esquentablack2.png" alt="" />
+                <img src="/arquivos/carajas-landing-contatosbotao-esquentablack1.png" alt="" />
+            </div>
+            <div class="col-md-4">
+                <img src="/arquivos/carajas-landing-contatos-esquentablack2.png" alt="" />
+                <img src="/arquivos/carajas-landing-contatosbotao-esquentablack3.png" alt="" />
+            </div>
+            <div class="col-md-4">
+                <img src="/arquivos/carajas-landing-contatos-esquentablack3.png" alt="" />
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row" style="border-top: solid 2px #FF7E00;margin-top: 3em;">
+                <h3 style="font-size: 20px; text-align: center;">Regulamento <span style="color: #FF7E00;">do frete</span></h3>
+            </div>
+
+            .
+
+
+        </div>
+
+
+        <div id="category-extra-bottom"></div>
+
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="Footer" />
+        <!-- /SubTemplate: Footer -->
+
+    </div><!-- .container-fluid -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                    <h4 class="modal-title">ESCOLHA SUA PLATAFORMA</h4>
+
+                </div>
+                <div class="modal-body">
+                    <ul class="allregions">
+                        <li><a href="https://play.google.com/store/apps/details?id=carajas.carajas">ANDROID</a></li>
+                        <li><a href="https://apps.apple.com/br/app/carajas/id1508001631">IOS</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<vtex:template id="commonScripts" />
+
+</html>
