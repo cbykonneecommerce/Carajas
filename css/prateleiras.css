@@ -7,7 +7,8 @@
 }
 
 .prateleira .product-image img {
-    max-width: 80%;
+    max-width: 90%;
+    padding-top: 5px;
 }
 
 .product-image::after {
@@ -18,27 +19,35 @@
 .prateleira .btn-add-buy-button-asynchronous .fa, .compare input {
     display: none;
 }
+
 .prateleira .product-name {
-    min-height: 96px !important;
+    min-height: 70px !important;
     padding: 4px;
 }
 
+
+.discount .flag{
+    background-color: #55A5C5;
+    color: white;
+    padding: 5px;
+    font-weight: 600;
+}
+
+
 .prateleira .btn-add-buy-button-asynchronous {
-    border-radius: 5px;
-    background-color: #F58220 !important;
+    background-color: #f58d31 !important;
     font-size: 20px;
-    width: 80%;
-    margin-top: 1em;
+    width: 85%;
+    font-weight: 500;
+    margin-top: 1.3em;
     padding-top: 15px;
     padding-bottom: 15px;
-    text-transform: uppercase;
 }
 
 .prateleira .product-name a {
     font-size: 13px !important;
     color: black !important;
     line-height: 17px;
-    
     font-weight: 700;
 
 }
@@ -48,37 +57,30 @@
 }
 
 .upper-side {
-    border: solid 1px #BDBDBD;
+    border: solid 1px #EDEDED;
     border-bottom: none;
-    border-top: solid 4px #227346;
 }
 
 .green-part {
-    background-color: #227346;
     padding-bottom: 1em;
     padding-top: 1em;
+    border: 1px solid #EDEDED;
 }
 
 .prateleira .price a, .prateleira .price .best-price {
-    color: #F2F2F2 !important;
+    color: #000000 !important;
 }
 
 .prateleira .price .best-price {
-    font-size: 20px;
+    font-size: 23px;
     padding-bottom: 8px;
-    font-weight: 200;
+    font-weight: bold;
 }
 
 .prateleira .price .installment {
-    font-size: 11px;
+    font-size: 14px;
+    color: #000000;
 }
-
-
-
-
-
-
-
 
 @media (max-width: 800px) {
     .prateleira .box-item {
@@ -86,15 +88,9 @@
     }
 }
 
-
-
-
-
 @media (min-width: 1200px) {
     .green-part {
         height: 11em;
     }
 }
-
-
 

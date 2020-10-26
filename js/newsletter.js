@@ -1,34 +1,43 @@
 
+$("#commit").click(function (event) {
+    event.preventDefault();
+  
+
+        let myname = $("#nameform").val();
+        let myemail = $("#emailform").val();
+        console.log(myname, myemail)
+        __blc['id'] = "7b7cf8b423b8c4472176d1372701ecdd";
+
+        try {
+
+            lc.sendData({
+                evento: "Novo Cadastro Newsletter",
+                nm_email: myemail,
+                vars: {
+                    nome: myname,
+                },
+                vars_json: {
+
+                },
+                lista: {
+                    nm_lista: "Carajas_Newsletter",
+                    atualizar: "1",
+                    nome: myname
+
+                }
+            });
+
+          alert("Inscrição concluída!")
+
+        } catch (e) {
+            alert("Algo de errado aconteceu :( \n Tente mais tarde")
+        }
+    
 
 
-$("#commit").click(()=>{
-    event.preventDefault(); 
-    //console.log($("#cl_email").val())
-    let dados = {
-            Email : $("#emailform").val()
-    }
 
-    fetch("/api/dataentities/NL/documents", {
-        method: 'PATCH',
-               headers: {
-                "Content-Type": "application/json"
-                  },
-        body: JSON.stringify(dados)
-    })
-    .then((res) => {return res})
-    .then(result =>{
-        console.log(result);
-        alert("Inscrição concluída");
-    })
-    .catch(err => console.log(err))
 })
-    
-//{"token":"4aa0282ea8cc1d4e14f434074119f772"}
 
 
-$("#commit").click(()=>{
-    event.preventDefault(); 
-    
-   
-})
-    
+
+

@@ -12,12 +12,23 @@
      xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
  
  <head>
-     <title> Carajas Home Center</title>
+     <title>Carajás Home Center | Aqui o importante é você.</title>
      <vtex:metaTags />
      <vtex:template id="commonStyles" />
      <link href="/arquivos/home.css" rel="stylesheet" type="text/css" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
+     
+     <script id="navegg" type="text/javascript">
+          (function(n,v,g){o='Navegg';if(!n[o]){
+            a=v.createElement('script');a.src=g;b=document.getElementsByTagName('script')[0];
+            b.parentNode.insertBefore(a,b);n[o]=n[o]||function(parms){
+            n[o].q=n[o].q||[];n[o].q.push([this, parms])};}})
+          (window, document, 'https://tag.navdmp.com/universal.min.js');
+          window.naveggReady = window.naveggReady||[];
+          nvg70380 = new Navegg({
+            acc: 70380
+          });
+    </script>
  </head>
  
  <body id="home-page">
@@ -29,7 +40,7 @@
          <!-- /SubTemplate: Header -->
  
          <div id="home-extra-top"></div>
-         <div class="container-fluid" style="padding-right:0px !important; padding-left:0px !important;">
+         <div class="container-fluid" style="padding-right:0px !important; padding-left:0px !important; text-align: center;">
              <div class="fullbanner hidden-xs">
                  <vtex:contentPlaceHolder id="bannersegmentado" />
              </div><!-- .fullbanner -->
@@ -39,16 +50,16 @@
              </div><!-- .fullbanner -->
          </div>
  
- 
- 
          <section id="home-content" class="container">
  
              <div id="propostascomerciais">
                  <div class="row hidden-xs">
-                     <div class="col-sm-3"><img src="/arquivos/proposta1.png" alt="" /></div>
-                     <div class="col-sm-3"><img src="/arquivos/proposta2.png" alt="" /></div>
-                     <div class="col-sm-3"><img src="/arquivos/proposta3.png" alt="" /></div>
-                     <div class="col-sm-3"><img src="/arquivos/proposta4.png" alt="" /></div>
+                     <div class="col-sm-2"><a href="https://www.carajasonline.com/saldao"><img src="/arquivos/selo-ofertas.png" alt="" /></a></div>
+                     <div class="col-sm-2"><img src="/arquivos/selo-parcele.png" alt="" /></div>
+                     <div class="col-sm-2"><img src="/arquivos/selo-retire.png" alt="" /></div>
+                     <div class="col-sm-2"><a href="https://www.carajasonline.com/landings/ourapp"><img src="/arquivos/selo-app.png" alt="" /></a></div>
+                     <div class="col-sm-2"><a href="https://www.carajasonline.com/institucional/nossas-lojas"><img src="/arquivos/selo-encontre.png" alt="" /></a></div>
+                     <div class="col-sm-2"><a href="https://wa.me/551140032020" target="_blank"><img src="/arquivos/selo-whats.png" alt="" /></a></div>
                  </div>
              </div>
  
@@ -56,12 +67,28 @@
              <div class="owl-carousel owl-theme  visible-xs" id="carouselpropostas" style="margin-top: 3em;">
                  <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
  
-                 <div class="item"><img src="/arquivos/proposta1.png" alt="Owl Image" /></div>
-                 <div class="item"><img src="/arquivos/proposta2.png" alt="Owl Image" /></div>
-                 <div class="item"><img src="/arquivos/proposta3.png" alt="Owl Image" /></div>
-                 <div class="item"><img src="/arquivos/proposta4.png" alt="Owl Image" /></div>
+                     <div class="item"><a href="https://www.carajasonline.com/saldao" target="_blank"><img src="/arquivos/selo-ofertas.png" alt="" /></a></div>
+                     <div class="item"><img src="/arquivos/selo-parcele.png" alt="" /></div>
+                     <div class="item"><img src="/arquivos/selo-retire.png" alt="" /></div>
+                     <div class="item"><a href="https://www.carajasonline.com/landings/ourapp" target="_blank"><img src="/arquivos/selo-app.png" alt="" /></a></div>
+                     <div class="item"><a href="https://www.carajasonline.com/institucional/nossas-lojas" target="_blank"><img src="/arquivos/selo-encontre.png" alt="" /></a></div>
+                     <div class="item"><a href="https://wa.me/551140032020" target="_blank"><img src="/arquivos/selo-whats.png" alt="" /></a></div>
  
+             </div>
  
+             <div id="category-extra-vitrine-1" style="margin-top: 4em;">
+                 <div class="row hidden-xs">
+                     <div class="col-sm-4">
+                        <vtex:contentPlaceHolder id="proposta1mob" />
+                     </div>
+                     <div class="col-sm-4">
+                        <vtex:contentPlaceHolder id="proposta2mob" />
+                     </div>
+                     <div class="col-sm-4">
+                        <vtex:contentPlaceHolder id="proposta3mob" />
+                     </div>
+ 
+                 </div>
              </div>
  
              <div id="category-extra-vitrine-1"></div>
@@ -81,71 +108,45 @@
                  <div class="item"><vtex:contentPlaceHolder id="proposta2" /></div>
                  <div class="item"><vtex:contentPlaceHolder id="proposta3" /></div>
  
- 
              </div>
- 
-             <div id="category-extra-vitrine-1" style="margin-top: 4em;">
-                 <div class="row hidden-xs">
-                     <div class="col-sm-4">
-                        <vtex:contentPlaceHolder id="proposta1mob" />
-                     </div>
-                     <div class="col-sm-4">
-                        <vtex:contentPlaceHolder id="proposta2mob" />
-                     </div>
-                     <div class="col-sm-4">
-                        <vtex:contentPlaceHolder id="proposta3mob" />
-                     </div>
- 
-                 </div>
-             </div>
- 
  
              <div id="category-extra-vitrine-2"></div>
  
-             <div class="showcase-default showcase-owl">
-                 <div class="collection-title">
-                   
-                 </div>
-                 <vtex:contentPlaceHolder id="Vendidos" />
-             </div>
- 
- 
              <div class="our-departments">
-                 <h2 class="section-title"><span>NAVEGUE PELOS NOSSOS DEPARTAMENTOS</span></h2>
  
                  <div class="background-container hidden-xs">
                      <div class="content">
                          <div class="row">
                              <div class="col-xs-6 col-sm-4 card hvr-shrink">
-                                 <a href="/construcao">
-                                     <img src="/arquivos/departamento1.png" />
+                                 <a href="/acabamento/cozinha/torneiras-para-cozinha">
+                                     <img src="/arquivos/banner_home01.png" />
                                  </a>
                              </div>
                              <div class="col-xs-6 col-sm-4 card hvr-shrink">
-                                 <a href="/acabamento">
-                                     <img src="/arquivos/departamento2.png" />
+                                 <a href="/busca/?fq=H:167">
+                                     <img src="/arquivos/banner_home02.png" />
                                  </a>
                              </div>
                              <div class="col-xs-6 col-sm-4 card hvr-shrink">
-                                 <a href="/manutencao">
-                                     <img src="/arquivos/departamento3.png" />
+                                 <a href="/casa-e-decoracao/iluminacao/lampadas">
+                                     <img src="/arquivos/banner_home03.png" />
                                  </a>
                              </div>
                          </div>
                          <div class="row">
                              <div class="col-xs-6 col-sm-4 card hvr-shrink">
-                                 <a href="/casa-e-decoracao">
-                                     <img src="/arquivos/departamento4.png" />
+                                 <a href="/busca?fq=H:165">
+                                     <img src="/arquivos/banner_home04.png" />
                                  </a>
                              </div>
                              <div class="col-xs-6 col-sm-4 card hvr-shrink">
-                                 <a href="/eletro-eletronico-e-tecnologia">
-                                     <img src="/arquivos/departamento5.png" />
+                                 <a href="/ventilador">
+                                     <img src="/arquivos/banner_home05.png" />
                                  </a>
                              </div>
                              <div class="col-xs-6 col-sm-4 card hvr-shrink">
-                                 <a href="/saldao">
-                                     <img src="/arquivos/departamento6.png" />
+                                 <a href="/casa-e-decoracao/cama-mesa---banho">
+                                     <img src="/arquivos/banner_home06.png" />
                                  </a>
                              </div>
                          </div>
@@ -157,219 +158,188 @@
  
                      <div class="item">
                          <div class="card hvr-shrink">
-                             <a href="">
-                                 <img src="/arquivos/departamento1.png" />
+                                 <a href="/acabamento/cozinha/torneiras-para-cozinha">
+                                 <img src="/arquivos/banner_home01.png" />
                              </a>
                          </div>
                      </div>
                      <div class="item">
                          <div class="card hvr-shrink">
-                             <a href="">
-                                 <img src="/arquivos/departamento2.png" />
+                                 <a href="/busca/?fq=H:167">
+                                 <img src="/arquivos/banner_home02.png" />
                              </a>
                          </div>
                      </div>
                      <div class="item">
                          <div class="card hvr-shrink">
-                             <a href="">
-                                 <img src="/arquivos/departamento3.png" />
+                                 <a href="/casa-e-decoracao/iluminacao/lampadas">
+                                 <img src="/arquivos/banner_home03.png" />
                              </a>
                          </div>
                      </div>
                      <div class="item">
                          <div class="card hvr-shrink">
-                             <a href="">
-                                 <img src="/arquivos/departamento4.png" />
+                                 <a href="/busca?fq=H:165">
+                                 <img src="/arquivos/banner_home04.png" />
                              </a>
                          </div>
                      </div>
                      <div class="item">
                          <div class="card hvr-shrink">
-                             <a href="">
-                                 <img src="/arquivos/departamento5.png" />
+                                 <a href="/ventilador">
+                                 <img src="/arquivos/banner_home05.png" />
                              </a>
                          </div>
                      </div>
                      <div class="item">
                          <div class="card hvr-shrink">
-                             <a href="">
-                                 <img src="/arquivos/departamento6.png" />
+                                 <a href="/casa-e-decoracao/cama-mesa---banho">
+                                 <img src="/arquivos/banner_home06.png" />
                              </a>
                          </div>
                      </div>
  
                  </div>
              </div>
- 
- 
+             
              <div class="showcase-default showcase-owl">
                  <div class="collection-title">
-                    
+                   
                  </div>
-                  <vtex:contentPlaceHolder id="procurados" /> 
+                 <vtex:contentPlaceHolder id="Vendidos" />
              </div>
+             
+            <div class="collection-title" style="margin-top: 2%;">
+                <h2>Nossas categorias</h2>
+            </div>
+
+            <div class="owl-carousel owl-theme" id="carouselfiliais">
+                <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
+                <div class="item"><a href="/eletro-eletronico-e-tecnologia/climatizacao">
+                    <img src="/arquivos/climatizacao-icon.png" alt="" /></a>
+                    <p id="titulocategorias">Climatização</p>
+                </div>
+
+                <div class="item"><a href="/acabamento/tintas-e-acessorios">
+                    <img src="/arquivos/tintas-icon.png" alt="" /></a>
+                    <p id="titulocategorias">Tintas e acessórios</p>
+                </div>
+                
+                <div class="item"><a href="/manutencao/materiais-eletricos">
+                    <img src="/arquivos/materiais-eletricos-icon.png" alt="" /></a>
+                    <p id="titulocategorias">Materiais Elétricos</p>
+                </div>
+
+                <div class="item"><a href="/casa-e-decoracao/jardim---lazer">
+                    <img src="/arquivos/jardim-icon.png" alt="" /></a>
+                    <p id="titulocategorias">Jardim e lazer</p>
+                </div>
+
+                <div class="item"><a href="/manutencao/ferramentas">
+                    <img src="/arquivos/ferramentas-icon.png" alt="" /></a>
+                    <p id="titulocategorias">Ferramentas</p>
+                </div>
+
+                <div class="item"><a href="/casa-e-decoracao/cama-mesa---banho">
+                    <img src="/arquivos/cama-icon.png" alt="" /></a>
+                    <p id="titulocategorias">Cama, mesa e banho</p>
+                </div>
+
+                <div class="item"><a href="/manutencao/materiais-hidraulicos">
+                    <img src="/arquivos/materiais-hidraulicos-icon.png" alt="Loja de Juazeiro" /></a>
+                    <p id="titulocategorias">Materiais Hidráulicos</p>
+                </div>
+
+                <div class="item"><a href="/construcao/material-de-construcao">
+                    <img src="/arquivos/materiais-icon.png" alt="Loja de Maceió" /></a>
+                    <p id="titulocategorias">Materiais de Construção</p>
+                </div>
+
+                <div class="item"><a href="/casa-e-decoracao/iluminacao">
+                    <img src="/arquivos/iluminacao-icon.png" alt="" /></a>
+                    <p id="titulocategorias">Iluminação</p>
+                </div>
+
+                <div class="item"><a href="/eletro-eletronico-e-tecnologia/eletroportateis">
+                    <img src="/arquivos/eletroportateis-icon.png" alt="" /></a>
+                    <p id="titulocategorias">Eletroportáteis</p>
+                </div>
+
+                <div class="item"><a href="/acabamento/banheiro">
+                    <img src="/arquivos/banheiro-icon.png" alt="" /></a>
+                    <p id="titulocategorias">Banheiro</p>
+                </div>
+
+                <div class="item"><a href="/acabamento/pisos-e-revestimentos">
+                    <img src="/arquivos/piso-icon.png" alt="" /></a>
+                    <p id="titulocategorias">Piso e revestimento</p>
+                </div>
+               
+            </div>
+            
+            <div class="collection-title" style="margin-top: 5%;">
+                <h2>Nossas filiais</h2>
+            </div>
+            
+            <div class="owl-carousel owl-theme" id="carouseldecategorias">
+                <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
+                <div class="item"><a href="/lojas/arapiraca">
+                    <img src="/arquivos/arapiraca-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Arapiraca</p>
+                </div>
+            
+                <div class="item"><a href="/lojas/cabedelo">
+                    <img src="/arquivos/cabedelo-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Cabedelo</p>
+                </div>
+                
+                <div class="item"><a href="/lojas/campinagrande">
+                    <img src="/arquivos/campinagrande-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Campina Grande</p>
+                </div>
+            
+                <div class="item"><a href="/lojas/fortaleza">
+                    <img src="/arquivos/fortaleza-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Fortaleza</p>
+                </div>
+            
+                <div class="item"><a href="/lojas/joaopessoa">
+                    <img src="/arquivos/joaopessoa-filial.png" alt="" /></a>
+                    <p id="titulocategorias">João Pessoa</p>
+                </div>
+            
+                <div class="item"><a href="/lojas/juazeiro">
+                    <img src="/arquivos/juazeiro-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Juazeiro</p>
+                </div>
+            
+                <div class="item"><a href="/lojas/maceio">
+                    <img src="/arquivos/maceio-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Maceió</p>
+                </div>
+            
+                <div class="item"><a href="/lojas/natal">
+                    <img src="/arquivos/natal-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Natal</p>
+                </div>
+            
+            </div>
  
- 
- 
- 
-             <div class="our-categories">
-                 <div class="collection-title">
-                     <h2>Conheça nossas categorias:</h2>
-                 </div>
- 
-                 <div class="content hidden-xs">
-                     <div class="row">
-                         <div class="col-sm-2">
-                             <div class="card">
-                                 <a href="/construcao">
-                                     <img src="/arquivos/category1.png" />
-                                 </a>
-                             </div>
-                             <div class="card-title">
-                                 <h4>CONSTRUÇÃO</h4>
-                             </div>
-                         </div>
-                         <div class="col-sm-2">
-                             <div class="card">
-                                 <a href="/acabamento">
-                                     <img src="/arquivos/category2.png" />
-                                 </a>
-                             </div>
-                             <div class="card-title">
-                                 <h4>ACABAMENTO</h4>
-                             </div>
-                         </div>
-                         <div class="col-sm-2">
-                             <div class="card">
-                                 <a href="/manutencao">
-                                     <img src="/arquivos/category3.png" />
-                                 </a>
-                             </div>
-                             <div class="card-title">
-                                 <h4>MANUTENÇÃO</h4>
-                             </div>
-                         </div>
-                         <div class="col-sm-2">
-                             <div class="card">
-                                 <a href="/casa-e-decoracao">
-                                     <img src="/arquivos/category4.png" />
-                                 </a>
-                             </div>
-                             <div class="card-title">
-                                 <h4>CASA E DECORAÇÃO</h4>
-                             </div>
-                         </div>
-                         <div class="col-sm-2">
-                             <div class="card">
-                                 <a href="/eletro-eletronico-e-tecnologia">
-                                     <img src="/arquivos/category5.png" />
-                                 </a>
-                             </div>
-                             <div class="card-title">
-                                 <h4>ELETROELETRÔNICO E TECNOLOGIA</h4>
-                             </div>
-                         </div>
-                         <div class="col-sm-2">
-                             <div class="card">
-                                 <a href="/saldao">
-                                     <img src="/arquivos/category6.png" />
-                                 </a>
-                             </div>
-                             <div class="card-title">
-                                 <h4>SALDÃO</h4>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="owl-carousel owl-theme  visible-xs" id="carouselcategorias" style="margin-top: 3em;">
-                     <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
- 
-                     <div class="item">
-                         <div class="card">
-                             <a href="/construcao">
-                                 <img src="/arquivos/category1.png" />
-                             </a>
-                         </div>
-                         <div class="card-title">
-                             <h4>CONSTRUÇÃO</h4>
-                         </div>
-                     </div>
-                     <div class="item">
-                         <div class="card">
-                             <a href="/acabamento">
-                                 <img src="/arquivos/category2.png" />
-                             </a>
-                         </div>
-                         <div class="card-title">
-                             <h4>ACABAMENTO</h4>
-                         </div>
-                     </div>
-                     <div class="item">
-                         <div class="card">
-                             <a href="/manutencao">
-                                 <img src="/arquivos/category3.png" />
-                             </a>
-                         </div>
-                         <div class="card-title">
-                             <h4>MANUTENÇÃO</h4>
-                         </div>
-                     </div>
-                     <div class="item">
-                         <div class="card">
-                             <a href="/casa-e-decoracao">
-                                 <img src="/arquivos/category4.png" />
-                             </a>
-                         </div>
-                         <div class="card-title">
-                             <h4>CASA E DECORAÇÃO</h4>
-                         </div>
-                     </div>
-                     <div class="item">
-                         <div class="card">
-                             <a href="/eletro-eletronico-e-tecnologia">
-                                 <img src="/arquivos/category5.png" />
-                             </a>
-                         </div>
-                         <div class="card-title">
-                             <h4>ELETROELETRÔNICO E TECNOLOGIA</h4>
-                         </div>
-                     </div>
-                     <div class="item">
-                         <div class="card">
-                             <a href="/saldao">
-                                 <img src="/arquivos/category6.png" />
-                             </a>
-                         </div>
-                         <div class="card-title">
-                             <h4>SALDÃO</h4>
-                         </div>
-                     </div>
- 
- 
- 
-                 </div>
-             </div>
- 
- 
-             <div class="collection-title">
-                 <h2>As melhores marcas você só encontra aqui.</h2>
+             <div class="collection-title" style="margin-top: 5%;">
+                 <h2>As melhores marcas</h2>
              </div>
  
              <div class="owl-carousel owl-theme" id="carouselmarcas" style="margin-top: 5em;">
                  <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
- 
-                 <div class="item"><a href="#"><img src="/arquivos/mideapb.png" alt="Owl Image" /></a></div>
-                 <div class="item"><a href="#"><img src="/arquivos/fortlevpb.png" alt="Owl Image" /></a></div>
-                 <div class="item"><a href="#"><img src="/arquivos/mondialpb.png" alt="Owl Image" /></a></div>
-                 <div class="item"><a href="#"><img src="/arquivos/tramontinapb.png" alt="Owl Image" /></a></div>
-                 <div class="item"><a href="#"><img src="/arquivos/coralpb.png" alt="Owl Image" /></a></div>
-                 <div class="item"><a href="#"><img src="/arquivos/quartzolitpb.png" alt="Owl Image" /></a></div>
-                 <div class="item"><a href="#"><img src="/arquivos/intelbraspb.png" alt="Owl Image" /></a></div>
-                 <div class="item"><a href="#"><img src="/arquivos/incenorpb.png" alt="Owl Image" /></a></div>
-                 
- 
+                 <div class="item" style="text-align: center;"><a href="/fortlev"><img src="/arquivos/fortlev_color.png" alt="Owl Image" /></a></div>
+                 <div class="item" style="text-align: center;"><a href="/franke"><img src="/arquivos/franke_color.png" alt="Owl Image" /></a></div>
+                 <div class="item" style="text-align: center;"><a href="/geonav"><img src="/arquivos/geoanv_color.png" alt="Owl Image" /></a></div>
+                 <div class="item" style="text-align: center;"><a href="/kapazi"><img src="/arquivos/kapazi_color.png" alt="Owl Image" /></a></div>
+                 <div class="item" style="text-align: center;"><a href="/tekbond"><img src="/arquivos/tekbond_color.png" alt="Owl Image" /></a></div>
+                 <div class="item" style="text-align: center;"><a href="/brinox"><img src="/arquivos/brinox_color.png" alt="Owl Image" /></a></div>
+                 <div class="item" style="text-align: center;"><a href="/termolar"><img src="/arquivos/termolar_color.png" alt="Owl Image" /></a></div>
+                
              </div>
- 
  
          </section><!-- #content -->
  
