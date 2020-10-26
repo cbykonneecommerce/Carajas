@@ -121,16 +121,28 @@
 <!--COUNTDOWN-->
                     <ul>
                         <li>
+                            <span>DIAS</span>
+                            <div class="diasblock">
 
+                            </div>
                         </li>
                         <li>
-
+                            <span>HORAS</span>
+                            <div class="horasblock">
+                                
+                            </div>
                         </li>
                         <li>
-
+                            <span>MINUTOS</span>
+                            <div class="minutosblock">
+                                
+                            </div>
                         </li>
                         <li>
-                            
+                            <span>SEGUNDOS</span>
+                            <div class="segundosblock">
+                                
+                            </div>
                         </li>
 
                     </ul>
@@ -452,13 +464,21 @@
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
       // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
+     // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+     // + minutes + "m " + seconds + "s ";
+
+     $(".diasblock").html(`${days}`)
+     $(".horasblock").html(`${hours}`)
+     $(".minutosblock").html(`${minutes}`)
+     $(".segundosblock").html(`${seconds}`)
         
       // If the count down is over, write some text 
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        $(".diasblock").html(`0`)
+     $(".horasblock").html(`0`)
+     $(".minutosblock").html(`0`)
+     $(".segundosblock").html(`0`)
       }
     }, 1000);
     </script>
