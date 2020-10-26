@@ -20,10 +20,34 @@
    // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
    // + minutes + "m " + seconds + "s ";
 
-   $(".diasblock").html(`${days}`)
-   $(".horasblock").html(`${hours}`)
-   $(".minutosblock").html(`${minutes}`)
-   $(".segundosblock").html(`${seconds}`)
+   if(days < 10){
+    $(".diasblock").html(`0${days}`);
+   } else{
+    $(".diasblock").html(`${days}`);
+   }
+
+   
+
+   if(hours < 10) {
+    $(".horasblock").html(`0${hours}`)
+   } else{
+    $(".horasblock").html(`${hours}`)
+   }
+
+   if(minutes < 10){
+    $(".minutosblock").html(`0${minutes}`)
+   } else{
+    $(".minutosblock").html(`${minutes}`)
+   }
+
+   if(seconds < 10){
+    $(".segundosblock").html(`0${seconds}`)
+   } else{
+    $(".segundosblock").html(`${seconds}`)
+   }
+   
+   
+  
       
     // If the count down is over, write some text 
     if (distance < 0) {
@@ -39,13 +63,13 @@
   $(".dropdown-container").hide();
 
 
-$(".dropdown-btn#regulamento1").toggle(() => {
+$(".dropdown-btn#regulamento").toggle(() => {
    
-    $(".dropdown-btn#regulamento1 i").attr('class', 'fa fa-angle-up');
-    $(".dropdown-container#regulamento1").slideDown()
+    $(".dropdown-btn#regulamento i").attr('class', 'fa fa-angle-up');
+    $(".dropdown-container#regulamento").slideDown()
 }, () => {
-    $(".dropdown-container#regulamento1").slideUp()
-    $(".dropdown-btn#regulamento1 i").attr('class', 'fa fa-angle-down');
+    $(".dropdown-container#regulamento").slideUp()
+    $(".dropdown-btn#regulamento i").attr('class', 'fa fa-angle-down');
 })
 
 
