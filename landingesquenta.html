@@ -21,6 +21,7 @@
     font-weight: 800;
     font-size: 44px;
     background-color: #FF7E00;
+    border: solid 4px #FF7E00;
     padding: 11px 24px;
         }
 
@@ -28,7 +29,7 @@
             color: white;
     font-weight: 800;
     font-size: 44px;
-    border: solid 4px #FF7E00;
+   
     border: solid 4px #FF7E00;
     padding: 11px 24px;
         }
@@ -97,6 +98,7 @@
         #newsform #emailformi {
             width: 28%;
             height: 2.5em;
+            margin-top: 2em;
         }
 
         #newsform #nomeformi {
@@ -111,7 +113,7 @@
             height: 2.5em;
         }
 
-        .dropbuttom .dropdown-btn#regulamento#regulamento2 {
+        .dropbuttom .dropdown-btn {
             width: 100%;
             padding-bottom: 1em;
             padding-top: 1em;
@@ -123,7 +125,7 @@
             padding-left: 1em;
         }
 
-        .dropbuttom#regulamento#regulamento2 button i {
+        .dropbuttom button i {
             color: white;
             padding-left: 35%;
             font-size: 23px;
@@ -137,15 +139,9 @@
             padding-bottom: 1.5em;
         }
 
-        .dropdown-container#regulamento,
-        .dropdown-container#regulamento2 {
-            font-size: 20px;
-            padding-top: 10px;
-            padding-left: 10px;
-        }
-
-        .dropdown-container#regulamento,
-        .dropdown-container#regulamento3 {
+        .dropdown-container#regulamento a,
+        .dropdown-container#regulamento2 a {
+            display: block !important;
             font-size: 20px;
             padding-top: 10px;
             padding-left: 10px;
@@ -268,32 +264,37 @@
                 </div>
             </div>
 
+            <div class="row">
 
-        <div class="row">
+                <p
+                    style="margin-top: 1em; margin-bottom: 1em;color: white; text-align: center;font-size: 20px;text-transform: uppercase;">
+                    Confira as <span style="color: #FF7E00;">principais categorias</span> procuradas na black friday</p>
 
-            <p
-                style="margin-top: 1em; margin-bottom: 1em;color: white; text-align: center;font-size: 20px;text-transform: uppercase;">
-                Confira as <span style="color: #FF7E00;">principais categorias</span> procuradas na black friday</p>
+                <ul class="banners-cole">
+                    <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/telefonia"><img
+                                src="/arquivos/carajas-landing-categorias-esquentablack1.png" alt="smartphone" /></a>
+                    </li>
+                    <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/audio---video"><img
+                                src="/arquivos/carajas-landing-categorias-esquentablack2.png" alt="audio e video" /></a>
+                    </li>
+                    <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/eletrodomesticos"><img
+                                src="/arquivos/carajas-landing-categorias-esquentablack3.png"
+                                alt="eletrodomesticos" /></a>
+                    </li>
+                    <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/climatizacao"><img
+                                src="/arquivos/carajas-landing-categorias-esquentablack4.png" alt="climatizaçao" /></a>
+                    </li>
+                    <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/eletroportateis"><img
+                                src="/arquivos/carajas-landing-categorias-esquentablack5.png"
+                                alt="eletroportateis" /></a>
+                    </li>
+                </ul>
 
-            <ul class="banners-cole">
-                <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/telefonia"><img
-                            src="/arquivos/carajas-landing-categorias-esquentablack1.png" alt="smartphone" /></a></li>
-                <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/audio---video"><img
-                            src="/arquivos/carajas-landing-categorias-esquentablack2.png" alt="audio e video" /></a>
-                </li>
-                <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/eletrodomesticos"><img
-                            src="/arquivos/carajas-landing-categorias-esquentablack3.png" alt="eletrodomesticos" /></a>
-                </li>
-                <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/climatizacao"><img
-                            src="/arquivos/carajas-landing-categorias-esquentablack4.png" alt="climatizaçao" /></a></li>
-                <li><a href="https://www.carajasonline.com/eletro-eletronico-e-tecnologia/eletroportateis"><img
-                            src="/arquivos/carajas-landing-categorias-esquentablack5.png" alt="eletroportateis" /></a>
-                </li>
-            </ul>
-
-            <p
-                style="margin-top: 1em; margin-bottom: 1em;color: white;text-align: center;font-size: 20px;text-transform: uppercase;">
-                Temos <span style="color: #FF7E00;">5 super dicas</span> para você curtir a black friday ao máximo: </p>
+                <p
+                    style="margin-top: 1em; margin-bottom: 1em;color: white;text-align: center;font-size: 20px;text-transform: uppercase;">
+                    Temos <span style="color: #FF7E00;">5 super dicas</span> para você curtir a black friday ao máximo:
+                </p>
+            </div>
         </div>
 
 
@@ -422,7 +423,8 @@
             <div class="row">
                 <div class="dropbuttom col-xs-12" style="padding: 0;
                 padding-bottom: 1px;">
-                    <button class="dropdown-btn" id="regulamento">CONDIÇÕES DE PARTICIPAÇÃO:
+                    <button class="dropdown-btn" id="regulamento" style="font-weight: bold;color: black;">CONDIÇÕES DE
+                        PARTICIPAÇÃO:
                         <i class="fa fa-angle-down"></i>
                     </button>
                     <div class="dropdown-container" id="regulamento">
@@ -468,7 +470,8 @@
             <div class="row">
                 <div class="dropbuttom col-xs-12" style="padding: 0;
             padding-bottom: 1px;">
-                    <button class="dropdown-btn" id="regulamento2">DURAÇÃO DA PROMOÇÃO ASSOCIADA ÀS DIRETRIZES
+                    <button class="dropdown-btn" id="regulamento2" style="font-weight: bold;color: black;">DURAÇÃO DA
+                        PROMOÇÃO ASSOCIADA ÀS DIRETRIZES
                         DE FRETE
                         GRÁTIS
                         <i class="fa fa-angle-down"></i>
@@ -507,7 +510,8 @@
             <div class="row">
                 <div class="dropbuttom col-xs-12" style="padding: 0;
             padding-bottom: 1px;">
-                    <button class="dropdown-btn" id="regulamento3">DISPOSIÇÕES FINAIS
+                    <button class="dropdown-btn" id="regulamento3" style="font-weight: bold;color: black;">DISPOSIÇÕES
+                        FINAIS
                         <i class="fa fa-angle-down"></i>
                     </button>
                     <div class="dropdown-container" id="regulamento3">
@@ -537,7 +541,7 @@
         <!-- /SubTemplate: Footer -->
 
     </div><!-- .container-fluid -->
-</div>
+
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
@@ -565,7 +569,6 @@
 </body>
 
 <script src="/arquivos/countdownBF.js"></script>
-
 
 <vtex:template id="commonScripts" />
 
