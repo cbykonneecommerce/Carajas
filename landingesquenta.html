@@ -93,6 +93,13 @@
             padding-left: 1em;
         }
 
+        .dropbuttom button i {
+            color: white;
+            padding-left: 35%;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
 
         @media screen and (min-width: 1200px) {
             .text-landing {
@@ -127,7 +134,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-<!--COUNTDOWN-->
+                    <!--COUNTDOWN-->
                     <ul>
                         <li>
 
@@ -139,7 +146,7 @@
 
                         </li>
                         <li>
-                            
+
                         </li>
 
                     </ul>
@@ -353,10 +360,37 @@
                         <p>Promoção válida para produtos vendidos e entregues pela CARAJÁS, conforme as condições de
                             frete direcionadas às regiões indicadas abaixo:</p>
                         <table>
-                            <td>
-                                <th>Região</th>
+                            <td> Região
+                                <tr>Alagoas (capital e região metropolitana)</tr>
+                                <tr>Paraíba (capital e região metropolitana)</tr>
+                                <tr>Ceará (capital e região metropolitana)</tr>
+                                <tr>Rio Grande do Norte (capital e região metropolitana)</tr>
+                            </td>
+
+                            <td> Regras
+                                <tr>GRÁTIS a partir de R$ 399,00</tr>
+                                <tr>GRÁTIS a partir de R$ 399,00</tr>
+                                <tr>GRÁTIS a partir de R$ 399,00</tr>
+                                <tr>GRÁTIS a partir de R$ 399,00</tr>
                             </td>
                         </table>
+                        <p>OBS: Consulte os CEP’s participantes.</p>
+                        <table>
+                            <td> Região
+                                <tr>Alagoas (interior)</tr>
+                                <tr>Paraíba (interior)</tr>
+                                <tr>Ceará (interior)</tr>
+                                <tr>Rio Grande do Norte (interior)</tr>
+                            </td>
+
+                            <td> Regras
+                                <tr>GRÁTIS a partir de R$ 599,00</tr>
+                                <tr>GRÁTIS a partir de R$ 599,00</tr>
+                                <tr>GRÁTIS a partir de R$ 599,00</tr>
+                                <tr>GRÁTIS a partir de R$ 599,00</tr>
+                            </td>
+                        </table>
+                        <p>OBS: Consulte os CEP’s participantes.</p>
                     </div>
                 </div>
             </div>
@@ -461,33 +495,33 @@
 <script>
     // Set the date we're counting down to
     var countDownDate = new Date("Nov 27, 2020 00:00:00").getTime();
-    
+
     // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-        
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-        
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-      // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-        
-      // If the count down is over, write some text 
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
     }, 1000);
-    </script>
+</script>
 
 <vtex:template id="commonScripts" />
 
