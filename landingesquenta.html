@@ -16,28 +16,31 @@
             justify-content: space-between;
         }
 
-        .diasblock{
+        .diasblock {
             color: white;
-    font-weight: 800;
-    font-size: 44px;
-    background-color: #FF7E00;
-    border: solid 4px #FF7E00;
-    padding: 11px 24px;
+            font-weight: 800;
+            font-size: 44px;
+            background-color: #FF7E00;
+            border: solid 4px #FF7E00;
+            padding: 11px 24px;
         }
 
-        .horasblock, .minutosblock, .segundosblock{
+        .horasblock,
+        .minutosblock,
+        .segundosblock {
             color: white;
-    font-weight: 800;
-    font-size: 44px;
-   
-    border: solid 4px #FF7E00;
-    padding: 11px 24px;
+            font-weight: 800;
+            font-size: 44px;
+
+            border: solid 4px #FF7E00;
+            padding: 11px 24px;
         }
 
-        .thefinalcountdown li{
-           text-align: center;
+        .thefinalcountdown li {
+            text-align: center;
         }
-        .thefinalcountdown li span{
+
+        .thefinalcountdown li span {
             color: white;
             line-height: 25px;
         }
@@ -95,30 +98,20 @@
             justify-content: center;
         }
 
-        #newsform #emailformi {
-            width: 28%;
-            height: 2.5em;
-            margin-right: 10px;
-        }
-
-        #newsform #nomeformi {
-            width: 28%;
-            height: 2.5em;
-            margin-right: 10px;
-        }
-
         #newsform #commitlanding {
             background-color: #353839;
             color: white;
-            height:3.5em;
+            height: 3.5em;
         }
 
-        .dropbuttom .dropdown-btn#regulamento#regulamento2#regulamento3 {
+        .dropbuttom .dropdown-btn#regulamento,
+        .dropbuttom .dropdown-btn#regulamento2,
+        .dropbuttom .dropdown-btn#regulamento3 {
             width: 100%;
             padding-bottom: 1em;
             padding-top: 1em;
             color: white;
-            background-color: #393939  !important;
+            background-color: #393939 !important;
             font-size: 16px;
             text-align: left;
             outline: none !important;
@@ -133,7 +126,7 @@
         }
 
         .dropdown-container#regulamento,
-        .dropdown-container#regulamento2
+        .dropdown-container#regulamento2,
         .dropdown-container#regulamento3 {
             background-color: #393939;
             padding: 8px;
@@ -141,18 +134,55 @@
             color: white;
         }
 
-        .dropdown-container#regulamento a,
-        .dropdown-container#regulamento2 a {
-            display: block !important;
+        .dropdown-container#regulamento,
+        .dropdown-container#regulamento2 {
             font-size: 20px;
             padding-top: 10px;
             padding-left: 10px;
         }
 
+        .dropdown-container#regulamento,
+        .dropdown-container#regulamento3 {
+            font-size: 20px;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        td {
+            border: solid 1px white;
+            line-height: 30px;
+            background-color: white;
+            text-align: center;
+            color: black;
+        }
+
+        tr {
+            border: solid 1px white;
+            background-color: black;
+            text-align: center;
+            color: white
+        }
+
+        #commit {}
+
 
         @media screen and (min-width: 1200px) {
             .text-landing {
                 padding: 7em;
+            }
+        }
+
+        @media screen and (min-width: 720px) {
+            #nameform {
+                margin-bottom: 1em;
+            }
+
+            #emailform {
+                margin-bottom: 1em;
+            }
+
+            #newstext {
+                margin-top: 2em;
             }
         }
     </style>
@@ -222,15 +252,17 @@
 
         <div class="container-fluid" style="background-color: #FF7E00;margin-top: 4em;">
 
-            <div class="hidden-lg" style="font-size: 1.3em;color: white;text-align: center;"> <h3>Quer receber nossas novidades?Cadastde-se</h3></div>
+            <div class="hidden-lg" style="font-size: 1.3em;color: white;text-align: center;">
+                <h3>Quer receber nossas novidades? Cadastre-se</h3>
+            </div>
             <div class="row" id="newsletter">
                 <div class="col-sm-4 col-sm-offset-1 col-xs-4 visible-lg" id="newstext">
-                    <h3>Quer receber nossas ofertas especiais? Cadastde-se</h3>
+                    <h3>Quer receber nossas novidades? Cadastre-se</h3>
                 </div>
                 <div class="col-lg-8 col-xs-12" id="newsform">
                     <input id="nameform" type="name" placeholder="Seu nome" style="margin-right: 10px;" />
                     <input id="emailform" type="email" placeholder="E-mail" />
-                    <input id="commitlanding" name="commit" type="submit" value="ENVIAR" />
+                    <input id="commit" name="commit" type="submit" value="ENVIAR" />
                 </div>
             </div>
         </div>
@@ -259,8 +291,8 @@
                         Em 2020, a Black Friday acontece no dia 27 de novembro, mas na Carajás, as ofertas começam antes
                         e duram o mês inteiro.<br /><br />
                         Selecionamos os itens mais desejados para você comprar tudo o que precisa e ainda economizar.
-                        Tem eletdodomésticos, pisos e revestimentos, tintas e acessórios, smartphones, materiais de
-                        constdução e muito mais.<br /><br />
+                        Tem eletrodomésticos, pisos e revestimentos, tintas e acessórios, smartphones, materiais de
+                        construção e muito mais.<br /><br />
                         Essa é uma excelente oportunidade de marcar o início do período de compras, que vai até o Natal.
                         Os produtos da campanha serão sinalizados para você garantir o menor preço.<br /><br />
                         <span style="color: #FF7E00;font-size: 20px;margin-top: 1em;">Aproveite!</span>
@@ -274,7 +306,7 @@
         <div class="row">
 
             <p
-                style="margin-top: 1em; margin-bottom: 1em;color: white; text-align: center;font-size: 20px;text-tdansform: uppercase;">
+                style="margin-top: 1em; margin-bottom: 1em;color: white; text-align: center;font-size: 20px;text-transform: uppercase;">
                 Confira as <span style="color: #FF7E00;">principais categorias</span> procuradas na black friday</p>
 
             <ul class="banners-cole">
@@ -294,7 +326,7 @@
             </ul>
 
             <p
-                style="margin-top: 1em; margin-bottom: 1em;color: white;text-align: center;font-size: 20px;text-tdansform: uppercase;">
+                style="margin-top: 1em; margin-bottom: 1em;color: white;text-align: center;font-size: 20px;text-transform: uppercase;">
                 Temos <span style="color: #FF7E00;">5 super dicas</span> para você curtir a black friday ao máximo: </p>
         </div>
 
@@ -311,7 +343,7 @@
                         antecedência e defina exatamente o que
                         você deseja comprar.
                         Smartphone? Geladeira? Ar-condicionado? TV? Micro-ondas? A Carajás garante os melhores produtos
-                        a preços superespeciais! </p>
+                        a preços super especiais! </p>
                 </div>
 
             </div>
@@ -341,7 +373,7 @@
                         descrições técnicas do
                         produto para evitar qualquer engano. Ninguém gosta de ser surpreendido com uma encomenda errada
                         em casa, não é mesmo?
-                        Se o preço do item mudar quando ele for inserido no carrinho de compras, cuidado. Entde em
+                        Se o preço do item mudar quando ele for inserido no carrinho de compras, cuidado. Entre em
                         contato com a empresa responsável imediatamente.
                     </p>
                 </div>
@@ -353,9 +385,8 @@
                 </div>
 
                 <div class="col-md-6" style="border-left: solid 2px #FF7E00;margin-bottom: 10px;">
-                    <p style="color: white;line-height: 22px;font-size: 17px;">Confira o prazo de entdega do produto e
-                        os dias necessários para que ele
-                        chegue até a sua casa.
+                    <p style="color: white;line-height: 22px;font-size: 17px;">Confira o prazo de entrega do produto e
+                        os dias necessários para que ele chegue até a sua casa.
                         Durante este período, pode acontecer de o item demorar um pouco mais para chegar que o normal.
                         Informe-se sobre isso para evitar dor de cabeça, combinado?
                     </p>
@@ -371,7 +402,7 @@
                     <p style="color: white; line-height: 22px;font-size: 17px;">Para comprar os melhores produtos a
                         preços imperdíveis e saber das
                         promoções antes de todo mundo,
-                        cadastde-se no site com antecedência. Não deixe para o dia 27. Crie logo a sua conta e recebe
+                        cadastre-se no site com antecedência. Não deixe para o dia 27. Crie logo a sua conta e recebe
                         ofertas exclusivas por e-mail.</p>
                 </div>
 
@@ -381,15 +412,17 @@
 
         <div class="container-fluid" style="background-color: #FF7E00;margin-top: 4em;">
 
-            <div class="hidden-lg" style="font-size: 1.3em;color: white;text-align: center;"> <h3>Quer receber nossas novidades?</h3></div>
+            <div class="hidden-lg" style="font-size: 1.3em;color: white;text-align: center;">
+                <h3>Quer receber nossas novidades? Cadastre-se</h3>
+            </div>
             <div class="row" id="newsletter">
                 <div class="col-sm-4 col-sm-offset-1 col-xs-4 visible-lg" id="newstext">
-                    <h3>Quer receber nossas ofertas especiais? Cadastde-se</h3>
+                    <h3>Quer receber nossas novidades? Cadastre-se</h3>
                 </div>
                 <div class="col-lg-8 col-xs-12" id="newsform">
                     <input id="nameform" type="name" placeholder="Seu nome" style="margin-right: 10px;" />
                     <input id="emailform" type="email" placeholder="E-mail" />
-                    <input id="commitlanding" name="commit" type="submit" value="ENVIAR" />
+                    <input id="commit" name="commit" type="submit" value="ENVIAR" />
                 </div>
             </div>
         </div>
@@ -401,8 +434,9 @@
                     <img src="/arquivos/carajas-landing-contatos-esquentablack1.png" alt="" />
                     <a href="https://apps.apple.com/br/app/carajas/id1508001631" style="    margin: 8px;"><img
                             src="/arquivos/carajas-landing-contatosbotao-esquentablack2.png" alt="" /></a>
-                    <a href="https://play.google.com/store/apps/details?id=carajas.carajas" style="    margin: 8px;"><img
-                            src="/arquivos/carajas-landing-contatosbotao-esquentablack1.png" alt="" /></a>
+                    <a href="https://play.google.com/store/apps/details?id=carajas.carajas"
+                        style="    margin: 8px;"><img src="/arquivos/carajas-landing-contatosbotao-esquentablack1.png"
+                            alt="" /></a>
                 </div>
                 <div class="">
                     <img src="/arquivos/carajas-landing-contatos-esquentablack2.png" alt="" />
@@ -426,41 +460,55 @@
                 <div class="dropbuttom col-xs-12" style="padding: 0;
                 padding-bottom: 1px;">
                     <button class="dropdown-btn" id="regulamento">CONDIÇÕES DE
-                        PARTICIPAÇÃO:
+                        PARTICIPAÇÃO
                         <i class="fa fa-angle-down"></i>
                     </button>
                     <div class="dropdown-container" id="regulamento">
-                        <p>Promoção válida para produtos vendidos e entdegues pela CARAJÁS,
+                        <p>Promoção válida para produtos vendidos e entregues pela CARAJÁS,
                             conforme as condições de
                             frete direcionadas às regiões indicadas abaixo:</p>
                         <table>
-                            <tr> Região
-                                <td>Alagoas (capital e região metdopolitana)</td>
-                                <td>Paraíba (capital e região metdopolitana)</td>
-                                <td>Ceará (capital e região metdopolitana)</td>
-                                <td>Rio Grande do Norte (capital e região metdopolitana)</td>
+                            <tr>
+                                <th>Região</th>
+                                <th>Regras</th>
                             </tr>
-
-                            <tr> Regras
+                            <tr>
+                                <td>Alagoas (capital e região metropolitana)</td>
                                 <td>GRÁTIS a partir de R$ 399,00</td>
+                            </tr>
+                            <tr>
+                                <td>Paraíba (capital e região metropolitana)</td>
                                 <td>GRÁTIS a partir de R$ 399,00</td>
+                            </tr>
+                            <tr>
+                                <td>Ceará (capital e região metropolitana)</td>
                                 <td>GRÁTIS a partir de R$ 399,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rio Grande do Norte (capital e região metropolitana)</td>
                                 <td>GRÁTIS a partir de R$ 399,00</td>
                             </tr>
                         </table>
                         <p>OBS: Consulte os CEP’s participantes.</p>
                         <table>
-                            <tr> Região
-                                <td>Alagoas (interior)</td>
-                                <td>Paraíba (interior)</td>
-                                <td>Ceará (interior)</td>
-                                <td>Rio Grande do Norte (interior)</td>
+                            <tr>
+                                <th>Região</th>
+                                <th>Regras</th>
                             </tr>
-
-                            <tr> Regras
+                            <tr>
+                                <td>Alagoas (interior)</td>
                                 <td>GRÁTIS a partir de R$ 599,00</td>
+                            </tr>
+                            <tr>
+                                <td>Paraíba (interior)</td>
                                 <td>GRÁTIS a partir de R$ 599,00</td>
+                            </tr>
+                            <tr>
+                                <td>Ceará (interior)</td>
                                 <td>GRÁTIS a partir de R$ 599,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rio Grande do Norte (interior)</td>
                                 <td>GRÁTIS a partir de R$ 599,00</td>
                             </tr>
                         </table>
@@ -472,17 +520,17 @@
             <div class="row">
                 <div class="dropbuttom col-xs-12" style="padding: 0;
             padding-bottom: 1px;">
-                    <button class="dropdown-btn" id="regulamento2">DURAÇÃO DA PROMOÇÃO ASSOCIADA ÀS DIREtdIZES
+                    <button class="dropdown-btn" id="regulamento2">DURAÇÃO DA PROMOÇÃO ASSOCIADA ÀS DIRETRIZES
                         DE FRETE
                         GRÁTIS
                         <i class="fa fa-angle-down"></i>
                     </button>
                     <div class="dropdown-container" id="regulamento2">
-                        <p> A promoção é válida durante o período de <span
-                                style="color: black; font-weight: bold;"> 26/10 a 31/10.</span>
+                        <p> A promoção é válida durante o período de <span style="color: black; font-weight: bold;">
+                                26/10 a 31/10.</span>
                             <span style="color: black; font-weight: bold;">REGRAS GERAIS</span>
-                            Promoção não cumulativa com cupons de desconto ou outdas promoções. <br /><br />
-                            Promoção válida apenas para produtos vendidos e entdegues pela CARAJÁS. <br /><br />
+                            Promoção não cumulativa com cupons de desconto ou outras promoções. <br /><br />
+                            Promoção válida apenas para produtos vendidos e entregues pela CARAJÁS. <br /><br />
                             A promoção também é válida para a compra de um ou mais produtos ou de produtos distintos no
                             mesmo carrinho de compra.<br /><br />
                             O benefício destina-se unicamente aos <span
@@ -490,7 +538,7 @@
                             comercialização
                             por terceiros.<br /><br />
                             Após selecionar o(s) produto(s), o cliente deverá colocá-lo(s) no carrinho de compras e
-                            clicar no botão <span style="color: black; font-weight: bold;">COMPRAR.</span> <br /><br />
+                            clicar no botão <span style="color: black; font-weight: bold;">COMPRAR.</span><br /><br />
                             Na tela de identificação, o cliente deverá fazer o <span
                                 style="color: black; font-weight: bold;">login</span> ou cadastdar-se caso seja sua
                             primeira compra. O cliente deve escolher a <span
@@ -500,9 +548,9 @@
                             pedido. A compra será efetivada somente quando os pedidos forem <span
                                 style="color: black; font-weight: bold;">aprovados</span> e
                             <span style="color: black; font-weight: bold;">faturados.</span> <br /><br />
-                            Em caso de cancelamento da compra em virtude de arrependimento, tdoca ou devolução, o valor
+                            Em caso de cancelamento da compra em virtude de arrependimento, troca ou devolução, o valor
                             a ser restituído será o mesmo do pagamento efetuado, já incluído o desconto. (Consulte os
-                            termos da política de tdoca e cancelamentos em
+                            termos da política de troca e cancelamentos em
                             https://www.carajasonline.com/institucional/politica-tdocas).
                         </p>
                     </div>
@@ -517,7 +565,7 @@
                     </button>
                     <div class="dropdown-container" id="regulamento3">
                         <p>
-                            A participação na promoção (Frete Grátis) implica na aceitação total e irrestdita pelo
+                            A participação na promoção (Frete Grátis) implica na aceitação total e irrestrita pelo
                             participante de todos os itens deste regulamento, seus termos e condições.
                             O presente regulamento poderá ser alterado e/ou a promoção suspensa e/ou cancelada a
                             qualquer momento, sem aviso prévio.<br /><br />
