@@ -66,7 +66,6 @@
         #newsform #emailformi {
             width: 28%;
             height: 2.5em;
-            margin-top: 2em;
         }
 
         #newsform #nomeformi {
@@ -81,7 +80,7 @@
             height: 2.5em;
         }
 
-        .dropbuttom .dropdown-btn {
+        .dropbuttom .dropdown-btn#regulamento#regulamento2 {
             width: 100%;
             padding-bottom: 1em;
             padding-top: 1em;
@@ -93,7 +92,7 @@
             padding-left: 1em;
         }
 
-        .dropbuttom button i {
+        .dropbuttom#regulamento#regulamento2 button i {
             color: white;
             padding-left: 35%;
             font-size: 23px;
@@ -107,9 +106,15 @@
             padding-bottom: 1.5em;
         }
 
-        .dropdown-container#regulamento a,
-        .dropdown-container#regulamento2 a {
-            display: block !important;
+        .dropdown-container#regulamento,
+        .dropdown-container#regulamento2 {
+            font-size: 20px;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        .dropdown-container#regulamento,
+        .dropdown-container#regulamento3 {
             font-size: 20px;
             padding-top: 10px;
             padding-left: 10px;
@@ -232,6 +237,7 @@
                 </div>
             </div>
         </div>
+
 
         <div class="row">
 
@@ -382,7 +388,7 @@
             <div class="row">
                 <div class="dropbuttom col-xs-12" style="padding: 0;
                 padding-bottom: 1px;">
-                    <button class="dropdown-btn" id="regulamento" style="font-weight: bold;color: black;">CONDIÇÕES DE PARTICIPAÇÃO:
+                    <button class="dropdown-btn" id="regulamento">CONDIÇÕES DE PARTICIPAÇÃO:
                         <i class="fa fa-angle-down"></i>
                     </button>
                     <div class="dropdown-container" id="regulamento">
@@ -427,7 +433,7 @@
             <div class="row">
                 <div class="dropbuttom col-xs-12" style="padding: 0;
             padding-bottom: 1px;">
-                    <button class="dropdown-btn" id="regulamento2" style="font-weight: bold;color: black;">DURAÇÃO DA PROMOÇÃO ASSOCIADA ÀS DIRETRIZES
+                    <button class="dropdown-btn" id="regulamento2">DURAÇÃO DA PROMOÇÃO ASSOCIADA ÀS DIRETRIZES
                         DE FRETE
                         GRÁTIS
                         <i class="fa fa-angle-down"></i>
@@ -459,7 +465,7 @@
             <div class="row">
                 <div class="dropbuttom col-xs-12" style="padding: 0;
             padding-bottom: 1px;">
-                    <button class="dropdown-btn" id="regulamento3" style="font-weight: bold;color: black;">DISPOSIÇÕES FINAIS
+                    <button class="dropdown-btn" id="regulamento3">DISPOSIÇÕES FINAIS
                         <i class="fa fa-angle-down"></i>
                     </button>
                     <div class="dropdown-container" id="regulamento3">
@@ -517,6 +523,7 @@
 </body>
 
 <script src="/arquivos/countdownBF.js"></script>
+
 
 <vtex:template id="commonScripts" />
 
