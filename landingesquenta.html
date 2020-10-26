@@ -10,6 +10,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
+        .thefinalcountdown {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+
+        .diasblock{
+            color: white;
+    font-weight: 800;
+    font-size: 44px;
+    background-color: #FF7E00;
+    padding: 11px 24px;
+        }
+
+        .horasblock, .minutosblock, .segundosblock{
+            color: white;
+    font-weight: 800;
+    font-size: 44px;
+    border: solid 4px #FF7E00;
+    padding: 11px 24px;
+        }
+
+        .thefinalcountdown li{
+           text-align: center;
+        }
+        .thefinalcountdown li span{
+            color: white;
+            line-height: 25px;
+        }
+
         #home-page {
             background-color: black
         }
@@ -155,7 +185,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <!--COUNTDOWN-->
-                    <ul>
+                    <ul class="thefinalcountdown">
                         <li>
                             <span>DIAS</span>
                             <div class="diasblock">
@@ -165,19 +195,19 @@
                         <li>
                             <span>HORAS</span>
                             <div class="horasblock">
-                                
+
                             </div>
                         </li>
                         <li>
                             <span>MINUTOS</span>
                             <div class="minutosblock">
-                                
+
                             </div>
                         </li>
                         <li>
                             <span>SEGUNDOS</span>
                             <div class="segundosblock">
-                                
+
                             </div>
                         </li>
 
@@ -236,7 +266,6 @@
                     </p>
                 </div>
             </div>
-        </div>
 
 
         <div class="row">
@@ -265,6 +294,8 @@
                 style="margin-top: 1em; margin-bottom: 1em;color: white;text-align: center;font-size: 20px;text-transform: uppercase;">
                 Temos <span style="color: #FF7E00;">5 super dicas</span> para você curtir a black friday ao máximo: </p>
         </div>
+
+
 
         <section id="home-content" class="container" style="padding: 7em;">
             <div class="row">
@@ -359,20 +390,22 @@
         </div>
 
         <div class="container">
-            <div class="row" style="margin-top: 3em;">
-                <div class="col-md-4">
+            <div class="row" style="margin-top: 3em;display: flex;
+            align-items: stretch;
+            justify-content: space-between;">
+                <div class="">
                     <img src="/arquivos/carajas-landing-contatos-esquentablack1.png" alt="" />
                     <a href="https://apps.apple.com/br/app/carajas/id1508001631"><img
                             src="/arquivos/carajas-landing-contatosbotao-esquentablack2.png" alt="" /></a>
                     <a href="https://play.google.com/store/apps/details?id=carajas.carajas"><img
                             src="/arquivos/carajas-landing-contatosbotao-esquentablack1.png" alt="" /></a>
                 </div>
-                <div class="col-md-4">
+                <div class="">
                     <img src="/arquivos/carajas-landing-contatos-esquentablack2.png" alt="" />
                     <a href="https://wa.me/551140032020"><img
                             src="/arquivos/carajas-landing-contatosbotao-esquentablack3.png" alt="" /></a>
                 </div>
-                <div class="col-md-4">
+                <div class="">
                     <img src="/arquivos/carajas-landing-contatos-esquentablack3.png" alt="" />
                 </div>
             </div>
@@ -392,7 +425,8 @@
                         <i class="fa fa-angle-down"></i>
                     </button>
                     <div class="dropdown-container" id="regulamento">
-                        <p style="color: #767676;">Promoção válida para produtos vendidos e entregues pela CARAJÁS, conforme as condições de
+                        <p style="color: #767676;">Promoção válida para produtos vendidos e entregues pela CARAJÁS,
+                            conforme as condições de
                             frete direcionadas às regiões indicadas abaixo:</p>
                         <table>
                             <td> Região
@@ -439,21 +473,28 @@
                         <i class="fa fa-angle-down"></i>
                     </button>
                     <div class="dropdown-container" id="regulamento2">
-                        <p style="color: #767676;"> A promoção é válida durante o período de <span style="color: black; font-weight: bold;"> 26/10 a 31/10.</span>
-                           <span  style="color: black; font-weight: bold;">REGRAS GERAIS</span> 
+                        <p style="color: #767676;"> A promoção é válida durante o período de <span
+                                style="color: black; font-weight: bold;"> 26/10 a 31/10.</span>
+                            <span style="color: black; font-weight: bold;">REGRAS GERAIS</span>
                             Promoção não cumulativa com cupons de desconto ou outras promoções. <br /><br />
                             Promoção válida apenas para produtos vendidos e entregues pela CARAJÁS. <br /><br />
                             A promoção também é válida para a compra de um ou mais produtos ou de produtos distintos no
                             mesmo carrinho de compra.<br /><br />
-                            O benefício destina-se unicamente aos <span  style="color: black; font-weight: bold;">clientes,</span> não podendo ser objeto de comercialização
+                            O benefício destina-se unicamente aos <span
+                                style="color: black; font-weight: bold;">clientes,</span> não podendo ser objeto de
+                            comercialização
                             por terceiros.<br /><br />
                             Após selecionar o(s) produto(s), o cliente deverá colocá-lo(s) no carrinho de compras e
-                            clicar no botão <span style="color: black; font-weight: bold;">COMPRAR.</span> <br/><br/>
-                            Na tela de identificação, o cliente deverá fazer o <span style="color: black; font-weight: bold;">login</span> ou cadastrar-se caso seja sua
-                            primeira compra. O cliente deve escolher a <span style="color: black; font-weight: bold;">forma de pagamento</span> e a  <span style="color: black; font-weight: bold;">forma de entrega</span> para
+                            clicar no botão <span style="color: black; font-weight: bold;">COMPRAR.</span> <br /><br />
+                            Na tela de identificação, o cliente deverá fazer o <span
+                                style="color: black; font-weight: bold;">login</span> ou cadastrar-se caso seja sua
+                            primeira compra. O cliente deve escolher a <span
+                                style="color: black; font-weight: bold;">forma de pagamento</span> e a <span
+                                style="color: black; font-weight: bold;">forma de entrega</span> para
                             finalizar o
-                            pedido. A compra será efetivada somente quando os pedidos forem <span style="color: black; font-weight: bold;">aprovados</span> e
-                            <span style="color: black; font-weight: bold;">faturados.</span>  <br /><br />
+                            pedido. A compra será efetivada somente quando os pedidos forem <span
+                                style="color: black; font-weight: bold;">aprovados</span> e
+                            <span style="color: black; font-weight: bold;">faturados.</span> <br /><br />
                             Em caso de cancelamento da compra em virtude de arrependimento, troca ou devolução, o valor
                             a ser restituído será o mesmo do pagamento efetuado, já incluído o desconto. (Consulte os
                             termos da política de troca e cancelamentos em
