@@ -163,27 +163,85 @@
             color: white
         }
 
-        #commit {}
+        #newsform #committ {
+            margin-left: 3em;
+            width: 18%;
+            background-color: #393939;
+            color: white;
+            border: none;
+            border-radius: 1px;
+            font-weight: 700;
+            height: 3.5em;
+            margin-top: 1px;
+        }
 
 
         @media screen and (min-width: 1200px) {
             .text-landing {
-                padding: 7em;
+                padding: 3em;
             }
         }
 
-        @media screen and (min-width: 720px) {
+        @media screen and (max-width: 630px) {
             #nameform {
-                margin-bottom: 1em;
+                margin-bottom: 3px;
             }
 
             #emailform {
-                margin-bottom: 1em;
+                margin-bottom: 3px;
             }
 
             #newstext {
                 margin-top: 2em;
             }
+
+            .banners-cole {
+                padding: 2em;
+            }
+
+            #committ {
+                width: 81%;
+                margin-bottom: 7px
+            }
+
+            .banners-cole {
+                padding: 2em;
+
+            }
+
+            #newsform #committ {
+                margin-left: 3em;
+                width: 77%;
+                background-color: #393939;
+                color: white;
+                border: none;
+                border-radius: 1px;
+                font-weight: 700;
+                height: 3.5em;
+                margin-top: 1px;
+            }
+
+            #newsmob {
+                margin-top: 6em;
+            }
+
+            .text-landing {
+                padding: 1em;
+            }
+
+            .regrasmob {
+                font-size: 15px;
+            }
+
+            .dicasmob {
+                padding-left: 6em;
+            }
+
+            .textdicasmob {
+                padding-left: 2em;
+            }
+
+
         }
     </style>
 
@@ -250,25 +308,25 @@
             </div>
         </div>
 
-        <div class="container-fluid" style="background-color: #FF7E00;margin-top: 4em;">
-
+        <div class="col-sm-4 col-sm-offset-1 col-xs-4 visible-lg" id="newstext">
+            <h3 style="margin-top: 24px;">Quer receber nossas novidades? Cadastre-se</h3>
+        </div>
+        <div class="container-fluid" id="newsmob" style="background-color: #FF7E00; margin-top: 4em;">
             <div class="hidden-lg" style="font-size: 1.3em;color: white;text-align: center;">
-                <h3>Quer receber nossas novidades? Cadastre-se</h3>
+                <h3 style="margin-top: 24px;" >Quer receber nossas novidades? Cadastre-se</h3>
             </div>
             <div class="row" id="newsletter">
-                <div class="col-sm-4 col-sm-offset-1 col-xs-4 visible-lg" id="newstext">
-                    <h3>Quer receber nossas novidades? Cadastre-se</h3>
-                </div>
-                <div class="col-lg-8 col-xs-12" id="newsform">
+                <div class="col-lg-12 col-xs-12" id="newsform">
                     <input id="nameform" type="name" placeholder="Seu nome" style="margin-right: 10px;" />
                     <input id="emailform" type="email" placeholder="E-mail" />
-                    <input id="commit" name="commit" type="submit" value="ENVIAR" />
+                    <input id="committ" name="commit" type="submit" value="ENVIAR" />
                 </div>
             </div>
         </div>
 
         <div class="col-md-12" style="margin-top: 2.5em; ">
-            <p style="font-size: 10px; font-weight: bold;text-align: center; color: white;">*Consulte condições de frete
+            <p class="regrasmob" style="font-size: 10px; font-weight: bold;text-align: center; color: white;">*Consulte
+                condições de frete
                 grátis
                 no regulamento da campanha.
                 ** O valor do frete varia de acordo com a localidade.
@@ -279,11 +337,12 @@
         <div class="container">
             <div class="row">
                 <div class="row-md-12" style="text-align: center;">
-                    <img src="/arquivos/carajas-landing-title-esquentablack.png" alt="" style=" margin-top: 1em;" />
+                    <img src="/arquivos/carajas-landing-title-esquentablack.png" alt=""
+                        style=" margin-top: 1em; margin-bottom: 1em;" />
                 </div>
                 <div class="row-md-12">
-                    <p class="text-landing" style="color: white; font-size: 20px; border-bottom: solid 2px #FF7E00;">A
-                        Black
+                    <p class="text-landing" style="color: white; font-size: 20px; border-bottom: solid 2px #FF7E00;">
+                        A Black
                         Friday é uma grande liquidação que começou nos Estados Unidos e geralmente acontece após
                         o feriado do Dia de Ação de Graças (Thanksgiving) no país. Com o passar do tempo, ganhou
                         popularidade em outdos lugares, inclusive no Brasil. <br /><br />
@@ -332,13 +391,13 @@
 
 
 
-        <section id="home-content" class="container" style="padding: 7em;">
+        <section id="home-content" class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 dicasmob" style="padding-left: 12em;">
                     <img src="/arquivos/carajas-landing-dicas-esquentablack1.png" alt="" />
                 </div>
 
-                <div class="col-md-6" style="border-left: solid 2px #FF7E00;">
+                <div class="col-md-6 textdicasmob"  style="border-left: solid 2px #FF7E00;padding-left: 5em;">
                     <p style="color: white;   line-height: 22px;font-size: 17px;">Faça uma listinha de compras com
                         antecedência e defina exatamente o que
                         você deseja comprar.
@@ -348,11 +407,12 @@
 
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 dicasmob"  style="padding-left: 12em;">
                     <img src="/arquivos/carajas-landing-dicas-esquentablack2.png" alt="" />
                 </div>
 
-                <div class="col-md-6" style="border-left: solid 2px #FF7E00; margin-bottom: 10px;">
+                <div class="col-md-6 textdicasmob" 
+                    style="border-left: solid 2px #FF7E00; margin-bottom: 10px;padding-left: 5em;">
                     <p style="color: white;  line-height: 22px;font-size: 17px;">Zele pela sua segurança. Mesmo com
                         tantas ofertas e descontos, fique atento
                         a possíveis fraudes
@@ -363,11 +423,12 @@
 
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 dicasmob"  style="padding-left: 12em;">
                     <img src="/arquivos/carajas-landing-dicas-esquentablack3.png" alt="" />
                 </div>
 
-                <div class="col-md-6" style="border-left: solid 2px #FF7E00;margin-bottom: 10px;">
+                <div class="col-md-6 textdicasmob" 
+                    style="border-left: solid 2px #FF7E00;margin-bottom: 10px;padding-left: 5em;">
                     <p style="color: white;line-height: 22px;font-size: 17px;">Antes de efetuar a compra e finalizar o
                         pedido, leia atentamente as
                         descrições técnicas do
@@ -380,11 +441,12 @@
 
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 dicasmob"  style="padding-left: 12em;">
                     <img src="/arquivos/carajas-landing-dicas-esquentablack4.png" alt="" />
                 </div>
 
-                <div class="col-md-6" style="border-left: solid 2px #FF7E00;margin-bottom: 10px;">
+                <div class="col-md-6 textdicasmob" 
+                    style="border-left: solid 2px #FF7E00;margin-bottom: 10px;padding-left: 5em;">
                     <p style="color: white;line-height: 22px;font-size: 17px;">Confira o prazo de entrega do produto e
                         os dias necessários para que ele chegue até a sua casa.
                         Durante este período, pode acontecer de o item demorar um pouco mais para chegar que o normal.
@@ -394,11 +456,11 @@
 
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 dicasmob"  style="padding-left: 12em;">
                     <img src="/arquivos/carajas-landing-dicas-esquentablack5.png" alt="" />
                 </div>
 
-                <div class="col-md-6" style="border-left: solid 2px #FF7E00;">
+                <div class="col-md-6 textdicasmob"  style="border-left: solid 2px #FF7E00;padding-left: 5em;">
                     <p style="color: white; line-height: 22px;font-size: 17px;">Para comprar os melhores produtos a
                         preços imperdíveis e saber das
                         promoções antes de todo mundo,
@@ -410,19 +472,18 @@
 
         </section><!-- #content -->
 
-        <div class="container-fluid" style="background-color: #FF7E00;margin-top: 4em;">
-
+        <div class="col-sm-4 col-sm-offset-1 col-xs-4 visible-lg" id="newstext">
+            <h3 style="margin-top: -4px;">Quer receber nossas novidades? Cadastre-se</h3>
+        </div>
+        <div class="container-fluid" id="newsmob" style="background-color: #FF7E00; margin-top: 4em;">
             <div class="hidden-lg" style="font-size: 1.3em;color: white;text-align: center;">
-                <h3>Quer receber nossas novidades? Cadastre-se</h3>
+                <h3 style="margin-top: 24px;">Quer receber nossas novidades? Cadastre-se</h3>
             </div>
             <div class="row" id="newsletter">
-                <div class="col-sm-4 col-sm-offset-1 col-xs-4 visible-lg" id="newstext">
-                    <h3>Quer receber nossas novidades? Cadastre-se</h3>
-                </div>
-                <div class="col-lg-8 col-xs-12" id="newsform">
+                <div class="col-lg-12 col-xs-12" id="newsform">
                     <input id="nameform" type="name" placeholder="Seu nome" style="margin-right: 10px;" />
                     <input id="emailform" type="email" placeholder="E-mail" />
-                    <input id="commit" name="commit" type="submit" value="ENVIAR" />
+                    <input id="committ" name="commit" type="submit" value="ENVIAR" />
                 </div>
             </div>
         </div>
@@ -440,7 +501,7 @@
                 </div>
                 <div class="">
                     <img src="/arquivos/carajas-landing-contatos-esquentablack2.png" alt="" />
-                    <a href="https://wa.me/551140032020" style="    margin-left: 8px;"><img
+                    <a href="https://wa.me/551140032020" style="margin-left: 8px;"><img
                             src="/arquivos/carajas-landing-contatosbotao-esquentablack3.png" alt="" /></a>
                 </div>
                 <div class="">
@@ -451,9 +512,9 @@
 
         <div class="container">
             <div class="row" style="border-top: solid 2px #FF7E00;margin-top: 3em;">
-                <h3 style="font-size: 20px; text-align: center; color: white;">Regulamento <span
-                        style="color: #FF7E00;">do
-                        frete</span></h3>
+                <h3
+                    style="font-size: 20px; text-align: center; color: white; text-transform: uppercase;margin-bottom: 1em;">
+                    Regulamento <span style="color: #FF7E00;">do frete</span></h3>
             </div>
 
             <div class="row">
@@ -469,8 +530,8 @@
                             frete direcionadas às regiões indicadas abaixo:</p>
                         <table>
                             <tr>
-                                <th>Região</th>
-                                <th>Regras</th>
+                                <th style="text-align: center;">Região (E-commerce)</th>
+                                <th style="text-align: center;">Regras (E-commerce)</th>
                             </tr>
                             <tr>
                                 <td>Alagoas (capital e região metropolitana)</td>
@@ -492,8 +553,8 @@
                         <p>OBS: Consulte os CEP’s participantes.</p>
                         <table>
                             <tr>
-                                <th>Região</th>
-                                <th>Regras</th>
+                                <th style="text-align: center;">Região (E-commerce)</th>
+                                <th style="text-align: center;">Regras (E-commerce)</th>
                             </tr>
                             <tr>
                                 <td>Alagoas (interior)</td>
@@ -513,6 +574,28 @@
                             </tr>
                         </table>
                         <p>OBS: Consulte os CEP’s participantes.</p>
+                        <table>
+                            <tr>
+                                <th style="text-align: center;">App</th>
+                                <th style="text-align: center;">Regras (App)</th>
+                            </tr>
+                            <tr>
+                                <td>Todas as compras pelo app carajás, o frete fica 0.50 centavos</td>
+                                <td>R$ 0,50</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <th style="text-align: center;">Televendas</th>
+                                <th style="text-align: center;">Regras (Televendas)</th>
+                            </tr>
+                            <tr>
+                                <td>Televendas</td>
+                                <td>GRÁTIS a partir de R$ 700,01</td>
+                            </tr>
+                        </table>
+                        <p>DURAÇÃO DA PROMOÇÃO ASSOCIADA ÀS DIRETRIZES DE FRETE GRÁTIS:
+                            A promoção é válida durante o período de 26/10 a 31/10.</p>
                     </div>
                 </div>
             </div>
@@ -540,10 +623,10 @@
                             Após selecionar o(s) produto(s), o cliente deverá colocá-lo(s) no carrinho de compras e
                             clicar no botão <span style="color: black; font-weight: bold;">COMPRAR.</span><br /><br />
                             Na tela de identificação, o cliente deverá fazer o <span
-                                style="color: black; font-weight: bold;">login</span> ou cadastdar-se caso seja sua
+                                style="color: black; font-weight: bold;">login</span> ou cadastrar-se caso seja sua
                             primeira compra. O cliente deve escolher a <span
                                 style="color: black; font-weight: bold;">forma de pagamento</span> e a <span
-                                style="color: black; font-weight: bold;">forma de entdega</span> para
+                                style="color: black; font-weight: bold;">forma de entrega</span> para
                             finalizar o
                             pedido. A compra será efetivada somente quando os pedidos forem <span
                                 style="color: black; font-weight: bold;">aprovados</span> e
