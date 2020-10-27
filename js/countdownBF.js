@@ -1,3 +1,43 @@
+setTimeout(function(){
+    $(".dropdown-btn#regulamento").toggle(() => {
+   
+        $(".dropdown-btn#regulamento i").attr('class', 'fa fa-angle-up');
+        $(".dropdown-container#regulamento").slideDown()
+    }, () => {
+        $(".dropdown-container#regulamento").slideUp()
+        $(".dropdown-btn#regulamento i").attr('class', 'fa fa-angle-down');
+    })
+    
+    
+    $(".dropdown-btn#regulamento2").toggle(() => {
+       
+        $(".dropdown-btn#regulamento2 i").attr('class', 'fa fa-angle-up');
+        $(".dropdown-container#regulamento2").slideDown()
+    }, () => {
+        $(".dropdown-container#regulamento2").slideUp()
+        $(".dropdown-btn#regulamento2 i").attr('class', 'fa fa-angle-down');
+    })
+    
+    
+    
+    
+    $(".dropdown-btn#regulamento3").toggle(() => {
+       
+        $(".dropdown-btn#regulamento3 i").attr('class', 'fa fa-angle-up');
+        $(".dropdown-container#regulamento3").slideDown()
+    }, () => {
+        $(".dropdown-container#regulamento3").slideUp()
+        $(".dropdown-btn#regulamento3 i").attr('class', 'fa fa-angle-down');
+    })
+    
+},2000)
+
+
+
+  
+  
+  
+  
   // Set the date we're counting down to
   var countDownDate = new Date("Nov 27, 2020 00:00:00").getTime();
 
@@ -61,41 +101,6 @@
 
 
   $(".dropdown-container").hide();
-
-setTimeout(function(){
-    $(".dropdown-btn#regulamento").toggle(() => {
-   
-        $(".dropdown-btn#regulamento i").attr('class', 'fa fa-angle-up');
-        $(".dropdown-container#regulamento").slideDown()
-    }, () => {
-        $(".dropdown-container#regulamento").slideUp()
-        $(".dropdown-btn#regulamento i").attr('class', 'fa fa-angle-down');
-    })
-    
-    
-    $(".dropdown-btn#regulamento2").toggle(() => {
-       
-        $(".dropdown-btn#regulamento2 i").attr('class', 'fa fa-angle-up');
-        $(".dropdown-container#regulamento2").slideDown()
-    }, () => {
-        $(".dropdown-container#regulamento2").slideUp()
-        $(".dropdown-btn#regulamento2 i").attr('class', 'fa fa-angle-down');
-    })
-    
-    
-    
-    
-    $(".dropdown-btn#regulamento3").toggle(() => {
-       
-        $(".dropdown-btn#regulamento3 i").attr('class', 'fa fa-angle-up');
-        $(".dropdown-container#regulamento3").slideDown()
-    }, () => {
-        $(".dropdown-container#regulamento3").slideUp()
-        $(".dropdown-btn#regulamento3 i").attr('class', 'fa fa-angle-down');
-    })
-    
-},2000)
-
 
 
 
