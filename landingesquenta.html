@@ -175,6 +175,18 @@
             margin-top: 1px;
         }
 
+        #nameformblack #emailformblack {
+            width: 35% !important;
+            height: 2.5em !important;
+            font-size: 20px !important;
+            padding-left: 1em !important;
+        }
+
+        .dicasmob {
+            padding-left: 12em !important;
+            
+        }
+
 
         @media screen and (min-width: 1200px) {
             .text-landing {
@@ -187,21 +199,22 @@
                 align-items: stretch;
                 justify-content: space-between;
             }
+
             #classeinline div a {
                 margin: 8px;
             }
         }
 
         @media screen and (max-width: 630px) {
-            #nameform {
+            #nameformblack {
                 margin-bottom: 3px;
             }
 
-            #classeinline div  {
+            #classeinline div {
                 text-align: center;
             }
 
-            #emailform {
+            #emailformblack {
                 margin-bottom: 3px;
             }
 
@@ -235,12 +248,22 @@
                 margin-top: 1px;
             }
 
+            #nameformblack {
+                width: 100%;
+            }
+
+            #emailformblack {
+                width: 100%;
+            }
+
             #newsmob {
-                margin-top: 6em;
+                margin-top: 6em !important;
+                
             }
 
             .text-landing {
-                padding: 1em;
+                padding: 1em !important;
+                
             }
 
             .regrasmob {
@@ -248,11 +271,13 @@
             }
 
             .dicasmob {
-                padding-left: 6em;
+                padding-left: 6em !important;
+                
             }
 
             .textdicasmob {
-                padding-left: 2em;
+                padding-left: 2em !important;
+                
             }
 
 
@@ -407,7 +432,7 @@
 
         <section id="home-content" class="container">
             <div class="row">
-                <div class="col-md-6 dicasmob" style="padding-left: 12em;">
+                <div class="col-md-6 dicasmob">
                     <img src="/arquivos/carajas-landing-dicas-esquentablack1.png" alt="" />
                 </div>
 
@@ -421,7 +446,7 @@
 
             </div>
             <div class="row">
-                <div class="col-md-6 dicasmob" style="padding-left: 12em;">
+                <div class="col-md-6 dicasmob">
                     <img src="/arquivos/carajas-landing-dicas-esquentablack2.png" alt="" />
                 </div>
 
@@ -437,7 +462,7 @@
 
             </div>
             <div class="row">
-                <div class="col-md-6 dicasmob" style="padding-left: 12em;">
+                <div class="col-md-6 dicasmob">
                     <img src="/arquivos/carajas-landing-dicas-esquentablack3.png" alt="" />
                 </div>
 
@@ -455,7 +480,7 @@
 
             </div>
             <div class="row">
-                <div class="col-md-6 dicasmob" style="padding-left: 12em;">
+                <div class="col-md-6 dicasmob">
                     <img src="/arquivos/carajas-landing-dicas-esquentablack4.png" alt="" />
                 </div>
 
@@ -470,7 +495,7 @@
 
             </div>
             <div class="row">
-                <div class="col-md-6 dicasmob" style="padding-left: 12em;">
+                <div class="col-md-6 dicasmob">
                     <img src="/arquivos/carajas-landing-dicas-esquentablack5.png" alt="" />
                 </div>
 
@@ -487,7 +512,7 @@
         </section><!-- #content -->
 
         <div class="col-sm-4 col-sm-offset-1 col-xs-4 visible-lg" id="newstext">
-            <h3 style="margin-top: -4px;">Quer receber nossas novidades? Cadastre-se</h3>
+            <h3 style="margin-top: 24px;">Quer receber nossas novidades? Cadastre-se</h3>
         </div>
         <div class="container-fluid" id="newsmob" style="background-color: #FF7E00; margin-top: 4em;">
             <div class="hidden-lg" style="font-size: 1.3em;color: white;text-align: center;">
@@ -495,8 +520,8 @@
             </div>
             <div class="row" id="newsletter">
                 <div class="col-lg-12 col-xs-12" id="newsform">
-                    <input id="nameform" type="name" placeholder="Seu nome" style="margin-right: 10px;" />
-                    <input id="emailform" type="email" placeholder="E-mail" />
+                    <input id="nameformblack" type="name" placeholder="Seu nome" style="margin-right: 10px;" />
+                    <input id="emailformblack" type="email" placeholder="E-mail" />
                     <input id="committ" name="commit" type="submit" value="ENVIAR" />
                 </div>
             </div>
@@ -507,9 +532,8 @@
                     <img src="/arquivos/carajas-landing-contatos-esquentablack1.png" alt="" />
                     <a href="https://apps.apple.com/br/app/carajas/id1508001631"><img
                             src="/arquivos/carajas-landing-contatosbotao-esquentablack2.png" alt="" /></a>
-                    <a href="https://play.google.com/store/apps/details?id=carajas.carajas"
-                        ><img src="/arquivos/carajas-landing-contatosbotao-esquentablack1.png"
-                            alt="" /></a>
+                    <a href="https://play.google.com/store/apps/details?id=carajas.carajas"><img
+                            src="/arquivos/carajas-landing-contatosbotao-esquentablack1.png" alt="" /></a>
                 </div>
                 <div class="">
                     <img src="/arquivos/carajas-landing-contatos-esquentablack2.png" alt="" />
@@ -517,7 +541,13 @@
                             src="/arquivos/carajas-landing-contatosbotao-esquentablack3.png" alt="" /></a>
                 </div>
                 <div class="">
-                    <img src="/arquivos/carajas-landing-contatos-esquentablack3.png" alt="" />
+                    <img src="/arquivos/carajas-landing-contatos-esquentablack-titulo.png" alt="" />
+                    <a href="https://www.facebook.com/carajashomecenter"><img
+                            src="/arquivos/carajas-landing-contatos-esquentablack-face.png" alt="" /></a>
+                    <a href="https://www.instagram.com/carajasonline/"><img
+                            src="/arquivos/carajas-landing-contatos-esquentablack-insta.png" alt="" /></a>
+                    <a href="https://www.linkedin.com/company/carajasonline/"><img
+                            src="/arquivos/carajas-landing-contatos-esquentablack-linkedin.png" alt="" /></a>
                 </div>
             </div>
         </div>
