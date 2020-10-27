@@ -62,7 +62,7 @@
 
   $(".dropdown-container").hide();
 
-setTimeout(function(){
+setInterval(function(){
     $(".dropdown-btn#regulamento").toggle(() => {
    
         $(".dropdown-btn#regulamento i").attr('class', 'fa fa-angle-up');
