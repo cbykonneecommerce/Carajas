@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <title> Carajas Home Center</title>
+    <vtex:metaTags />
+    <vtex:template id="commonStyles" />
+    <link href="/arquivos/home.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        #home-page {
+            background-color: black
+        }
+
+        #myModal {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            border: none !important;
+            width: 600px !important;
+        }
+
+        .modal.in .modal-dialog {
+            margin-top: 33%;
+        }
+
+        .modal-title {
+            text-align: center;
+            font-weight: 700;
+            color: #278950;
+        }
+
+        .modal-body .allregions {
+            text-align: center;
+        }
+
+        .modal-body .allregions li {
+            margin-bottom: 3em;
+        }
+
+        .modal-body .allregions li a {
+            background-color: #F58220;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            padding: 10px 30px;
+        }
+
+        .text-especial {
+            text-align: center;
+            padding: 1em;
+        }
+
+        .thefinalcountdown {
+            display: flex;
+            align-items: stdetch;
+            justify-content: space-between;
+        }
+
+        .horasblock,
+        .minutosblock,
+        .segundosblock {
+            color: white;
+            font-weight: 800;
+            font-size: 44px;
+
+            border: solid 4px #FF7E00;
+            padding: 11px 24px;
+        }
+
+        .thefinalcountdown li {
+            text-align: center;
+        }
+
+        .thefinalcountdown li span {
+            color: white;
+            line-height: 25px;
+        }
+
+        .pratileira.vitrine h2 {
+            display: none !important;
+        }
+
+        .prateleira .box-item {
+            height: 30em !important;
+            width: 17em !important;
+            background-color: white !important;
+        }
+
+        .prateleira .btn-add-buy-button-asynchronous {
+            font-size: 20px;
+            width: 102%;
+            font-weight: 500;
+            margin-top: 1.3em;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: rgb(255, 145, 6) !important;
+        }
+
+        .prateleira .price a,
+        .prateleira .price .best-price {
+            color: #FF7E00 !important;
+        }
+
+        #compre-agora {
+            margin-left: 3em;
+            width: 23%;
+            background-color: #FF9106;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            height: 3.5em;
+            margin-top: 1px;
+        }
+
+        .green-part {
+            padding-bottom: 1em;
+            padding-top: 1em;
+            border: 1px solid #fff !important;
+        }
+
+        .upper-side {
+            border: solid 1px #fff !important;
+            border-bottom: none;
+        }
+            
+
+            @media screen and (min-width: 1200px) {
+                #classeinline {
+                    margin-top: 3em;
+                    display: flex;
+                    align-items: stretch;
+                    justify-content: space-between;
+                }
+
+                #classeinline div a {
+                    margin: 8px;
+                }
+            }
+
+            @media screen and (max-width: 630px) {
+                #classeinline div {
+                    text-align: center;
+                }
+            }
+    </style>
+
+</head>
+
+<body id="home-page">
+
+    <div class="page">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="Header" />
+        <!-- /SubTemplate: Header -->
+
+        <div id="home-extra-top"></div>
+        <div class="container-fluid"
+            style="padding-right:0px !important; padding-left:0px !important; text-align: center;         ">
+            <div class="fullbanner hidden-xs">
+                <vtex:contentPlaceHolder id="bannersegmentado" />
+            </div><!-- .fullbanner -->
+
+            <div class="fullbanner visible-xs">
+                <vtex:contentPlaceHolder id="bannersegmentadomobile" />
+            </div><!-- .fullbanner -->
+        </div>
+
+        <div class="container-fluid" style="background-color: #FF9106;margin-top: -1px;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-especial">
+                        <h2 style="color: white;font-size: 37px;font-weight: bold;">Separamos nossas melhores ofertas
+                            especialmente para você!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="imagem-especial">
+            <img src="/arquivos/carajas-landing-black_flare.png" alt="" />
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="text-align: center;">
+                    <vtex:contentPlaceHolder id="collection-ofertadia" />
+                </div>
+                <div class="col-md-6" style="padding-right: 11em;">
+                    <h2 style="color: #fff;font-weight: bold;font-size: 40px;">Super <span style="color: #FF7E00;">
+                            <br /> oferta</span> <br /> do dia</h2>
+                            <a href=" https://www.carajasonline.com/busca/?fq=H:208"> <input id="compre-agora" type="text"
+                                placeholder="Compre Agora" /> </a>
+                    <!--COUNTDOWN-->
+                    <ul class="thefinalcountdown">
+                        <li>
+                            <span>HORAS</span>
+                            <div class="horasblock">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span>MINUTOS</span>
+                            <div class="minutosblock">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span>SEGUNDOS</span>
+                            <div class="segundosblock">
+
+                            </div>
+                        </li>
+                    </ul>
+
+                    <p style="color: #fff; font-size:22px;margin-top: 3em;">Aproveite nessa super oferta do dia e
+                        recebaum cupom de <span style="color: #FF7E00;">10% de
+                            desconto para a sua próxima compra!</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1 style="text-align: center;font-weight:bold;font-size: 50px; color: #fff;">Veja o que mais <span
+                        style="color: #FF9106;font-weight:bold">combina com você!</span></h1>
+
+                <div id="flag-descontos" style="display: flex;margin-top: 5em;">
+                    <div class="item">
+                        <a href=""> <img src="/arquivos/carajas-landing-black_20.png" alt=""
+                                style="margin-left: 6em;" /></a>
+                    </div>
+                    <div class="item">
+                        <a href=""> <img src="/arquivos/carajas-landing-black_40.png" alt="" /></a>
+                    </div>
+                    <div class="item">
+                        <a href=""> <img src="/arquivos/carajas-landing-black_50.png" alt="" /></a>
+                    </div>
+                </div>
+
+                <div id="flag-descontos2" style="display: flex;margin-top: 5em;">
+                    <div class="item">
+                        <a href=""> <img src="/arquivos/carajas-landing-black_60.png" alt=""
+                                style="margin-left: 6em;" /></a>
+                    </div>
+                    <div class="item">
+                        <a href=""> <img src="/arquivos/carajas-landing-black_100.png" alt="" /></a>
+                    </div>
+                    <div class="item">
+                        <a href=""> <img src="/arquivos/carajas-landing-black_200.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="saldao">
+            <h1 style="text-align: center;font-size: 55px;font-weight: bold; color: #fff;margin-top: 1.5em;">Super <span
+                    style="color: #FF7E00;font-size: 55px;font-weight: bold;">Saldão</span> </h1>
+        </div>
+
+        <div class="col-sm-12 " style="margin-left: 12em;">
+            <vtex:contentPlaceHolder id="collection-saldao" />
+        </div>
+
+
+        <div class="container">
+            <div class="row" id="classeinline" style="border-top: solid 2px #FF7E00;margin-bottom: 3em;">
+                <div class="" style="margin-top: 2em;">
+                    <img src="/arquivos/carajas-landing-contatos-esquentablack1.png" alt="" />
+                    <a href="https://apps.apple.com/br/app/carajas/id1508001631"><img
+                            src="/arquivos/carajas-landing-contatosbotao-esquentablack2.png" alt="" /></a>
+                    <a href="https://play.google.com/store/apps/details?id=carajas.carajas"><img
+                            src="/arquivos/carajas-landing-contatosbotao-esquentablack1.png" alt="" /></a>
+                </div>
+                <div class="" style="margin-top: 2em;">
+                    <img src="/arquivos/carajas-landing-contatos-esquentablack2.png" alt="" />
+                    <a href="https://wa.me/551140032020" style="margin-left: 8px;"><img
+                            src="/arquivos/carajas-landing-contatosbotao-esquentablack3.png" alt="" /></a>
+                </div>
+                <div class="" style="margin-top: 2em;">
+                    <img src="/arquivos/carajas-landing-contatos-esquentablack-titulo.png" alt=""
+                        style="display: block; margin-left: 17px;" />
+                    <a href="https://www.facebook.com/carajashomecenter"><img
+                            src="/arquivos/carajas-landing-contatos-esquentablack-face.png" alt="" /></a>
+                    <a href="https://www.instagram.com/carajasonline/"><img
+                            src="/arquivos/carajas-landing-contatos-esquentablack-insta.png" alt="" /></a>
+                    <a href="https://www.linkedin.com/company/carajasonline/"><img
+                            src="/arquivos/carajas-landing-contatos-esquentablack-linkedin.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="category-extra-bottom"></div>
+
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="Footer" />
+        <!-- /SubTemplate: Footer -->
+
+    </div><!-- .container-fluid -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                    <h4 class="modal-title">ESCOLHA SUA PLATAFORMA</h4>
+
+                </div>
+                <div class="modal-body">
+                    <ul class="allregions">
+                        <li><a href="https://play.google.com/store/apps/details?id=carajas.carajas">ANDROID</a></li>
+                        <li><a href="https://apps.apple.com/br/app/carajas/id1508001631">IOS</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<vtex:template id="commonScripts" />
+<script src="/arquivos/countdownBF.js"></script>
+
+</html>
