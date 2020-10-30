@@ -59,13 +59,12 @@
             justify-content: space-between;
         }
 
-        .horasblock,
-        .minutosblock,
-        .segundosblock {
+        .hoursleft,
+        .minutesleft,
+        .secondsleft {
             color: white;
             font-weight: 800;
             font-size: 44px;
-
             border: solid 4px #FF7E00;
             padding: 11px 24px;
         }
@@ -79,7 +78,7 @@
             line-height: 25px;
         }
 
-        .pratileira.vitrine h2 {
+        .pratileira.vitrine h2{
             display: none !important;
         }
 
@@ -87,16 +86,21 @@
             height: 30em !important;
             width: 17em !important;
             background-color: white !important;
+            padding: 0px 0px !important;
         }
 
         .prateleira .btn-add-buy-button-asynchronous {
-            font-size: 20px;
-            width: 102%;
-            font-weight: 500;
-            margin-top: 1.3em;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            background-color: rgb(255, 145, 6) !important;
+            font-size: 20px !important;
+            width: 100% !important;
+            font-weight: 500 !important;
+            margin-top: 1.3em !important;
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+            background-color: #FF9106 !important;
+        }
+
+        .prateleira .price {
+            height: 69px !important;
         }
 
         .prateleira .price a,
@@ -105,47 +109,65 @@
         }
 
         #compre-agora {
-            margin-left: 3em;
-            width: 23%;
-            background-color: #FF9106;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-weight: 700;
-            height: 3.5em;
-            margin-top: 1px;
+            width: 68% !important;
+            background-color: #FF9106 !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 4px !important;
+            font-weight: 700 !important;
+            height: 3.5em !important;
+            margin-top: 15px !important;
+            margin-bottom: 2em;
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+
         }
 
         .green-part {
-            padding-bottom: 1em;
-            padding-top: 1em;
+            padding-bottom: 1em !important;
+            padding-top: 1em !important;
             border: 1px solid #fff !important;
+            height: 10em !important;
         }
 
         .upper-side {
             border: solid 1px #fff !important;
-            border-bottom: none;
+            border-bottom: none !important;
         }
-            
 
-            @media screen and (min-width: 1200px) {
-                #classeinline {
-                    margin-top: 3em;
-                    display: flex;
-                    align-items: stretch;
-                    justify-content: space-between;
-                }
+        .item1{
+            margin-left: 6em;
+        }
 
-                #classeinline div a {
-                    margin: 8px;
-                }
+        .saldo-collection{
+            margin-left: 7em;
+        }
+
+        @media screen and (min-width: 1200px) {
+            #classeinline {
+                margin-top: 3em;
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
             }
 
-            @media screen and (max-width: 630px) {
-                #classeinline div {
-                    text-align: center;
-                }
+            #classeinline div a {
+                margin: 8px;
             }
+        }
+
+        @media screen and (max-width: 630px) {
+            #classeinline div {
+                text-align: center;
+            }
+            .pratileira .vitrine  {
+                margin-left: 4em !important;
+        }
+        .saldo-collection{
+            margin-left: 5em;
+        }
+        }
     </style>
 
 </head>
@@ -182,7 +204,7 @@
         </div>
 
         <div class="imagem-especial">
-            <img src="/arquivos/carajas-landing-black_flare.png" alt="" />
+            <img src="/arquivos/carajas-landing-black_flare.png" alt="" style="margin-top: -1em;" />
         </div>
 
         <div class="container">
@@ -193,25 +215,24 @@
                 <div class="col-md-6" style="padding-right: 11em;">
                     <h2 style="color: #fff;font-weight: bold;font-size: 40px;">Super <span style="color: #FF7E00;">
                             <br /> oferta</span> <br /> do dia</h2>
-                            <a href=" https://www.carajasonline.com/busca/?fq=H:208"> <input id="compre-agora" type="text"
-                                placeholder="Compre Agora" /> </a>
+                    <a href=" https://www.carajasonline.com/busca/?fq=H:208"> <button id="#compre-agora">Compre Agora</button></a>
                     <!--COUNTDOWN-->
                     <ul class="thefinalcountdown">
                         <li>
                             <span>HORAS</span>
-                            <div class="horasblock">
+                            <div class="hoursleft">
 
                             </div>
                         </li>
                         <li>
                             <span>MINUTOS</span>
-                            <div class="minutosblock">
+                            <div class="minutesleft">
 
                             </div>
                         </li>
                         <li>
                             <span>SEGUNDOS</span>
-                            <div class="segundosblock">
+                            <div class="secondsleft">
 
                             </div>
                         </li>
@@ -230,9 +251,8 @@
                         style="color: #FF9106;font-weight:bold">combina com você!</span></h1>
 
                 <div id="flag-descontos" style="display: flex;margin-top: 5em;">
-                    <div class="item">
-                        <a href=""> <img src="/arquivos/carajas-landing-black_20.png" alt=""
-                                style="margin-left: 6em;" /></a>
+                    <div class="item1">
+                        <a href=""> <img src="/arquivos/carajas-landing-black_20.png" alt=""/></a>
                     </div>
                     <div class="item">
                         <a href=""> <img src="/arquivos/carajas-landing-black_40.png" alt="" /></a>
@@ -243,9 +263,8 @@
                 </div>
 
                 <div id="flag-descontos2" style="display: flex;margin-top: 5em;">
-                    <div class="item">
-                        <a href=""> <img src="/arquivos/carajas-landing-black_60.png" alt=""
-                                style="margin-left: 6em;" /></a>
+                    <div class="item1">
+                        <a href=""> <img src="/arquivos/carajas-landing-black_60.png" alt=""/></a>
                     </div>
                     <div class="item">
                         <a href=""> <img src="/arquivos/carajas-landing-black_100.png" alt="" /></a>
@@ -262,7 +281,7 @@
                     style="color: #FF7E00;font-size: 55px;font-weight: bold;">Saldão</span> </h1>
         </div>
 
-        <div class="col-sm-12 " style="margin-left: 12em;">
+        <div class="saldo-collection col-sm-12">
             <vtex:contentPlaceHolder id="collection-saldao" />
         </div>
 
