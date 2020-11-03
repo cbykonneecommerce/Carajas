@@ -552,6 +552,10 @@
      margin-right: -15px;
      padding: 0;
    }
+
+   .prateleira.vitrine>ul>li {
+    width: 23.3333% !important;
+}
  
      .prateleira.vitrine > ul > li,
      .n1colunas > ul > li,
