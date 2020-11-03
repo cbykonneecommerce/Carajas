@@ -41,7 +41,7 @@
 }
 
 .prateleira .box-item {
-    height: 30em !important;
+    height: 30em;
 }
 
 .card:hover {
