@@ -1,0 +1,67 @@
+Relatório de pacote
+
+-----------------------------------------------------------------------------
+Documento:
+Nome: Banners cadeira.ai
+Modo de cor: Cor RGB
+Perfil de cor: sRGB IEC61966-2.1
+Unidades da régua: pixels
+Dimensões da prancheta: 299 px x 610 px
+Mostrar imagens no modo de contorno: DESATIVADO
+Realçar fontes substituídas: DESATIVADO
+Realçar glifos substituídos: DESATIVADO
+Preservar capacidade de edição do texto
+Simular papel colorido: DESATIVADO
+
+-----------------------------------------------------------------------------
+Objetos de cor especial:
+
+-----------------------------------------------------------------------------
+Fontes ausentes:NENHUM
+
+-----------------------------------------------------------------------------
+Fontes protegidas que não foram empacotadas:
+Proxima Nova Medium (Fontes da Adobe)
+Proxima Nova Bold (Fontes da Adobe)
+Proxima Nova Extrabold (Fontes da Adobe)
+
+-----------------------------------------------------------------------------
+Fontes:
+NENHUM
+
+-----------------------------------------------------------------------------
+Fontes incorporadas:
+NENHUM
+
+-----------------------------------------------------------------------------
+Vínculos ausentes:
+NENHUM
+
+-----------------------------------------------------------------------------
+Imagens vinculadas:
+
+C:\Users\raphael.araujo\Desktop\Design\11 - Novembro\03 - Cadeira\Para uso\170_2.png
+Tipo: RGB transparente
+Bits por pixel: 32
+Canais: 4
+Tamanho: 29708K, 2168 por 3508 pixels
+Dimensões: 706,226 por 1105,377 pontos 
+Resolução: 221,028 por 228,498 pixels por polegada
+
+
+C:\Users\raphael.araujo\Desktop\Design\11 - Novembro\03 - Cadeira\Para uso\233.png
+Tipo: RGB transparente
+Bits por pixel: 32
+Canais: 4
+Tamanho: 17708K, 1567 por 2893 pixels
+Dimensões: 519,484 por 927,722 pontos 
+Resolução: 217,185 por 224,524 pixels por polegada
+
+
+C:\Users\raphael.araujo\Desktop\Design\11 - Novembro\03 - Cadeira\Para uso\170.png
+Tipo: RGB transparente
+Bits por pixel: 32
+Canais: 4
+Tamanho: 29708K, 2168 por 3508 pixels
+Dimensões: 706,226 por 1105,377 pontos 
+Resolução: 221,028 por 228,498 pixels por polegada

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <title> Carajas Home Center</title>
+    <vtex:metaTags />
+    <vtex:template id="commonStyles" />
+    <link href="/arquivos/home.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        #myModal {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            border: none !important;
+            width: 600px !important;
+        }
+
+        .modal.in .modal-dialog {
+            margin-top: 33%;
+        }
+
+        .modal-title {
+            text-align: center;
+            font-weight: 700;
+            color: #278950;
+        }
+
+        .modal-body .allregions {
+            text-align: center;
+        }
+
+        .modal-body .allregions li {
+            margin-bottom: 3em;
+        }
+
+        .modal-body .allregions li a {
+            background-color: #F58220;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            padding: 10px 30px;
+
+        }
+
+        #content-redes {
+            width: 103% !important;
+        }
+
+        .lojas {
+            display: flex;
+            justify-content: center;
+            width: 103% !important;
+        }
+
+        .imperdiveis {
+            padding: 4em !important;
+            max-width: 82% !important;
+            margin-left: 7em !important;
+        }
+
+        .text-principal {
+            text-align: center;
+            font-size: 34px;
+            color: #9C9C9B;
+            font-weight: 600;
+        }
+
+        .banner-cadeira {
+            margin-left: -3em;
+        }
+
+        @media screen and (min-width: 1200px) {
+            #classeinline {
+                margin-top: 0em;
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+            }
+
+            #classeinline div a {
+                margin: 8px;
+            }
+
+        }
+
+        @media screen and (max-width: 630px) {
+            #classeinline div {
+                text-align: center;
+                margin-top: 10em;
+            }
+
+            #content-redes {
+                width: 100% !important;
+            }
+
+            .lojas {
+                width: 100% !important;
+            }
+
+            .linkedin {
+                margin-right: 0em !important;
+            }
+
+            .imperdiveis {
+                padding: 1.5em !important;
+                margin-left: 2em !important;
+            }
+
+            .text-principal {
+                font-size: 21px !important;
+            }
+
+            .banner-cadeira {
+                margin-left: 0em !important;
+            }
+
+            .google {
+                margin-left: 3px !important;
+            }
+
+            .contato {
+                margin-left: 155px !important
+            }
+
+            .cadeira-casa{
+                margin-left: -27px;
+            }
+
+            .cadeira-classico{
+                margin-left: -6px;
+            }
+
+
+        }
+    </style>
+
+</head>
+
+<body id="home-page">
+
+    <div class="page">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="Header" />
+        <!-- /SubTemplate: Header -->
+
+        <div id="home-extra-top"></div>
+        <div class="container-fluid"
+            style="padding-right:0px !important; padding-left:0px !important; text-align: center;         ">
+            <div class="fullbanner hidden-xs">
+                <vtex:contentPlaceHolder id="bannersegmentado" />
+            </div><!-- .fullbanner -->
+
+            <div class="fullbanner visible-xs">
+                <vtex:contentPlaceHolder id="bannersegmentadomobile" />
+            </div><!-- .fullbanner -->
+        </div>
+
+        <div class="col-md-12" style="margin-top: 1.5em; margin-bottom: 1.5em; ">
+            <p class="text-principal">Conforto, estilo e uma variedade <br /> de cadeiras para renovar seu lar!</p>
+        </div>
+
+        <section id="home-content" class="container" style="margin-top:2em;">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="/busca?fq=H:234"> <img src="/arquivos/Cadeira_Botão_casa.png" alt="" class="cadeira-casa" /></a>
+                </div>
+                <div class="col-md-6">
+                    <a href="/busca?fq=H:235"> <img src="/arquivos/Cadeira_Botão_lazer.png" alt=""
+                            class="banner-cadeira" /></a>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="/busca?fq=H:236"> <img src="/arquivos/Cadeira_Botão_clássico.png" alt="" class="cadeira-classico" /></a>
+                </div>
+                <div class="col-md-6">
+                    <a href="/busca?fq=H:237"> <img src="/arquivos/Cadeira_Botão_moderno.png" alt=""
+                            class="banner-cadeira" /></a>
+                </div>
+
+            </div>
+
+
+            <div class="container" id="content-redes">
+                <div class="row" id="classeinline" style="background-color: #EEEEEE;border-radius: 4px;">
+                    <div class="" style="margin-top: 2em;margin-bottom: 2em; display: flex;">
+                        <img src="/arquivos/carajas-landing-piascubastorneiras-app.png" alt="" />
+                        <a href="https://apps.apple.com/br/app/carajas/id1508001631"><img
+                                src="/arquivos/carajas-landing-piascubastorneiras-apple.png" alt=""
+                                style="margin-top: 35px;" /></a>
+                        <a href="https://play.google.com/store/apps/details?id=carajas.carajas"><img
+                                src="/arquivos/carajas-landing-piascubastorneiras-google.png" alt=""
+                                style="margin-top: 35px;" class="google" /></a>
+                    </div>
+                    <div class="" style="margin-top: 2em;margin-bottom: 2em">
+                        <a href="https://wa.me/551140032020" style="margin-left: 3px;"><img
+                                src="/arquivos/carajas-landing-piascubastorneiras-wpp.png" alt="" /></a>
+                    </div>
+                    <div class="" style="margin-top: 2em;margin-bottom: 2em">
+                        <img src="/arquivos/carajas-landing-piascubastorneiras-social.png" alt=""
+                            style="display: block; margin-left: 17px;" class="contato"  />
+                        <a href="https://www.facebook.com/carajashomecenter"><img
+                                src="/arquivos/carajas-landing-contatos-esquentablack-face.png" alt="" /></a>
+                        <a href="https://www.instagram.com/carajasonline/"><img
+                                src="/arquivos/carajas-landing-contatos-esquentablack-insta.png" alt="" /></a>
+                        <a href="https://www.linkedin.com/company/carajasonline/"><img
+                                src="/arquivos/carajas-landing-contatos-esquentablack-linkedin.png" alt=""
+                                class="linkedin" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h2>Fale com a Carajás!</h2>
+                <div class="col-sm-12">
+                    <div class="col-sm-12">
+                        <div class="owl-carousel owl-theme" id="carouselcards">
+                            <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
+
+                            <div class="item"><a href="/"><img src="/arquivos/carajas-landing-pintoueconomia-icon1.png"
+                                        alt="Owl Image" /></a></div>
+                            <div class="item"><a type="button" class="modal-opener" data-toggle="modal"
+                                    data-target="#myModal"><img src="/arquivos/carajas-landing-pintoueconomia-icon2.png"
+                                        alt="Owl Image" /></a></div>
+                            <div class="item"><a href="/institucional/nossas-lojas"><img
+                                        src="/arquivos/carajas-landing-pintoueconomia-icon3.png" alt="Owl Image" /></a>
+                            </div>
+                            <div class="item"><a href="#"><img src="/arquivos/carajas-landing-pintoueconomia-icon4.png"
+                                        alt="Owl Image" /></a></div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section><!-- #content -->
+
+        <div id="category-extra-bottom"></div>
+
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="Footer" />
+        <!-- /SubTemplate: Footer -->
+
+    </div><!-- .container-fluid -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                    <h4 class="modal-title">ESCOLHA SUA PLATAFORMA</h4>
+
+                </div>
+                <div class="modal-body">
+                    <ul class="allregions">
+                        <li><a href="https://play.google.com/store/apps/details?id=carajas.carajas">ANDROID</a></li>
+                        <li><a href="https://apps.apple.com/br/app/carajas/id1508001631">IOS</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<vtex:template id="commonScripts" />
+
+</html>

@@ -221,4 +221,12 @@
         width: 100% !important;
         margin-left: -3em !important;
     }
+
+    .google{
+        margin-left: 3px !important;
+    }
+
+    .contato{
+        margin-left: 166px !important;
+    }
 }
