@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <title> Carajas Home Center - Natal</title>
+    <vtex:metaTags />
+    <vtex:template id="commonStyles" />
+    <link href="/arquivos/hotsitenatal.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    @media screen and (max-width: 1100px) {
+
+        .doublebanner .item {
+            margin-right: 10px !important;
+        }
+
+        .prateleira.vitrine>ul>li,
+        .n1colunas>ul>li,
+        .n2colunas>ul>li,
+        .n3colunas>ul>li,
+        .n4colunas>ul>li,
+        .n5colunas>ul>li {
+            padding: 13px 4px !important;
+        }
+
+    }
+</style>
+
+<body id="home-page">
+
+    <div class="page">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="Header" />
+        <!-- /SubTemplate: Header -->
+
+        <div class="container" style="text-align: center;margin-top: 3em;margin-bottom: 2em;">
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-size: 22px !important;color: #838383 !important;font-weight: 700 !important;"><span
+                            style="font-size: 25px !important;color: #227346 !important;font-weight: 700 !important;">Natal
+                            Mágico Carajás:</span> dicas para aproveitar a melhor época do ano</p>
+                    <p style="font-size: 18px !important;font-weight: 700 !important; color: #838383 !important;">
+                        Período é marcado por mesa farta, luzes, presentes e renovação de votos.</p>
+                    <p style="font-size: 18px !important;font-weight: 700 !important; color: #838383 !important;">
+                        Descubra como curtir cada momento e celebrar a chegada do ano novo que está por vir!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="home-extra-top"></div>
+        <div class="container-fluid"
+            style="padding-right:0px !important; padding-left:0px !important; text-align: center;         ">
+            <div class="fullbanner hidden-xs">
+                <vtex:contentPlaceHolder id="bannersegmentado" />
+            </div><!-- .fullbanner -->
+
+            <div class="fullbanner visible-xs">
+                <vtex:contentPlaceHolder id="bannersegmentadomobile" />
+            </div><!-- .fullbanner -->
+        </div>
+
+        <div class="container" style="text-align: justify !important;">
+            <div class="row">
+                <div class="col-md-12" style="margin-top: 2.5em; margin-bottom: 1.5em; ">
+
+                    <vtex:contentPlaceHolder id="blocotexto1" />
+
+                <!--   <p style="font-size: 20px !important; font-weight: 700 !important;color: #838383 !important;">
+                        Dezembro
+                        chegou e o clima natalino já está presente em todos os lugares. É neste mês que as famílias se
+                        preparam para
+                        celebrar o nascimento de Jesus Cristo. Não faltam <a
+                            href="https://www.carajasonline.com/pres%C3%A9pio?&utmi_p=_landings_ourapp&utmi_pc=BuscaFullText&utmi_cp=pres%C3%A9pio">presépios</a>
+                        , pisca-piscas,<a
+                            href="https://www.carajasonline.com/%C3%A1rvore%20natal?&utmi_p=_pisca+pisca&utmi_pc=BuscaFullText&utmi_cp=%C3%A1rvore%20natal">árvores</a>
+                        , guirlandas,
+                        <a
+                            href="https://www.carajasonline.com/bola%20natal?&utmi_p=_%C3%A1rvore+natal&utmi_pc=BuscaFullText&utmi_cp=bola%20natal">bolas
+                            coloridas…</a> </p>
+                    <p style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;">
+                        Para
+                        comemorar uma dos meses mais especiais do ano, a Carajás dá dicas para você aproveitar o Natal
+                        com
+                        criatividade e
+                        estilo. As nossas <a href="https://www.carajasonline.com/institucional/nossas-lojas">lojas</a>
+                        estão decoradas e prontas para te receber. Estamos esperando a sua
+                        visita.
+                    </p>
+                    <p style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;">Se
+                        você
+                        preferir, também pode comprar tudo o que precisa através do noss <a href="/">site</a> , <a
+                            href="https://www.carajasonline.com/televendas">televendas</a> ou
+                        <a href="https://www.carajasonline.com/landings/ourapp">aplicativo</a> . É
+                        rápido,
+                        prático e seguro!</p>
+                    <p style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;">Boa
+                        leitura!</p>--> 
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <vtex:contentPlaceHolder id="blocotexto2" />
+<!--
+                    <h2 style="font-size: 25px !important;color: #227346 !important;font-weight: 700 !important;">
+                        Capriche na Decoração!</h2>
+                    <p
+                        style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;text-align: justify !important;margin-bottom: 2em !important;margin-top: 1em !important;">
+                        Natal é a época preferida para quem gosta de decorar a casa. A data é sinônimo de luzes,
+                        folhagens e laços coloridos. A <a
+                            href="https://www.carajasonline.com/%C3%A1rvore%20de%20natal?&utmi_p=_&utmi_pc=BuscaFullText&utmi_cp=%C3%A1rvore%20de%20natal">árvore
+                            de natal</a> ganha protagonismo. Confira algumas inspirações:
+                    </p>-->
+                </div>
+            </div>
+
+            <div id="categoria-decoracao" style="display: flex;">
+                <div class="item">
+                    <vtex:contentPlaceHolder id="banner01-white" />
+                </div>
+                <div class="item">
+                    <vtex:contentPlaceHolder id="banner02-red" />
+                </div>
+                <div class="item">
+                    <vtex:contentPlaceHolder id="banner03-yellow" />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container" style="text-align: justify !important;">
+            <div class="row">
+                <div class="col-md-12" style="margin-top: 2.5em; margin-bottom: 2.5em; ">
+
+                    <vtex:contentPlaceHolder id="blocotexto3" />
+<!--
+                    <p style="font-size:20px !important; font-weight: 700 !important;color: #838383 !important;">Os
+                        itens
+                        mais comuns de uma árvore são bolas coloridas, laços e estrelas no topo. Eles podem ser brancos,
+                        verdes,
+                        dourados, rosas, vermelhos ou azuis.</p>
+                    <p style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;">Uma
+                        dica
+                        legal é comprar itens de tamanhos diferentes e começar a preencher a árvore de cima para baixo.
+                        A
+                        finalização
+                        da decoração fica por conta do saiote e caixas de presentes.</p>
+                    <p style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;">Além
+                        da
+                        árvore, você também pode complementar o décor com <a
+                            href="https://www.carajasonline.com/guirlanda?&utmi_p=_pres%C3%A9pio&utmi_pc=BuscaFullText&utmi_cp=guirlanda">guirlandas</a>
+                        (que podem ser dispostas sobre a
+                        porta
+                        e até
+                        sobre a mesa), <a
+                            href="https://www.carajasonline.com/pisca%20pisca?&utmi_p=_guirlanda&utmi_pc=BuscaFullText&utmi_cp=pisca%20pisca">pisca-piscas</a>,
+                        <a
+                            href="https://www.carajasonline.com/pres%C3%A9pio?&utmi_p=_vela&utmi_pc=BuscaFullText&utmi_cp=pres%C3%A9pio">presépios</a>
+                        e <a
+                            href="https://www.carajasonline.com/conjunto-de-vela-natalina-christmasville-14x95x55cm-6-pecas/p">velas</a>.
+                    </p>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="item" id="cores">
+                <vtex:contentPlaceHolder id="cores-natal" />
+            </div>
+        </div>
+
+        <div class="container" style="text-align: justify !important;">
+            <div class="row">
+                <div class="col-md-12" style="margin-top: 1em !important;">
+
+                    <vtex:contentPlaceHolder id="blocotexto4" />
+
+                  <!--  <h2 style="font-size: 25px !important;color: #227346 !important;font-weight: 700 !important;">
+                        Organize um amigo secreto</h2>
+                    <p style="font-size: 20px !important; font-weight: 700 !important;color: #838383 !important;">O
+                        amigo secreto já virou tradição entre grupos de amigos e famílias em geral. Neste ano, em
+                        especial, talvez ele precise
+                        passar por algumas adaptações, mas ainda sim poderá ser realizado com estilo e criatividade. A
+                        primeira dica é fazer um <br />
+                        sorteio online para agilizar a compra dos presentes. Funciona direitinho!</p>
+                    <p style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;">Na
+                        hora de presentear, fuja do convencional. Para os homens, <a
+                            href="https://www.carajasonline.com/caixa%20de%20som?&utmi_p=_&utmi_pc=BuscaFullText&utmi_cp=caixa%20de%20som">caixas
+                            de som</a>, petisqueiras e
+                        <a
+                            href="https://www.carajasonline.com/porta-retrato?&utmi_p=_petisqueira&utmi_pc=BuscaFullText&utmi_cp=porta-retrato">porta-retratos</a>
+                        porta-retratos são boas
+                        opções de mimos. Para as mulheres, aposte em livros, agendas, <a
+                            href="https://www.carajasonline.com/quadro%20decorativo?&utmi_p=_fone+de+ouvido&utmi_pc=BuscaFullText&utmi_cp=quadro%20decorativo">quadros
+                            decorativos</a> e <a
+                            href="https://www.carajasonline.com/fone%20de%20ouvido?&utmi_p=_Sistema_buscavazia&utmi_pc=BuscaFullText&utmi_cp=fone%20de%20ouvido">fones
+                            de
+                            ouvido.</a> </p>
+                    <p style="font-size: 20px!important; font-weight: 700 !important; color: #838383 !important;">Antes
+                        de comprar, avalie a idade, personalidade e profissão da pessoa a ser presenteada. Com a ajuda
+                        da internet, você
+                        pode comprar o presente em casa sem enfrentar lojas cheias e filas enormes!</p>
+                    <p style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;">
+                        Nossas indicações de presentes:</p>-->
+                </div>
+            </div>
+            <div class="saldo-collection col-sm-12">
+                <vtex:contentPlaceHolder id="collection-natal" />
+            </div>
+        </div>
+
+        <div class="container" style="text-align: justify;">
+            <div class="row">
+                <div class="col-md-12" style="margin-top: 2.5em; margin-bottom: 2.5em; ">
+
+                    <vtex:contentPlaceHolder id="blocotexto5" />
+                 <!--   <h2 style="font-size: 25px !important;color: #227346 !important;font-weight: 700 !important;">Ceia:
+                        a
+                        arte de servir bem</h2>
+                    <p style="font-size: 20px !important; font-weight: 700 !important;color: #838383 !important;">A ceia
+                        é
+                        um dos momentos mais aguardados de todo o Natal. Rabanada, panetone, peru, salpicão… quem não
+                        gosta?
+                        Esse
+                        é o momento perfeito para matar a vontade de degustar essas delícias que ficam adormecidas
+                        durante o
+                        ano. Coma um
+                        pouquinho de cada coisa, mas com moderação.</p>
+                    <p style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;">Para
+                        não
+                        sobrecarregar apenas uma pessoa na hora de montar a mesa, divida os pratos e as atividades entre
+                        os
+                        convidados. Também não se esqueça da composição dos itens da mesa de jantar. Aposte na harmonia
+                        entre os objetos.</p>
+                    <p style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;">
+                        Invista
+                        em <a
+                            href="https://www.carajasonline.com/porta-guardanapo?&utmi_p=_Sistema_buscavazia&utmi_pc=BuscaFullText&utmi_cp=porta-guardanapo">toalhas
+                            de mesa</a> vermelhas, <a
+                            href="https://www.carajasonline.com/porta-guardanapo?&utmi_p=_Sistema_buscavazia&utmi_pc=BuscaFullText&utmi_cp=porta-guardanapo">copos</a>,
+                        <a
+                            href="https://www.carajasonline.com/porta-guardanapo?&utmi_p=_Sistema_buscavazia&utmi_pc=BuscaFullText&utmi_cp=porta-guardanapo">castiçais,
+                            talheres, porta-guardanapos</a>, <a
+                            href="https://www.carajasonline.com/sousplat?&utmi_p=_porta-guardanapo&utmi_pc=BuscaFullText&utmi_cp=sousplat">sousplats</a>,
+                        pratos e
+                        acessórios
+                        coloridos.</p>-->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-xs-12">
+                    <div class="item-1" style="text-align: center;">
+                        <vtex:contentPlaceHolder id="ceia1" style="max-width: 100%;" />
+                        <p class="oxford"
+                            style=" margin-top: 2em;font-size: 14px !important;font-weight: 700 !important; color: #838383 !important;">
+                            A coleção Plateu Red, da Oxford, mostra que ousadia e sofisticação podem andar lado a lado.
+                            O
+                            vermelho é a cara do Natal!</p>
+                        <a href=""><button id="comprar">Comprar</button></a>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="doublebanner">
+                        <div class="item" style="display: inline;    margin-right: 2em;">
+                            <img src="/arquivos/carajas-landing-natalmagico-ceia2.png" alt="" style="width: 46%;" />
+                        </div>
+                        <div class="item" style="display: inline;">
+                            <img src="/arquivos/carajas-landing-natalmagico-ceia3.png" alt="" style="width: 46%;" />
+                        </div>
+                    </div>
+                    <p class="natal" style="font-size: 14px !important;    margin-top: 2em;
+                    text-align: center;font-weight: 700 !important;color: #838383 !important;">Natal tem que ter
+                        vermelho e… panetone!</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="container" style="text-align: justify;margin-top: 3em;margin-bottom: 3em;">
+            <div class="row">
+                <div class="col-md-12" style="margin-bottom: 2em;">
+                    <h2 style="font-size: 25px !important;color: #227346 !important;font-weight: 700 !important;">
+                        Reforma rápidas: prepare a casa para o fim do ano </h2>
+                    <p style="font-size: 20px !important; font-weight: 700 !important;color: #838383 !important;">Fim de
+                        ano é tempo de confraternizar e é por isso que é tão importante assegurar que tudo esteja nos
+                        conformes para
+                        bem receber suas visitas. Mas você não precisa fazer obras super especiais ou ter gastos
+                        exorbitantes.</p>
+                    <p style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;">
+                        Existem algumas soluções que podem ajudar, e muito, a transformar qualquer ambiente. Aproveite
+                        para jogar fora tudo
+                        que está quebrado e doar objetos que não usa mais.</p>
+                    <p style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;">
+                        Abaixo, compartilhamos outras dicas:</p>
+                </div>
+            </div>
+
+            <div class="item" id="reformas">
+                <vtex:contentPlaceHolder id="reformas" />
+            </div>
+        </div>
+
+        <div class="container" style="text-align: justify;margin-top: 3em;">
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-size: 20px !important; font-weight: 700 !important;color: #838383 !important;">
+                        Esperamos que esse conteúdo tenha sido útil para você. A Carajás agradece a sua confiança
+                        durante esse ano que está
+                        quase terminando. Esperamos que o seu Natal seja um momento de luz e repleto de sorrisos. </p>
+                    <p style="font-size: 20px !important; font-weight: 700 !important; color: #838383 !important;">Que
+                        você esteja perto das pessoas queridas e que em 2021 os seus olhos continuem a brilhar na
+                        esperança de dias
+                        melhores. Que a sua vida seja feita de sonhos. Faça seu pedido e acredite. Porque quando a gente
+                        acredita até os anjos
+                        dizem amém! </p>
+                    <p
+                        style="font-size: 25px !important; font-weight: 700 !important; color: #227346 !important;margin-top: 2em;">
+                        Boas
+                        festas e feliz 2021 para você e toda a sua família!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <h2>Fale com a Carajás!</h2>
+            <div class="col-sm-12">
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-theme" id="carouselcards"> -->
+        <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
+
+        <!-- <div class="item"><a href="/"><img src="/arquivos/carajas-landing-pintoueconomia-icon1.png"
+                                    alt="Owl Image" /></a></div>
+                        <div class="item"><a type="button" class="modal-opener" data-toggle="modal"
+                                data-target="#myModal"><img src="/arquivos/carajas-landing-pintoueconomia-icon2.png"
+                                    alt="Owl Image" /></a></div>
+                        <div class="item"><a href="/institucional/nossas-lojas"><img
+                                    src="/arquivos/carajas-landing-pintoueconomia-icon3.png" alt="Owl Image" /></a>
+                        </div>
+                        <div class="item"><a href="#"><img src="/arquivos/carajas-landing-pintoueconomia-icon4.png"
+                                    alt="Owl Image" /></a></div>
+    
+    
+                    </div>
+                </div>
+            </div>
+           
+        </div> -->
+
+        <div id="category-extra-bottom"></div>
+
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="Footer" />
+        <!-- /SubTemplate: Footer -->
+
+    </div><!-- .container-fluid -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                    <h4 class="modal-title">ESCOLHA SUA PLATAFORMA</h4>
+
+                </div>
+                <div class="modal-body">
+                    <ul class="allregions">
+                        <li><a href="https://play.google.com/store/apps/details?id=carajas.carajas">ANDROID</a></li>
+                        <li><a href="https://apps.apple.com/br/app/carajas/id1508001631">IOS</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<vtex:template id="commonScripts" />
+
+</html>
