@@ -2,15 +2,18 @@
     display: none;
 }
 
-
 #propostascomerciais{
     margin-top: 3em;
 }
 
+.remove-spaceowl {
+    width: 140px !important;
+}
 
 .collection-title{
     margin-bottom: 2em;
 }
+
 .collection-title h2 {
     font-size: 40px;
     color: #227346;
@@ -23,17 +26,10 @@
 }
 
 .our-categories .content .card {
-    border: 1px solid #278950;
-    background-color: #F2F2F2;
-    border-radius: 20px;
     text-align: center;
-    padding: 22%;
 }
 
-
-
 .owl-item .item .card {
-    border: 1px solid #278950;
     background-color: #F2F2F2;
     border-radius: 20px;
     text-align: center;
@@ -41,16 +37,15 @@
 }
 
 .prateleira .box-item {
-    height: 30em;
+    height: 31em !important;
 }
 
 .card:hover {
-    background-color: rgb(39, 137, 80,0.8) !important;
-    -webkit-transition: rgb(39, 137, 80,0.8) 1000ms linear;
-    -ms-transition: rgb(39, 137, 80,0.8) 1000ms linear;
-    transition:rgb(39, 137, 80,0.8)  1000ms linear;
+    background-color: #F2F2F2 !important;
+    -webkit-transition: #F2F2F2 1000ms linear;
+    -ms-transition: #F2F2F2 1000ms linear;
+    transition:#F2F2F2  1000ms linear;
 }
-
 
 .card-title {
     text-align: center;
@@ -60,13 +55,12 @@
     line-height: 1.4em;
 }
 
-
 h2.section-title {
     width: 100%; 
     text-align: center; 
     border-bottom: 7px solid #227346; 
     line-height: 0;
-    margin: 10px 0 20px; 
+    margin: 50px 0 20px; 
     margin-bottom: 2em;
  } 
  
@@ -75,23 +69,20 @@ h2.section-title {
      padding:0 10px; 
  }
 
-
  .our-departments .background-container {
-     background-image: url("/arquivos/cards-background.png");
      background-repeat: no-repeat !important;
      background-size: contain;
      background-position: center center;
-     padding-top: 6em;
-    padding-bottom: 3em;
  }
+
 .background-container .content .card {
-    border: 2px solid #227346;
-    border-radius: 20px;
     text-align: center;
     padding: 14px;
     margin: 0.5em;
-    background-color: #F2F2F2;
-    width: 31%;
+    /* Background in Card:
+    background-color: #F2F2F2; */
+    width: 32%;
+    display: inline-block;
 }
 
 .showcase-default h2 {
@@ -100,31 +91,50 @@ h2.section-title {
     font-size: 1.7em !important;
 }
 
+#titulofiliais {
+    padding-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+}   
+
+#titulocategorias {
+    padding-top: 15px;
+    padding-right: 5px;
+    font-size: 14px !important;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.card-title h4 {
+    font-size: 14px !important;
+    color: #000;
+    font-weight: bold;
+   }
+
+/* ## Itens Desalinhados ##
 
 #carouselmarcas .owl-item:nth-child(odd)
 {
     margin-top: 4.5em;
-}
+} */
 
 .card-title h4 {
-        
     font-size: 14px !important;
+    color: #000;
+    font-weight: bold;
 }
 
 .our-categories .content .card a img{
-    height: 78px;
-    margin: auto
+    margin: auto;
 }
 
 @media (max-width: 1600px)  {
 
- 
-
     .collection-title h2 {
         font-size: 1.7em;
     }
-
-    
 }
 
 @media (max-width: 500px)  {
@@ -149,7 +159,6 @@ h2.section-title {
     }
 }
 
-
 @media (max-width: 600px)  {
     
     .owl-carousel .owl-controls .owl-pagination .owl-page{
@@ -162,5 +171,11 @@ h2.section-title {
     .prateleira .box-item {
         height: 29em !important;
     }
-    
+
+    .background-container .content .card{
+        text-align: center;
+    padding: 3px !important;
+     margin: 0em !important; 
+    width: 50%;
+    }
 }
