@@ -1,0 +1,127 @@
+.flag {
+    color: transparent;
+  }
+  
+  #alignElement {
+    margin-left: -700px;
+    margin-top: 60px;
+  }
+  
+  .flag .ventilou-carajas {
+      background-color: #55A5C5;
+      color: white;
+      padding: 5px;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+  
+  .flag .colecao-televisoes {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete.png");
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+  }
+  
+  .flag .colecao-arcond {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete.png");
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+  }
+  
+  .flag .colecao-smartphones {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete.png");
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+  }
+  
+  .flag .colecao-ferramentas {
+      background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete2.png");
+      height: 65px;
+      background-repeat: no-repeat;
+      background-position: 0% center;
+      color: transparent;
+      position: absolute;
+      margin: -160px 0px 0px 130px;
+  }
+  
+  .flag .colecao-piscinas {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete2.png");
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+  }
+  
+  .flag .colecao-duchas-chuveiros {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete2.png");
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+  }
+  
+  .flag .colecao-eletro-fretegratis {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete2.png");
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+  }
+  
+  .flag .colecao-cuba {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-campanha-pias.png");
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+  }
+  
+  .flag .colecao-torneiras {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-campanha-pias.png");
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+  }
+  
+  .flag .colecao-pias {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-campanha-pias.png");
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+  }
+
+
+  .flag .colecao-verao {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/col-verao-banner.png");
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+  }
