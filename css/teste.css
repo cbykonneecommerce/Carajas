@@ -1,0 +1,5 @@
+.elementor-widget-container .elementor-heading-title span a:first-child::after {
+  content: url("https://blog.carajasonline.com/wp-content/uploads/2020/12/seta.png");
+  margin-left: 5px;
+}
+/*# sourceMappingURL=teste.css.map */

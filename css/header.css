@@ -24,7 +24,31 @@
     margin-top: 0px;
 }
 
-.welcome .dropdown-toggle .fa-angle-down:before {
+.welcome .fa-angle-down {
+    float: none;
+    color: #F58220 !important
+}
+
+.welcome .btn-group {
+    vertical-align: initial !important;
+}
+
+.welcome .btn-group button.btn-dropdown{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 0;
+    margin-left: 15px;
+}
+
+.welcome .btn-group button.btn-dropdown:after{  
+    content: url("https://carajas.vteximg.com.br/arquivos/icon-lojas-header.svg");
+    margin-left: 5px;
+    position: absolute;
+}
+
+.welcome .fa-angle-down:before {
     content: "\f107";
     position: absolute;
     /* text-align: center; */
@@ -488,7 +512,7 @@ h2 {
     color: #F67828;
 }
 
-.dropdown-toggle i {
+.dropdown i {
     float: right;
 }
 

@@ -13,116 +13,270 @@
       padding: 5px;
       font-weight: 600;
       text-transform: uppercase;
+      font-size: 0px;
   }
   
   .flag .colecao-televisoes {
-    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete.png");
-    height: 65px;
+    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil.png");
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
     background-position: 0% center;
     color: transparent;
     position: absolute;
     margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
   }
   
   .flag .colecao-arcond {
-    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete.png");
-    height: 65px;
+    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-nordeste.png");
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
     background-position: 0% center;
     color: transparent;
     position: absolute;
     margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
   }
   
   .flag .colecao-smartphones {
-    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete.png");
-    height: 65px;
+    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil.png");
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
     background-position: 0% center;
     color: transparent;
     position: absolute;
     margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
   }
   
   .flag .colecao-ferramentas {
-      background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete2.png");
-      height: 65px;
+      background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil.png");
+      width: 70px;
+      height: 70px;
       background-repeat: no-repeat;
       background-position: 0% center;
       color: transparent;
       position: absolute;
       margin: -160px 0px 0px 130px;
+      background-size: contain;
+      font-size: 0px;
   }
   
   .flag .colecao-piscinas {
-    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete2.png");
-    height: 65px;
+    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil.png");
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
     background-position: 0% center;
     color: transparent;
     position: absolute;
     margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
   }
   
   .flag .colecao-duchas-chuveiros {
-    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete2.png");
-    height: 65px;
+    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
     background-position: 0% center;
     color: transparent;
     position: absolute;
     margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
   }
   
   .flag .colecao-eletro-fretegratis {
-    background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete2.png");
-    height: 65px;
+    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil.png");
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
     background-position: 0% center;
     color: transparent;
     position: absolute;
     margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
   }
   
   .flag .colecao-cuba {
     background-image: url("https://carajas.vteximg.com.br/arquivos/flag-campanha-pias.png");
-    height: 65px;
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
     background-position: 0% center;
     color: transparent;
     position: absolute;
     margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
   }
   
   .flag .colecao-torneiras {
     background-image: url("https://carajas.vteximg.com.br/arquivos/flag-campanha-pias.png");
-    height: 65px;
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
     background-position: 0% center;
     color: transparent;
     position: absolute;
     margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
   }
   
   .flag .colecao-pias {
     background-image: url("https://carajas.vteximg.com.br/arquivos/flag-campanha-pias.png");
-    height: 65px;
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
     background-position: 0% center;
     color: transparent;
     position: absolute;
     margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
   }
 
 
   .flag .colecao-verao {
     background-image: url("https://carajas.vteximg.com.br/arquivos/col-verao-banner.png");
-    height: 92px;
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
     background-position: 0% center;
     color: transparent;
     position: absolute;
     margin: -160px 0px 0px 130px;
-    background-size: cover;
+    background-size: contain;
+    font-size: 0px;
+  }
+
+  .flag .chuveiros-e-duchas {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
+  }
+  
+
+  .flag .aparelhos-de-jantar {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
+  }
+
+  .flag .torneiras {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
+  }
+
+    .flag .cuidados-pessoais {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
+  }
+
+  .flag .tomadas-e-interruptores {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -160px 0px 0px 130px;
+    background-size: contain;
+    font-size: 0px;
+  }
+
+  .flag .cabos {
+    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: transparent;
+    position: absolute;
+    margin: -180px 0px 0px 100px;
+    background-size: contain;
+    font-size: 0px;
+  }
+
+  .prateleira .flag .colecao-televisoes,
+  .prateleira .flag .colecao-arcond,
+  .prateleira .flag .colecao-smartphones,
+  .prateleira .flag .colecao-ferramentas,
+  .prateleira .flag .colecao-piscinas,
+  .prateleira .flag .colecao-duchas-chuveiros,
+  .prateleira .flag .colecao-eletro-fretegratis,
+  .prateleira .flag .colecao-cuba,
+  .prateleira .flag .colecao-torneiras,
+  .prateleira .flag .colecao-pias,
+  .prateleira .flag .colecao-verao,
+  .prateleira .flag .chuveiros-e-duchas,
+  .prateleira .flag .aparelhos-de-jantar,
+  .prateleira .flag .torneiras,
+  .prateleira .flag .cuidados-pessoais,
+  .prateleira .flag .tomadas-e-interruptores,
+  .prateleira .flag .cabos{
+    margin: -190px 0px 0px 130px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .prateleira .flag .colecao-televisoes,
+    .prateleira .flag .colecao-arcond,
+    .prateleira .flag .colecao-smartphones,
+    .prateleira .flag .colecao-ferramentas,
+    .prateleira .flag .colecao-piscinas,
+    .prateleira .flag .colecao-duchas-chuveiros,
+    .prateleira .flag .colecao-eletro-fretegratis,
+    .prateleira .flag .colecao-cuba,
+    .prateleira .flag .colecao-torneiras,
+    .prateleira .flag .colecao-pias,
+    .prateleira .flag .colecao-verao,
+    .prateleira .flag .chuveiros-e-duchas,
+    .prateleira .flag .aparelhos-de-jantar,
+    .prateleira .flag .torneiras,
+    .prateleira .flag .cuidados-pessoais,
+    .prateleira .flag .tomadas-e-interruptores,
+    .prateleira .flag .cabos {
+      margin: -140px 0px 0px 85px;
+    }
   }

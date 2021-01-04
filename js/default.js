@@ -142,8 +142,15 @@
 			    navigationText 		: ['<button class="btn btn-default btn-lg"><i class="fa fa-chevron-left"></i></button>','<button class="btn btn-default btn-lg"><i class="fa fa-chevron-right"></i></button>'],
 			});
 		}
-
 	}
+});
 
-
+$(document).click(function(e) {
+    var target = e.target;
+    $('.dropdown-menu').each(function() {
+        var $this = $(this);
+        var dropdown = $this.prev('.btn-dropdown');
+        if (dropdown[0] == target) $(this).toggle();
+        else $(this).hide();
+    });
 });

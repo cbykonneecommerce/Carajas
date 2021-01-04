@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+ 
+ <head>
+     <title> Lojas</title>
+     <vtex:metaTags/>
+     <vtex:template id="commonStyles" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     
+     <link href="/arquivos/filial.css" rel="stylesheet" type="text/css" />
+     <link href="/arquivos/home.css" rel="stylesheet" type="text/css" />
+
+     <style>
+         #titulo-info {
+            color: #F68326;
+            font-size: 26px;
+            font-weight: bold;
+         }
+         
+         #espacamento {
+            line-height: 25px;
+            font-size: 14px;
+         }
+         
+         #baixar-catalogo {
+            background-color: #F67828;
+            color: white;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            width: 70%;
+            margin-bottom: 10px;
+            border-radius: 0px;
+         }
+     </style>
+ </head>
+ 
+ <body id="institucional-page">
+     <div class="page">
+ 
+        <vtex:template id="Header" />
+                     
+        <div id="institucional-extra-top"></div>                    
+         
+        <div class="container-fluid" style="padding-right: 0px !important; padding-left: 0px !important;"></div>
+        
+         <section id="institucional-content" class="container-fluid">
+            <div class="fullbanner hidden-xs" style="width: 100%" id="desk">
+                <vtex:contentPlaceHolder id="image-filial-desktop" />
+            </div>
+            
+            <div class="fullbanner visible-xs" style="width: 100%" id="desk">
+                <vtex:contentPlaceHolder id="image-filial-mobile" />
+            </div>
+             
+             <div class="row hidden-xs">
+                     <div class="col-sm-5" style="padding-left: 10%;">
+                         <vtex:contentPlaceHolder id="informacoes-filial-content" />
+                     </div>
+                     
+                    <div class="col-sm-7" style="text-align: center; margin-top: 20px;">
+                        <vtex:contentPlaceHolder id="loja-box-map-mob" />
+                    </div>
+                    
+             </div>
+             
+             <div class="row">
+                <div class="col-xs-12 visible-xs">
+                    <div style="width: 100%" id="loja-map" class="visible-xs">
+                    <vtex:contentPlaceHolder id="informacoes-filial-mobile" />
+                    </div>
+                </div>
+             </div>
+             
+             <div class="row">
+                <div class="col-xs-12 visible-xs">
+                    <div style="text-align: center; width: 100%" id="loja-map" class="visible-xs">
+                        <vtex:contentPlaceHolder id="loja-box-map-mob" />
+                    </div>
+                </div>
+             </div>
+         </section><!-- #content -->  
+         
+        <div id="home-content" class="container">    
+            <div class="collection-title" style="margin-top: 5%;">
+                <h2 style="color: black;">Nossas filiais</h2>
+            </div>
+            
+            <div class="owl-carousel owl-theme" id="carouseldecategorias">
+                <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
+                <div class="item"><a href="/lojas/arapiraca">
+                    <img src="/arquivos/arapiraca-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Arapiraca</p>
+                </div>
+            
+                <div class="item"><a href="/lojas/cabedelo">
+                    <img src="/arquivos/cabedelo-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Cabedelo</p>
+                </div>
+                
+                <div class="item"><a href="/lojas/campinagrande">
+                    <img src="/arquivos/campinagrande-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Campina Grande</p>
+                </div>
+            
+                <div class="item"><a href="/lojas/fortaleza">
+                    <img src="/arquivos/fortaleza-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Fortaleza</p>
+                </div>
+            
+                <div class="item"><a href="/lojas/joaopessoa">
+                    <img src="/arquivos/joaopessoa-filial.png" alt="" /></a>
+                    <p id="titulocategorias">João Pessoa</p>
+                </div>
+            
+                <div class="item"><a href="/lojas/juazeiro">
+                    <img src="/arquivos/juazeiro-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Juazeiro</p>
+                </div>
+            
+                <div class="item"><a href="/lojas/maceio">
+                    <img src="/arquivos/maceio-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Maceió</p>
+                </div>
+            
+                <div class="item"><a href="/lojas/natal">
+                    <img src="/arquivos/natal-filial.png" alt="" /></a>
+                    <p id="titulocategorias">Natal</p>
+                </div>
+            
+            </div>
+        </div>
+                 
+         <!--  SubTemplate: FooterTelevendas -->
+         <vtex:template id="FooterTelevendas" />
+         <!-- /SubTemplate: FooterTelevendas -->
+     
+     </div><!-- .container-fluid -->
+ 
+ </body>
+ 
+ <vtex:template id="commonScripts" />
+ </html>

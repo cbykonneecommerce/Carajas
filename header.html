@@ -5,36 +5,33 @@
     <div class="welcome-bar hidden-xs">
         <div class="container-fluid">
             <div class="row">
-                <div class="welcome col-xs-6">
+                <div class="welcome dropdown col-xs-6">
                     <!-- aqui vai ser o dropdown de lojas fisicas -->
-                    <span>Escolha uma loja:</span>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                        aria-expanded="false" style="margin-left: 10px;">
-                        Lojas <i class="fa fa-angle-down"
-                            style="float: none;padding-left: 1em;color: #F58220 !important"></i>
-                    </a>
-                    <ul class="dropdown-menu" id="lojas-fisicas" style="background-color: #278950;">
-                        <li><a href="/lojas/maceio">Maceió</a></li>
-                        <li><a href="/lojas/fortaleza">Fortaleza</a></li>
-                        <li><a href="/lojas/juazeiro">Juazeiro</a></li>
-                        <li><a href="/lojas/natal">Natal</a></li>
-                        <li><a href="/lojas/joaopessoa">João Pessoa</a></li>
-                        <li><a href="/lojas/arapiraca">Arapiraca</a></li>
-                        <li><a href="/lojas/campinagrande">Campina Grande</a></li>
-                        <li><a href="/lojas/cabedelo">Cabedelo</a></li>
-                    </ul>
-
+                    <!-- <span>Escolha uma loja:</span> -->
+                    <div class="btn-group">
+                        <button class="btn-dropdown">Escolha uma de nossas lojas</button>
+                        <ul class="dropdown-menu" id="lojas-fisicas" style="background-color: #278950;">
+                            <li><a href="/lojas/maceio">Maceió</a></li>
+                            <li><a href="/lojas/fortaleza">Fortaleza</a></li>
+                            <li><a href="/lojas/juazeiro">Juazeiro</a></li>
+                            <li><a href="/lojas/natal">Natal</a></li>
+                            <li><a href="/lojas/joaopessoa">João Pessoa</a></li>
+                            <li><a href="/lojas/arapiraca">Arapiraca</a></li>
+                            <li><a href="/lojas/campinagrande">Campina Grande</a></li>
+                            <li><a href="/lojas/cabedelo">Cabedelo</a></li>
+                        </ul>
+                    </div>
                 </div><!-- .welcome -->
                 
                 <div class="help-menu col-xs-6" style="padding-right: 4%;">
                     <ul class="text-right list-inline">
                         <li><span>
-                            <a href="https://wa.me/551140032020" target="_blank" style="font-size: 13px;line-height: 20px;color: white !important;">11 4003-2020</a> <img src="/arquivos/whatsapp-logo-fixed.png" alt="" style="width: 15px;
+                            <a href="https://wa.me/551140032020" target="_blank" rel="noopener" style="font-size: 13px;line-height: 20px;color: white !important;">11 4003-2020</a> <img src="/arquivos/whatsapp-logo-fixed.png" alt="" style="width: 15px;
                             margin-left: 10px;margin-top: -2px;" /></span></li>
                         <li class="televendas-topo"><span>Televendas:
                                 <vtex.cmc:telefone /></span></li>
                         <li class="link-orders"><a href="/account#/orders" title="Meus Pedidos">Meus Pedidos</a></li>
-                        <li class="link-sobre hidden-sm "><a href="/institucional/atendimento">Atendimento</a></li>
+                        <li class="link-sobre hidden-sm "><a href="/televendas">Atendimento</a></li>
                         <li class="link-help  hidden-sm "><a href="/institucional/faq">Dúvidas</a></li>
 
                     </ul>
@@ -48,7 +45,7 @@
             <div class="row">
 
                 <div class="button-menu-xs col-xs-3 col-sm-1 visible-xs visible-sm visible-md">
-                    <button class="btn btn-default btn-open-menu-xs btn-menu-xs" data-id="#menu-mobile"><i
+                    <button aria-label="Menu Mobile" class="btn btn-default btn-open-menu-xs btn-menu-xs" data-id="#menu-mobile"><i
                             class="fa fa-bars"></i></button>
                     <div id="menu-mobile" style="display: none;">
                         <div class="header-menu-mobile visible-xs">
@@ -74,8 +71,8 @@
                 </div><!-- .button-menu-xs -->
 
                 <div class="logo col-xs-6 col-sm-3 col-md-2 col-lg-2">
-                    <a href="/" title="STORE" class="link-logo">
-                        <img src="/arquivos/logo-carajas1.png" alt="Logo" />
+                    <a href="/" title="Carajás Home Center" class="link-logo">
+                        <img src="/arquivos/logo-carajas1.png" alt="Logo Carajás" />
                     </a>
                 </div>
 
@@ -96,9 +93,9 @@
                     <ul class="nav navbar-nav">
 
                         <li class="dropdown hidden-sm hidden-md  hidden-xs" id="usuario-login">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            <a href="/account" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                 aria-haspopup="true" aria-expanded="false"><img src="/arquivos/login.png"
-                                    style="max-height: 45px !important;" /></a>
+                                    style="max-height: 45px !important;" alt="Login" /></a>
                             <ul class="dropdown-menu" id="drop-login">
                                 <li><a href="/account" title="Fazer Login"
                                         class="btn btn-default btn-login">ENTRAR/CADASTRE-SE</a></li>
