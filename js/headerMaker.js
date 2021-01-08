@@ -83,7 +83,7 @@ $(document).ready(function () {
                         `);
                         
                         $(`.depto-${element.name} .row`).append(`
-                        <div class="col-sm-4 thirdlayer thirdlayer-${subs.name} parent-${element.name}">
+                        <div class="col-sm-4 thirdlayer parent-${element.name}">
                             <img class="banner-cat-${element.name} " src="/arquivos/banner-cat-${element.name}.jpg"/>
                  </div>
                         `);
