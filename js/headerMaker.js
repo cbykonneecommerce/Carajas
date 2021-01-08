@@ -81,12 +81,7 @@ $(document).ready(function () {
                      </ul>
                  </div>
                         `);
-                        
-                        $(`.depto-${element.name} .row`).append(`
-                        <div class="col-sm-4 thirdlayer parent-${element.name}">
-                            <img class="banner-cat-${element.name} " src="/arquivos/banner-cat-${element.name}.jpg"/>
-                 </div>
-                        `);
+                   
                         
                         //Mobile
                         $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${subs.name}"><a href="${subs.url}">${divtextsub}</a></span>
@@ -152,6 +147,13 @@ $(document).ready(function () {
                        
 
                     })
+
+                         
+                    $(`.depto-${element.name} .row`).append(`
+                    <div class="col-sm-4 thirdlayer parent-${element.name}">
+                        <img class="banner-cat-${element.name} " src="/arquivos/banner-cat-${element.name}.jpg"/>
+             </div>
+                    `);
 
                         //Desktop
 
