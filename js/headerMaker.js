@@ -75,13 +75,20 @@ $(document).ready(function () {
 
                         if (subs.hasChildren) {
                             $(`.depto-${element.name} .row`).append(`
-                        <div class="col-sm-8 secondLayer secondLayer-${subs.name} parent-${element.name}" style="display:none">
+                        <div class="col-sm-4 secondLayer secondLayer-${subs.name} parent-${element.name}" style="display:none">
                      <ul class="">
                          
                      </ul>
                  </div>
                         `);
-                            //Mobile
+                        
+                        $(`.depto-${element.name} .row`).append(`
+                        <div class="col-sm-4 thirdlayer thirdlayer-${subs.name} parent-${element.name}" style="display:none">
+                            <img class="banner-cat-${element.name} " src="/arquivos/banner-cat-${element.name}.jpg"/>
+                 </div>
+                        `);
+                        
+                        //Mobile
                         $(`.dropdown-container#${element.name}`).append(`<div style="display:block;border-top: solid 1px #E4E5E9;"><span class="depto-${subs.name}"><a href="${subs.url}">${divtextsub}</a></span>
                         <button class="dropdown-btn" id="${subs.name}"><i class="fa fa-angle-down"></i></button></div>
                         <div class="dropdown-container" id="${subs.name}"></div>`);
