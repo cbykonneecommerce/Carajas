@@ -2,9 +2,8 @@
   color: transparent;
 }
 
-#alignElement {
-  margin-left: -700px;
-  margin-top: 60px;
+#alignElement .flag {
+  width: 183px;
 }
 /*
 .flag .ventilou-carajas {
@@ -275,4 +274,12 @@
   background-repeat: no-repeat;
   background-position:  center;
   background-size: contain;
+}
+
+
+#alignElement .flag.colecao-smartphones{
+  background-image: url(https://carajas.vteximg.com.br/arquivos/flag-frete-gratis--brasil.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
 }
