@@ -269,7 +269,7 @@
 
 /*CBYK ONNE*/
 
-.flag .colecao-smartphones {
+.flag .smartphone-frete-gratis {
   background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete-gratis--brasil.gif");
   background-repeat: no-repeat;
   background-position:  center;
@@ -277,7 +277,7 @@
 }
 
 
-#alignElement .flag.colecao-smartphones{
+#alignElement .flag.smartphone-frete-gratis{
   background-image: url(https://carajas.vteximg.com.br/arquivos/flag-frete-gratis--brasil.gif);
   background-repeat: no-repeat;
   background-position: left;
