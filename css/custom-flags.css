@@ -5,266 +5,7 @@
 #alignElement .flag {
   width: 183px;
 }
-/*
-.flag .ventilou-carajas {
-    background-color: #55A5C5;
-    color: white;
-    padding: 5px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0px;
-}
 
-.flag .colecao-televisoes {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-.flag .colecao-arcond {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-nordeste.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-
-.flag .colecao-ferramentas {
-    background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil.png");
-    width: 70px;
-    height: 70px;
-    background-repeat: no-repeat;
-    background-position: 0% center;
-    color: transparent;
-    position: absolute;
-    margin: -160px 0px 0px 130px;
-    background-size: contain;
-    font-size: 0px;
-}
-
-.flag .colecao-piscinas {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-.flag .colecao-duchas-chuveiros {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-.flag .colecao-eletro-fretegratis {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-.flag .colecao-cuba {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-campanha-pias.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-.flag .colecao-torneiras {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-campanha-pias.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-.flag .colecao-pias {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-campanha-pias.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-
-.flag .colecao-verao {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/col-verao-banner.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-.flag .chuveiros-e-duchas {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-
-.flag .aparelhos-de-jantar {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-.flag .torneiras {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-  .flag .cuidados-pessoais {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-.flag .tomadas-e-interruptores {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -160px 0px 0px 130px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-.flag .cabos {
-  background-image: url("https://carajas.vteximg.com.br/arquivos/frete-gratis-brasil-199.png");
-  width: 70px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-position: 0% center;
-  color: transparent;
-  position: absolute;
-  margin: -180px 0px 0px 100px;
-  background-size: contain;
-  font-size: 0px;
-}
-
-.prateleira .flag .colecao-televisoes,
-.prateleira .flag .colecao-arcond,
-.prateleira .flag .colecao-ferramentas,
-.prateleira .flag .colecao-piscinas,
-.prateleira .flag .colecao-duchas-chuveiros,
-.prateleira .flag .colecao-eletro-fretegratis,
-.prateleira .flag .colecao-cuba,
-.prateleira .flag .colecao-torneiras,
-.prateleira .flag .colecao-pias,
-.prateleira .flag .colecao-verao,
-.prateleira .flag .chuveiros-e-duchas,
-.prateleira .flag .aparelhos-de-jantar,
-.prateleira .flag .torneiras,
-.prateleira .flag .cuidados-pessoais,
-.prateleira .flag .tomadas-e-interruptores,
-.prateleira .flag .cabos{
-  margin: -190px 0px 0px 130px;
-}
-
-@media screen and (max-width: 600px) {
-  .prateleira .flag .colecao-televisoes,
-  .prateleira .flag .colecao-arcond,
-  .prateleira .flag .colecao-ferramentas,
-  .prateleira .flag .colecao-piscinas,
-  .prateleira .flag .colecao-duchas-chuveiros,
-  .prateleira .flag .colecao-eletro-fretegratis,
-  .prateleira .flag .colecao-cuba,
-  .prateleira .flag .colecao-torneiras,
-  .prateleira .flag .colecao-pias,
-  .prateleira .flag .colecao-verao,
-  .prateleira .flag .chuveiros-e-duchas,
-  .prateleira .flag .aparelhos-de-jantar,
-  .prateleira .flag .torneiras,
-  .prateleira .flag .cuidados-pessoais,
-  .prateleira .flag .tomadas-e-interruptores,
-  .prateleira .flag .cabos {
-    margin: -140px 0px 0px 85px;
-  }
-}*/
 
 
 /*CBYK ONNE*/
@@ -283,3 +24,164 @@
   background-position: left;
   background-size: auto;
 }
+
+
+
+
+.flag .arcondicionado-frete-gratis-al-pb-rn-ce-01-02-2021 {
+  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete-gratis--al-pb-ce-rn.gif");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: contain;
+}
+
+
+#alignElement .arcondicionado-frete-gratis-al-pb-rn-ce-01-02-2021{
+  background-image: url(https://carajas.vteximg.com.br/arquivos/flag-frete-gratis--al-pb-ce-rn.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+}
+
+
+
+
+
+
+.flag .torneiras-frete-gratis-brasil-01-02-2021 {
+  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-199.gif");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: contain;
+}
+
+
+#alignElement .torneiras-frete-gratis-brasil-01-02-2021{
+  background-image: url(https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-199.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  
+}
+
+.flag .aparelho-de-jantar-frete-gratis-brasil-01-02-2021 {
+  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-199.gif");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: contain;
+}
+
+
+#alignElement .aparelho-de-jantar-frete-gratis-brasil-01-02-2021{
+  background-image: url(https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-199.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  
+}
+
+.flag .cabos-frete-gratis-brasil-01-02-2021 {
+  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-199.gif");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: contain;
+}
+
+
+#alignElement .cabos-frete-gratis-brasil-01-02-2021{
+  background-image: url(https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-199.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  
+}
+
+
+.flag .iluminacao-frete-gratis-brasil-01-02-2021 {
+  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-199.gif");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: contain;
+}
+
+
+#alignElement .iluminacao-frete-gratis-brasil-01-02-2021{
+  background-image: url(https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-199.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  
+}
+
+
+
+
+
+
+.flag .audio-frete-gratis-brasil-01-02-2021 {
+  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-299.gif");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: contain;
+}
+
+
+#alignElement .audio-frete-gratis-brasil-01-02-2021{
+  background-image: url(https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-299.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  
+}
+
+.flag .furadeira-frete-gratis-brasil-01-02-2021 {
+  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-299.gif");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: contain;
+}
+
+
+#alignElement .furadeira-frete-gratis-brasil-01-02-2021{
+  background-image: url(https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-299.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  
+}
+
+
+.flag .eletrinho-frete-gratis-brasil-01-02-2021 {
+  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-299.gif");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: contain;
+}
+
+
+#alignElement .eletrinho-frete-gratis-brasil-01-02-2021{
+  background-image: url(https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-299.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  
+}
+
+
+.flag .ventiladordeteto-frete-gratis-brasil-01-02-2021 {
+  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-299.gif");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: contain;
+}
+
+
+#alignElement .ventiladordeteto-frete-gratis-brasil-01-02-2021{
+  background-image: url(https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-299.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  
+}
+
+
