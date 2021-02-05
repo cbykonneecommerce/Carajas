@@ -169,6 +169,18 @@ $($("#specification table tr")[$("#specification table tr").length - 1]).remove(
 
 //CALCULADORA
 
+function firstCalc(metragem, price){
+    let qty = 1
+
+   
+    console.log(qty)
+    let metragemOriginal = metragem;
+    metragemOriginal = metragem * qty;
+    let totalPrice = metragemOriginal.toFixed(2) * price
+    $("#metragemPiso").html(`Você está comprando: ${metragemOriginal.toFixed(2)} M² <br/><br/>
+    Caixas: ${qty} no total de: <span style="color: #278950;font-weight: 400;">R$ ${totalPrice.toFixed(2)} </span>`);
+}
+
 setTimeout(()=>{
     let ispiso = false;
     let metragem = 0
@@ -186,6 +198,8 @@ setTimeout(()=>{
         let price = skuJson.skus[0].bestPriceFormated;
         price = price.replace(/,/g, '.').replace(/[\sR$]+/g, '');
         price = Number(price);
+
+        firstCalc(metragem, price);
 
         $(".btn-menos").click(()=>{
             let qty = Number($('.buy-button-box .box-qtd .qtd').val());
