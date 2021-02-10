@@ -1,171 +1,408 @@
 /* /files/checkout5-custom.css */
-
-
-#logo-carajas{
-    width: 200px;
-    height: auto;
+@media (min-width: 1200px){
+  .container-cart, .container-order-form {
+      width: 1200px;
+    }
+  
+  
+  .cart-fixed {
+        width: 328px !important;
+      }
   }
-
-  .table thead:first-child tr:first-child th{
-    font-weight: 200;
-  color: #278950;
-  font-size: 25px;
-}
-
-.icon-plus-sign, .icon-minus-sign, .icon-remove  {
-    color: #278950
-}
-
-.link-coupon-add span {
-    color: #BDBDBD !important;
-}
-
-.full-cart .summary-totalizers tr{
-    font-size: 16px;
-    color: #4F4F4F;
-}
-
-.full-cart .summary-totalizers .info, .full-cart .summary-totalizers .monetary{
-    font-size: 16px;
-    color: #227346 !important;
-}
-.srp-main-title  {
+  
+  * {
+      font-family: 'Nunito', sans-serif;
+  }
+  
+  .product-name a {
     color: #333 !important;
-    font-weight: 300;
-}
-  #cart-title{
-    display: none !important;
+      font-weight: 600;
   }
   
-  .cart, .step, .step.active{
-    border: 1px solid #808080;
-    border-top: solid 4px #278950;
-    border-radius: 10px;
-  }
-
-  .cart-template.mini-cart {
-      border-radius: 0px;
-  }
-
-  
-  a, span {
-    color: #4F4F4F;
-  }
-  .btn-place-order {
-    font-size: 23px;
-    font-weight: 200;
-    text-transform: uppercase;
-    background-color: #F58220 !important;
-    text-shadow: none !important;
-    background-image: none !important;
-    border-color: transparent !important;
-}
-  #btn-client-pre-email {
-    font-size: 23px;
-    font-weight: 200;
-    text-transform: uppercase;
-    background-color: #F58220 !important;
-    text-shadow: none !important;
-    background-image: none !important;
-    border-color: transparent !important;
-  }
-
-  p.submit {
-      text-align: center;
-  }
-
-  button.btn.btn-large, input[type="submit"].btn.btn-large {
-    font-size: 12px;
-    /* text-align: center; */
-    font-weight: 200;
-    text-transform: uppercase;
-    background-color: #F58220 !important;
-    text-shadow: none !important;
-    background-image: none !important;
-    border-color: transparent !important;
-  }
-  #btn-client-pre-email span{
+  .mini-cart .table td {
+      text-shadow: none !important;
       color: white !important;
   }
-
-  .step .text input {
-    border: solid 1px #278950;
-    background-color: #F2F2F2;
+  
+  .payment-data .link-gift-card{
+      left: 0px;
+      line-height: 40px;
+      border: 2px solid #f4f4f4;
+      border-radius: 4px;
+      text-align: center;
+      width: 185px;
+      margin-bottom: 5px;
+      display: block;
+      position: relative;
   }
-  .step .text label, .step .select label {
+
+  a#show-gift-card-group {
+      font-size: 0px;
+  }
+
+  a#show-gift-card-group:after {
+      content: 'Adicionar vale compra';
+      font-size: 14px;
+  }
+
+  .payment-group-item {
+      border: 2px solid #f4f4f4;
+      border-right: 2px solid #f4f4f4;
+      display: block;
+      margin-left: 0px;
+      opacity: .7;
+      width: 100%;
+      padding: 0 18px 0 8px;
+      border-radius: 5px 0 0 5px;
+      -moz-border-radius: 5px 0 0 5px;
+      -webkit-border-radius: 5px 0 0 5px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+  }
+
+  .payment-group-item.active{
+      margin-bottom: 8px;
+  }
+
+  .payment-group-list-btn {  
+      top: -35px;
+      position: relative;
+  }
+
+  .gift-card-provider-default label{
+      font-size: 0px;
+  }
+
+  .gift-card-provider-default label:after{
+      content: 'Vale compra';
+      font-size: 14px;
+  }
+  
+  .payment-data .gift-card-section input[type=text]{
+      padding-top: 0;
+      padding-bottom: 0;
+      box-shadow: none;
+      border-radius: 0;
+      background: #fff;
+      transition: border .2s ease-out;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #929292;
+      min-height: 30px;
+      line-height: 30px;
+      margin-left: 10px;
+  }
+  
+  .link-choose-more-products{
+    color: #F58220 !important;
+      text-decoration: none;
+      border: solid 2px #F58220 !important;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 8px;
+      padding-bottom: 12px;
+      border-radius: 5px;
+      font-size: 18px;
+      background-color: transparent;
+      /* margin-left: 1em; */
+      text-decoration: none;
+      outline-style: none;
+      display: inline-block;
+      box-shadow: none;
+      font-weight: 700;
+  }
+  
+  
+  
+  .icon-edit:before {
+    color: #F58220 !important;
+  }
+  
+  #logo-carajas{
+      width: 200px;
+      height: auto;
+    }
+  
+    .table thead:first-child tr:first-child th{
+    color: #278950;
+    font-size: 25px;
+  }
+  
+  .icon-plus-sign, .icon-minus-sign, .icon-remove  {
+      color: #278950
+  }
+  
+  .link-coupon-add span {
+      color: #BDBDBD !important;
+  }
+  
+  .full-cart .summary-totalizers p.coupon-data{
+      display: none !important;
+  }
+  .full-cart .summary-totalizers .coupon-fieldset > div{
+      display: block !important;
+  }
+  
+  .full-cart .summary-totalizers tr{
+      font-size: 16px;
       color: #4F4F4F;
   }
-  .accordion-toggle i, #orderform-title {
+  
+  .full-cart .summary-totalizers .info, .full-cart .summary-totalizers .monetary{
+      font-size: 16px;
+      color: #227346 !important;
+  }
+  .srp-main-title  {
+      color: #333 !important;
+      font-weight: 300;
+  }
+    #cart-title{
+      display: none !important;
+    }
+    
+    .cart, .step, .step.active{
+      border: 1px solid #808080;
+      border-top: solid 4px #278950;
+      border-radius: 10px;
+    padding:12px;
+    }
+  
+    .cart-template.mini-cart {
+        border-radius: 0px;
+    }
+  
+    
+   /* a, span {
+      color: #4F4F4F;
+    }*/
+    .btn-place-order {
+      font-size: 23px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: #F58220 !important;
+      text-shadow: none !important;
+      background-image: none !important;
+      border-color: transparent !important;
+  }
+    #btn-client-pre-email {
+      font-size: 23px;
+      font-weight: 200;
+      text-transform: uppercase;
+      background-color: #F58220 !important;
+      text-shadow: none !important;
+      background-image: none !important;
+      border-color: transparent !important;
+    }
+  
+    p.submit {
+        text-align: center;
+    }
+  
+    button.btn.btn-large, input[type="submit"].btn.btn-large {
+      font-size: 12px;
+      /* text-align: center; */
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: #F58220 !important;
+      text-shadow: none !important;
+      background-image: none !important;
+      border-color: transparent !important;
+    }
+    #btn-client-pre-email span{
+        color: white !important;
+    }
+  
+    .step .text input {
+      border: solid 1px #278950;
+      background-color: #F2F2F2;
+    }
+    .step .text label, .step .select label {
+        color: #4F4F4F;
+    }
+    .accordion-toggle i:not(.icon-edit), #orderform-title {
+      display: none !important;
+    }
+    .accordion-toggle span, .accordion-heading .accordion-toggle{
+      font-family: 'Nunito', sans-serif !important;
+      color:#278950;
+    }
+  
+  
+    .mini-cart h2{
+      font-family: 'Nunito', sans-serif !important;
+      color: #278950;
+      background-color: transparent;
+      text-align: center;
+      font-size: 18px;
+      border-top: solid 4px #278950;
+      border-left: 1px solid #BDBDBD;
+      border-right: 1px solid #BDBDBD;
+      border-radius: 0px;
+      padding-top: 1em;
+    }
+  
+    .mini-cart .cart {
+      border-left: 1px solid #BDBDBD;
+      border-right: 1px solid #BDBDBD;     
+      border-radius: 0px;
+  
+    }
+  
+    .mini-cart .item{
+        border: none !important;
+    }
+  
+    .mini-cart .summary-template-holder {
+      background: #227346;
+      border-radius: 0px;
+      border:none
+    }
+  
+    #orderform-minicart-to-cart, .mini-cart .table tfoot td {
+      text-shadow: none;
+      color: white;
+      font-weight: 800;
+    }
+    .description, .mini-cart .item .fn{
+      font-family: 'Nunito', sans-serif;
+      color: #4F4F4F;
+      font-weight: bold;
+    }
+  
+  
+  
+    #tracker {
+      margin-bottom: 2em;
+      margin-top: -1em;
+      text-align: center;
+  }
+    
+  
+  .icon-edit {
+    display:block !important
+  }
+  
+  .payment-data .gift-card-section{
+    margin-left: 0;
+    width: 100%;
+    float: right;
+    box-sizing: border-box;
+  }
+  
+  .gift-card-section {
+     margin-bottom: 5px;
+     padding: 10px 15px 10px 20px;
+  }
+  
+  .payment-data .gift-card-section .btn{
+      border: 0;
+      box-shadow: 0;
+      text-shadow: 0;
+      border-radius: 0;
+      position: absolute;
+      margin-right: 10px;
+      right: 0;
+      text-transform: uppercase;
+      background-color: #227346 !important;
+      text-shadow: none !important;
+      background-image: none !important;
+      border-color: transparent !important;
+      padding: 10px 15px 10px 20px;
+        color: #fff;
+        top: 15px;
+  }
+  
+    @media (max-width: 1800px) {
+      #logo-carajas{
+        width: 10em;
+      }
+      .table thead:first-child tr:first-child th{
+        font-size: 20px;
+      }
+  
+      .btn-place-order {
+          font-size: 15px;
+      }
+  
+      #tracker img {
+          max-width: 80%
+      }
+    }
+
+
+
+   
+      .full-cart .summary-totalizers {
+        width: 42% !important;
+    }
+    .cart-more-options{
+      display: none !important;
+    }
+
+    .shipping-sla-selector .shipping-sla-options{
+      left: 20px !important;
+    position: relative !important;
+    display: block !important;
+    border: none !important;
+    box-shadow: none !important;
+    }
+    .full-cart .postal-code-for-sla{
+      font-size: 17px !important;
+    }
+
+    .shipping-sla-selector .icon-ok{
+      position: absolute;
+      left: 5px;
+    }
+
+    .shipping-sla-button{
+      color: white;
+      background-color: #227346;
+      background-image: none !important;
+      font-weight: 700;
+      display: none !important;
+    }
+
+    .full-cart .summary-totalizers .info{
+      text-align: left !important;
+    }
+
+    .totalizers-list > .Shipping{
+      display: contents !important;
+    }
+
+    .cart-active .table .srp-summary-result {
+      display: none !important;
+  }
+
+  .full-cart .summary-totalizers .monetary.form-postal-code{
+    display: block !important;
+  }
+
+  .full-cart .summary-totalizers .shipping-calculate .info{
     display: none !important;
   }
-  .accordion-toggle span, .accordion-heading .accordion-toggle{
-    font-family: "Nunito" !important;
-    color:#278950;
-  }
 
-
-  .mini-cart h2{
-    font-family: "Nunito" !important;
-    color: #278950;
-    background-color: transparent;
-    text-align: center;
-    font-size: 18px;
-    border-top: solid 4px #278950;
-    border-left: 1px solid #BDBDBD;
-    border-right: 1px solid #BDBDBD;
-    border-radius: 0px;
-    padding-top: 1em;
-  }
-
-  .mini-cart .cart {
-    border-left: 1px solid #BDBDBD;
-    border-right: 1px solid #BDBDBD;     
-    border-radius: 0px;
-
-  }
-
-  .mini-cart .item{
-      border: none !important;
-  }
-
-  .mini-cart .summary-template-holder {
-    background: #227346;
-    border-radius: 0px;
-    border:none
-  }
-
-  #orderform-minicart-to-cart, .mini-cart .table tfoot td {
-    text-shadow: none;
+  #cart-shipping-calculate{
     color: white;
-    font-weight: 400;
-  }
-  .description, .mini-cart .item .fn{
-    font-family: "Nunito";
-    color: #4F4F4F;
-    font-weight: bold;
+    background-color: #227346;
+    background-image: none !important;
   }
 
-
-
-  #tracker {
-    margin-bottom: 2em;
-    margin-top: -1em;
-    text-align: center;
-}
-  
-  @media (max-width: 1800px) {
-    #logo-carajas{
-      width: 10em;
-    }
-    .table thead:first-child tr:first-child th{
-      font-size: 20px;
-    }
-
-    .btn-place-order {
-        font-size: 15px;
-    }
-
-    #tracker img {
-        max-width: 80%
-    }
+  #shipping-calculate-link{
+    display: none !important;
   }
+  .full-cart .summary-totalizers .shipping-calculate{
+    display: block !important;
+  }
+
+  @media (max-width: 800px) {
+    .full-cart .summary-totalizers {
+      width: 100% !important;
+  }
+  }
+
+ 
+    
