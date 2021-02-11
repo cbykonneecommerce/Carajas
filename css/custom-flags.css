@@ -134,6 +134,27 @@
   
 }
 
+
+
+.flag .pias-cubas-e-torneiras---landing---torneira--2° {
+  background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-299.gif");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: contain;
+}
+
+
+#alignElement .pias-cubas-e-torneiras---landing---torneira--2°{
+  background-image: url(https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-299.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  
+}
+
+
+
+
 .flag .furadeira-frete-gratis-brasil-01-02-2021 {
   background-image: url("https://carajas.vteximg.com.br/arquivos/flag-frete-gratis-brasil--a-partir-de-299.gif");
   background-repeat: no-repeat;
