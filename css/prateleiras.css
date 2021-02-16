@@ -55,7 +55,7 @@
 
 .green-part {
     padding-bottom: 1em;
-    padding-top: 1em;
+    padding-top: 2em;
     border: 1px solid #EDEDED;
 }
 
@@ -76,7 +76,7 @@
 
 @media (max-width: 800px) {
     .prateleira .box-item {
-        height: 30em;
+        height: 35em;
     }
 }
 
