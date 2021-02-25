@@ -111,12 +111,15 @@ function gimmeDemIps() {
 
 $(document).ready(function () {
 
-    if(sessionStorage.gotlocation != true){
-        gimmeDemIps();
+    if (sessionStorage.gotlocation != true) {
+        setTimeout(function () {
+            gimmeDemIps();
+        }, 2000)
+
         sessionStorage.gotlocation = true
 
     }
-    
+
 
 
     $(".use-location").click(() => {
