@@ -79,6 +79,9 @@ function gimmeDemIps() {
             .then(res => {
                 console.log(res);
                 let coordinates = res.postal;
+                let city = res.city;
+                console.log(city)
+                $(".mylocation").text(city);
 
                 fetch(`/api/sessions`, {
                     method: "POST",
@@ -95,7 +98,7 @@ function gimmeDemIps() {
                     })
                 }).then(res => {
                     vtexjs.session.getSession().done(e => console.log(e))
-                    $(".mylocation").text(res.city);
+
                     $('#header-location-modal').modal('hide');
                 })
             });
@@ -108,7 +111,12 @@ function gimmeDemIps() {
 
 $(document).ready(function () {
 
+    if(sessionStorage.gotlocation != true){
+        gimmeDemIps();
+        sessionStorage.gotlocation = true
 
+    }
+    
 
 
     $(".use-location").click(() => {
@@ -169,7 +177,7 @@ function fillInAddress() {
     })
     console.log(mycep)
     console.log(myCity)
-    
+
     $(".mylocation").text(myCity)
 
     fetch(`/api/sessions`, {
