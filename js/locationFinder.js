@@ -111,10 +111,11 @@ function gimmeDemIps() {
 
 $(document).ready(function () {
 
-    if (sessionStorage.gotlocation != true) {
+    if (!sessionStorage.gotlocation) {
         setTimeout(function () {
+            console.log("Primeiro acesso")
             gimmeDemIps();
-        }, 2000)
+        }, 1000)
 
         sessionStorage.gotlocation = true
 

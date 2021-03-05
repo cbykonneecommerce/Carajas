@@ -7,7 +7,7 @@ $(document).ready(function() {
       
       $("#bannersegmentadomobile").owlCarousel({
      
-        autoPlay: 3000, //Set AutoPlay to 3 seconds
+        autoPlay: 6000, //Set AutoPlay to 6 seconds
     
         items : 1,
         itemsDesktop : [1199,1],
