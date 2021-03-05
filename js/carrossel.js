@@ -15,7 +15,7 @@ $(document).ready(function() {
         navigation: true,
         stopOnHover: true
     
-    });
+    }); 
     
     $("#carouselmarcas").owlCarousel({
      
