@@ -26,11 +26,11 @@ function eraseCookie(name) {
 
 
 function registercookiestate(uf) {
-    if (!readCookie("myuf")) {
-        createCookie("myuf", uf, 1);
+    if (!readCookie("mycity")) {
+        createCookie("mycity", uf, 10);
     } else {
-        eraseCookie("myuf");
-        createCookie("myuf", uf, 1);
+        eraseCookie("mycity");
+        createCookie("mycity", uf, 10);
     }
 }
 
@@ -82,6 +82,7 @@ function gimmeDemIps() {
                 let city = res.city;
                 console.log(city)
                 $(".mylocation").text(city);
+                registercookiestate(city)
 
                 fetch(`/api/sessions`, {
                     method: "POST",
@@ -100,6 +101,8 @@ function gimmeDemIps() {
                     vtexjs.session.getSession().done(e => console.log(e))
 
                     $('#header-location-modal').modal('hide');
+                    
+                    location.reload();
                 })
             });
 
@@ -111,6 +114,8 @@ function gimmeDemIps() {
 
 $(document).ready(function () {
 
+ 
+
     if (!sessionStorage.gotlocation) {
         setTimeout(function () {
             console.log("Primeiro acesso")
@@ -119,6 +124,10 @@ $(document).ready(function () {
 
         sessionStorage.gotlocation = true
 
+    } else{
+        readCookie("mycity")
+
+        $(".mylocation").text(readCookie("mycity"))
     }
 
 
@@ -183,6 +192,7 @@ function fillInAddress() {
     console.log(myCity)
 
     $(".mylocation").text(myCity)
+    registercookiestate(myCity)
 
     fetch(`/api/sessions`, {
         method: "POST",
@@ -200,6 +210,7 @@ function fillInAddress() {
     }).then(res => {
         vtexjs.session.getSession().done(e => console.log(e));
         $('#header-location-modal').modal('hide');
+        location.reload();
     })
 
 
