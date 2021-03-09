@@ -25,12 +25,11 @@ function eraseCookie(name) {
 }
 
 
-function registercookiestate(uf) {
-    if (!readCookie("mycity")) {
-        createCookie("mycity", uf, 10);
+function registerstoragestate(uf) {
+    if (!localStorage.mycity) {
+        localStorage.mycity = uf;
     } else {
-        eraseCookie("mycity");
-        createCookie("mycity", uf, 10);
+        localStorage.mycity = uf;
     }
 }
 
@@ -82,7 +81,9 @@ function gimmeDemIps() {
                 let city = res.city;
                 console.log(city)
                 $(".mylocation").text(city);
-                registercookiestate(city)
+                //city = city.replace(/[^\x00-\x7F]/g, "");
+                console.log(city, "ACII compliant")
+                registerstoragestate(city)
 
                 fetch(`/api/sessions`, {
                     method: "POST",
@@ -125,9 +126,9 @@ $(document).ready(function () {
         sessionStorage.gotlocation = true
 
     } else{
-        readCookie("mycity")
+        
 
-        $(".mylocation").text(readCookie("mycity"))
+        $(".mylocation").text(localStorage.mycity)
     }
 
 
@@ -192,7 +193,10 @@ function fillInAddress() {
     console.log(myCity)
 
     $(".mylocation").text(myCity)
-    registercookiestate(myCity)
+
+   // myCity = myCity.replace(/[^\x00-\x7F]/g, "");
+    console.log(myCity, "ACII compliant")
+    registerstoragestate(myCity)
 
     fetch(`/api/sessions`, {
         method: "POST",
