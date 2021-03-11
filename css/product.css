@@ -37,6 +37,15 @@
     padding-top: 0px !important
 }
 
+.product-info-exclusivo {
+    margin-top: 20px;
+    color: #278950 !important;
+    font-size: 20px;
+    margin-bottom: 0.3em;
+    font-weight: 400;
+}
+
+
 
 .buy-button.buy-button-ref .fa-lock, .added-to-cart, #description, #specification, #reviews {
     display: none;
