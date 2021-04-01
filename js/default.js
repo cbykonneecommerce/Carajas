@@ -7,7 +7,7 @@
  *
  */
  
-;$(document).ready( function(){
+$(document).ready( function(){
 	
 	if( $.fn.ADMAKEadvancedFilter ){
 		$(document).ADMAKEadvancedFilter({

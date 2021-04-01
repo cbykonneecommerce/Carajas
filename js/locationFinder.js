@@ -78,6 +78,7 @@ function gimmeDemIps() {
             .then(res => {
                 console.log(res);
                 let coordinates = res.postal;
+                localStorage.cep = res.postal;
                 let city = res.city;
                 console.log(city)
                 $(".mylocation").text(city);
@@ -189,6 +190,7 @@ function fillInAddress() {
             myCity = item.long_name
         }
     })
+    localStorage.cep = mycep;
     console.log(mycep)
     console.log(myCity)
 
