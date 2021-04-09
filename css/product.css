@@ -455,9 +455,10 @@ margin: 6px;
         width: 46%;
         margin-bottom: 1em;
     }
-    #newsletter, .footer, .copy-right{
+
+    /* #newsletter, .footer, .copy-right{
         display: none !important;;
-    }
+    } */
 
     .short-description .productDescriptionShort {
         font-size: 13px;
